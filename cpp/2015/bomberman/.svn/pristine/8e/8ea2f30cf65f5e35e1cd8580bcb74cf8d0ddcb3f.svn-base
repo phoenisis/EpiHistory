@@ -1,0 +1,28 @@
+/*
+**  src/main.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Graph.hh"
+#include "../inc/Bomberlib.hh"
+#include "../inc/Mygame.hh"
+#include "../inc/Vector3f.hh"
+
+#include <iostream>
+#include <unistd.h>
+int main()
+{
+  Disp::Menu  *menu  = new Disp::Menu(-25, -10, 50, 20);
+
+  bool continu = true;
+  menu->initialize();
+
+  while(continu)
+    {
+      menu->Draw(2);
+    }
+
+}

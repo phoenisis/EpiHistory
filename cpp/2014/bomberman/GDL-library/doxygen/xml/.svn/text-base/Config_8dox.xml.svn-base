@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="Config_8dox" kind="file">
+    <compoundname>Config.dox</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#<sp/>Doxyfile<sp/>1.7.4</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>Project<sp/>related<sp/>configuration<sp/>options</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal">DOXYFILE_ENCODING<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>UTF-8</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">PROJECT_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>GDL-GL</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">PROJECT_NUMBER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1.1</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">PROJECT_BRIEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Library<sp/>developped<sp/>by<sp/>the<sp/>Game<sp/>Development<sp/>Laboratory<sp/>used<sp/>to<sp/>create<sp/>video<sp/>games.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">PROJECT_LOGO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">OUTPUT_DIRECTORY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">CREATE_SUBDIRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">OUTPUT_LANGUAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>English</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">BRIEF_MEMBER_DESC<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">REPEAT_BRIEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">ABBREVIATE_BRIEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">ALWAYS_DETAILED_SEC<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">INLINE_INHERITED_MEMB<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">FULL_PATH_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">STRIP_FROM_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">STRIP_FROM_INC_PATH<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">SHORT_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">JAVADOC_AUTOBRIEF<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">QT_AUTOBRIEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">MULTILINE_CPP_IS_BRIEF<sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">INHERIT_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">SEPARATE_MEMBER_PAGES<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">TAB_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">ALIASES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">OPTIMIZE_OUTPUT_FOR_C<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">OPTIMIZE_OUTPUT_JAVA<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">OPTIMIZE_FOR_FORTRAN<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">OPTIMIZE_OUTPUT_VHDL<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">EXTENSION_MAPPING<sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">BUILTIN_STL_SUPPORT<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">CPP_CLI_SUPPORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">SIP_SUPPORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">IDL_PROPERTY_SUPPORT<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">DISTRIBUTE_GROUP_DOC<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">SUBGROUPING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">INLINE_GROUPED_CLASSES<sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">TYPEDEF_HIDES_STRUCT<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">SYMBOL_CACHE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>Build<sp/>related<sp/>configuration<sp/>options</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal">EXTRACT_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">EXTRACT_PRIVATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">EXTRACT_STATIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">EXTRACT_LOCAL_CLASSES<sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">EXTRACT_LOCAL_METHODS<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">EXTRACT_ANON_NSPACES<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">HIDE_UNDOC_MEMBERS<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">HIDE_UNDOC_CLASSES<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">HIDE_FRIEND_COMPOUNDS<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">HIDE_IN_BODY_DOCS<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">INTERNAL_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">CASE_SENSE_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">HIDE_SCOPE_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">SHOW_INCLUDE_FILES<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">FORCE_LOCAL_INCLUDES<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">INLINE_INFO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">SORT_MEMBER_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">SORT_BRIEF_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">SORT_MEMBERS_CTORS_1ST<sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">SORT_GROUP_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">SORT_BY_SCOPE_NAME<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">STRICT_PROTO_MATCHING<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">GENERATE_TODOLIST<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">GENERATE_TESTLIST<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">GENERATE_BUGLIST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">GENERATE_DEPRECATEDLIST=<sp/>YES</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">ENABLED_SECTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">MAX_INITIALIZER_LINES<sp/><sp/>=<sp/>30</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">SHOW_USED_FILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">SHOW_DIRECTORIES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">SHOW_FILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">SHOW_NAMESPACES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">FILE_VERSION_FILTER<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">LAYOUT_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>warning<sp/>and<sp/>progress<sp/>messages</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="normal">QUIET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">WARNINGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">WARN_IF_UNDOCUMENTED<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">WARN_IF_DOC_ERROR<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">WARN_NO_PARAMDOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">WARN_FORMAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;$file:$line:<sp/>$text&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">WARN_LOGFILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>input<sp/>files</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="normal">INPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">INPUT_ENCODING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>UTF-8</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">FILE_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">RECURSIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">EXCLUDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">EXCLUDE_SYMLINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">EXCLUDE_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">EXCLUDE_SYMBOLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">EXAMPLE_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">EXAMPLE_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">EXAMPLE_RECURSIVE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">IMAGE_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">INPUT_FILTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">FILTER_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">FILTER_SOURCE_FILES<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">FILTER_SOURCE_PATTERNS<sp/>=</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>source<sp/>browsing</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal">SOURCE_BROWSER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">INLINE_SOURCES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">STRIP_CODE_COMMENTS<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">REFERENCED_BY_RELATION<sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">REFERENCES_RELATION<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">REFERENCES_LINK_SOURCE<sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">USE_HTAGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">VERBATIM_HEADERS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>alphabetical<sp/>class<sp/>index</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal">ALPHABETICAL_INDEX<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">COLS_IN_ALPHA_INDEX<sp/><sp/><sp/><sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">IGNORE_PREFIX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>HTML<sp/>output</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="normal">GENERATE_HTML<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">HTML_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>html</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">HTML_FILE_EXTENSION<sp/><sp/><sp/><sp/>=<sp/>.html</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">HTML_HEADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">HTML_FOOTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">HTML_STYLESHEET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">HTML_EXTRA_FILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">HTML_COLORSTYLE_HUE<sp/><sp/><sp/><sp/>=<sp/>220</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">HTML_COLORSTYLE_SAT<sp/><sp/><sp/><sp/>=<sp/>100</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">HTML_COLORSTYLE_GAMMA<sp/><sp/>=<sp/>80</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">HTML_TIMESTAMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">HTML_ALIGN_MEMBERS<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">HTML_DYNAMIC_SECTIONS<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">GENERATE_DOCSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">DOCSET_FEEDNAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Doxygen<sp/>generated<sp/>docs&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">DOCSET_BUNDLE_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>org.doxygen.Project</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">DOCSET_PUBLISHER_ID<sp/><sp/><sp/><sp/>=<sp/>org.doxygen.Publisher</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">DOCSET_PUBLISHER_NAME<sp/><sp/>=<sp/>Publisher</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">GENERATE_HTMLHELP<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">CHM_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">HHC_LOCATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">GENERATE_CHI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">CHM_INDEX_ENCODING<sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">BINARY_TOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">TOC_EXPAND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">GENERATE_QHP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">QCH_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">QHP_NAMESPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>org.doxygen.Project</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">QHP_VIRTUAL_FOLDER<sp/><sp/><sp/><sp/><sp/>=<sp/>doc</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">QHP_CUST_FILTER_NAME<sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">QHP_CUST_FILTER_ATTRS<sp/><sp/>=</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">QHP_SECT_FILTER_ATTRS<sp/><sp/>=</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">QHG_LOCATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">GENERATE_ECLIPSEHELP<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">ECLIPSE_DOC_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>org.doxygen.Project</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">DISABLE_INDEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">ENUM_VALUES_PER_LINE<sp/><sp/><sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">GENERATE_TREEVIEW<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">USE_INLINE_TREES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">TREEVIEW_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>250</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">EXT_LINKS_IN_WINDOW<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">FORMULA_FONTSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">FORMULA_TRANSPARENT<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">USE_MATHJAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">MATHJAX_RELPATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>http:</highlight><highlight class="comment">//www.mathjax.org/mathjax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">SEARCHENGINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">SERVER_BASED_SEARCH<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>LaTeX<sp/>output</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="normal">GENERATE_LATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">LATEX_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>latex</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">LATEX_CMD_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>latex</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">MAKEINDEX_CMD_NAME<sp/><sp/><sp/><sp/><sp/>=<sp/>makeindex</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">COMPACT_LATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">PAPER_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>a4</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">EXTRA_PACKAGES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">LATEX_HEADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">LATEX_FOOTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">PDF_HYPERLINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">USE_PDFLATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">LATEX_BATCHMODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">LATEX_HIDE_INDICES<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">LATEX_SOURCE_CODE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>RTF<sp/>output</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor"></highlight><highlight class="normal">GENERATE_RTF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">RTF_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>rtf</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">COMPACT_RTF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">RTF_HYPERLINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">RTF_STYLESHEET_FILE<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">RTF_EXTENSIONS_FILE<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>man<sp/>page<sp/>output</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="normal">GENERATE_MAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">MAN_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>man</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">MAN_EXTENSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>.3</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">MAN_LINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>XML<sp/>output</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="normal">GENERATE_XML<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">XML_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>xml</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">XML_SCHEMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">XML_DTD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">XML_PROGRAMLISTING<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>for<sp/>the<sp/>AutoGen<sp/>Definitions<sp/>output</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="normal">GENERATE_AUTOGEN_DEF<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>Perl<sp/>module<sp/>output</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="normal">GENERATE_PERLMOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">PERLMOD_LATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">PERLMOD_PRETTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">PERLMOD_MAKEVAR_PREFIX<sp/>=</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>preprocessor</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"></highlight><highlight class="normal">ENABLE_PREPROCESSING<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">MACRO_EXPANSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">EXPAND_ONLY_PREDEF<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">SEARCH_INCLUDES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">INCLUDE_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">INCLUDE_FILE_PATTERNS<sp/><sp/>=</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">PREDEFINED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">EXPAND_AS_DEFINED<sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">SKIP_FUNCTION_MACROS<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>Configuration::additions<sp/>related<sp/>to<sp/>external<sp/>references</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight><highlight class="normal">TAGFILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">GENERATE_TAGFILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">ALLEXTERNALS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">EXTERNAL_GROUPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">PERL_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>/usr/bin/perl</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>dot<sp/>tool</highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"></highlight><highlight class="normal">CLASS_DIAGRAMS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">MSCGEN_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">HIDE_UNDOC_RELATIONS<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">HAVE_DOT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">DOT_NUM_THREADS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">DOT_FONTNAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Helvetica</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">DOT_FONTSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">DOT_FONTPATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">CLASS_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">COLLABORATION_GRAPH<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">GROUP_GRAPHS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">UML_LOOK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">TEMPLATE_RELATIONS<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">INCLUDE_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">INCLUDED_BY_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">CALL_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">CALLER_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">GRAPHICAL_HIERARCHY<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">DIRECTORY_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">DOT_IMAGE_FORMAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>png</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">DOT_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">DOTFILE_DIRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">MSCFILE_DIRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">DOT_GRAPH_MAX_NODES<sp/><sp/><sp/><sp/>=<sp/>50</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">MAX_DOT_GRAPH_DEPTH<sp/><sp/><sp/><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">DOT_TRANSPARENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">DOT_MULTI_TARGETS<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">GENERATE_LEGEND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">DOT_CLEANUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+    </programlisting>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Config.dox"/>
+  </compounddef>
+</doxygen>

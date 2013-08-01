@@ -1,0 +1,32 @@
+/*
+**  src/AObject.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include <list>
+#include <utility>
+
+#include "../inc/AObject.hh"
+
+void AObject::initialize()
+{
+    gdl::Model Bombe = gdl::Model::load("./asserts/bombe.FBX");
+    gdl::Model Marvin1 = gdl::Model::load("./asserts/anims/bomberman_white_run.FBX");
+    gdl::Model Marvin2 = gdl::Model::load("./asserts/anims/bomberman_black_run.FBX");
+    gdl::Model Fire = gdl::Model::load("./asserts/fire.FBX");
+    gdl::Model Dalle = gdl::Model::load("./asserts/ground.FBX");
+    gdl::Model Breakable = gdl::Model::load("./asserts/box.FBX");
+    gdl::Model Unbreakable = gdl::Model::load("./asserts/stone.FBX");
+    gdl::Model Bonus_Fire = gdl::Model::load("./asserts/bonus_fire_up.FBX");
+    gdl::Model Bonus_Bombe = gdl::Model::load("./asserts/bonus_bomb_up.FBX");
+    gdl::Model Malus_Fire = gdl::Model::load("./asserts/bonus_fire_down.FBX");
+    gdl::Model Malus_Bombe = gdl::Model::load("./asserts/bonus_bomb_down.FBX");
+}
+
+void	AObject::add_positions(Vector3f *position, float rotation)
+{
+  this->positions.push_back(std::pair<Vector3f*, float>(position, rotation));
+}

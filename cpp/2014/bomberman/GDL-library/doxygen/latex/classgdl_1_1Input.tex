@@ -1,0 +1,97 @@
+\hypertarget{classgdl_1_1Input}{
+\section{gdl::Input Class Reference}
+\label{classgdl_1_1Input}\index{gdl::Input@{gdl::Input}}
+}
+
+
+{\ttfamily \#include $<$Input.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgdl_1_1Input_aaaec080ed208c7a0e93160e11710a6db}{Input} (\hyperlink{classgdl_1_1Window}{gdl::Window} \&window)
+\item 
+\hyperlink{classgdl_1_1Input_aa9c7fd004ef583434b65ddf7ebbad9bc}{$\sim$Input} ()
+\item 
+bool \hyperlink{classgdl_1_1Input_ae0bfa17187848fd6a1576eb1e8204230}{isKeyDown} (gdl::Keys::Key key)
+\item 
+bool \hyperlink{classgdl_1_1Input_a893c44e94392d6d2d3c01f5ff4263f96}{isMouseButtonDown} (gdl::Mouse::Button button)
+\item 
+int \hyperlink{classgdl_1_1Input_a1a9f9de83134c8ea6e62ece2163868ca}{getMousePositionX} (void) const 
+\item 
+int \hyperlink{classgdl_1_1Input_a8732662c038df92f1cb422973b675288}{getMousePositionY} (void) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classgdl_1_1Input}{Input} class catches each input event for a window. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgdl_1_1Input_aaaec080ed208c7a0e93160e11710a6db}{
+\index{gdl::Input@{gdl::Input}!Input@{Input}}
+\index{Input@{Input}!gdl::Input@{gdl::Input}}
+\subsubsection[{Input}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Input::Input ({\bf gdl::Window} \& {\em window})}}
+\label{classgdl_1_1Input_aaaec080ed208c7a0e93160e11710a6db}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em window}]\hyperlink{classgdl_1_1Window}{Window} to link with. \end{DoxyParams}
+\hypertarget{classgdl_1_1Input_aa9c7fd004ef583434b65ddf7ebbad9bc}{
+\index{gdl::Input@{gdl::Input}!$\sim$Input@{$\sim$Input}}
+\index{$\sim$Input@{$\sim$Input}!gdl::Input@{gdl::Input}}
+\subsubsection[{$\sim$Input}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Input::$\sim$Input ()}}
+\label{classgdl_1_1Input_aa9c7fd004ef583434b65ddf7ebbad9bc}
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1Input_a1a9f9de83134c8ea6e62ece2163868ca}{
+\index{gdl::Input@{gdl::Input}!getMousePositionX@{getMousePositionX}}
+\index{getMousePositionX@{getMousePositionX}!gdl::Input@{gdl::Input}}
+\subsubsection[{getMousePositionX}]{\setlength{\rightskip}{0pt plus 5cm}int gdl::Input::getMousePositionX (void) const}}
+\label{classgdl_1_1Input_a1a9f9de83134c8ea6e62ece2163868ca}
+Get the cursor position.
+
+\begin{DoxyReturn}{Returns}
+The cursor position on x-\/axis. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Input_a8732662c038df92f1cb422973b675288}{
+\index{gdl::Input@{gdl::Input}!getMousePositionY@{getMousePositionY}}
+\index{getMousePositionY@{getMousePositionY}!gdl::Input@{gdl::Input}}
+\subsubsection[{getMousePositionY}]{\setlength{\rightskip}{0pt plus 5cm}int gdl::Input::getMousePositionY (void) const}}
+\label{classgdl_1_1Input_a8732662c038df92f1cb422973b675288}
+Get the cursor position.
+
+\begin{DoxyReturn}{Returns}
+The cursor position on y-\/axis. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Input_ae0bfa17187848fd6a1576eb1e8204230}{
+\index{gdl::Input@{gdl::Input}!isKeyDown@{isKeyDown}}
+\index{isKeyDown@{isKeyDown}!gdl::Input@{gdl::Input}}
+\subsubsection[{isKeyDown}]{\setlength{\rightskip}{0pt plus 5cm}bool gdl::Input::isKeyDown (gdl::Keys::Key {\em key})}}
+\label{classgdl_1_1Input_ae0bfa17187848fd6a1576eb1e8204230}
+Check if a key is down.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em key}]Key to check. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the key is down, true is returned. Otherwise, returned false. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Input_a893c44e94392d6d2d3c01f5ff4263f96}{
+\index{gdl::Input@{gdl::Input}!isMouseButtonDown@{isMouseButtonDown}}
+\index{isMouseButtonDown@{isMouseButtonDown}!gdl::Input@{gdl::Input}}
+\subsubsection[{isMouseButtonDown}]{\setlength{\rightskip}{0pt plus 5cm}bool gdl::Input::isMouseButtonDown (gdl::Mouse::Button {\em button})}}
+\label{classgdl_1_1Input_a893c44e94392d6d2d3c01f5ff4263f96}
+Check if a mouse button is down.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em button}]Button to check. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the button is down, true is returned. Otherwise, returned false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Input.hpp\item 
+Input.cpp\end{DoxyCompactItemize}

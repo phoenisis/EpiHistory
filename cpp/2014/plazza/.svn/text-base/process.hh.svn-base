@@ -1,0 +1,33 @@
+//
+// process.hh for plazza in /home/hubert_s//plazza-2014-pidoux_q
+// 
+// Made by sevan hubert
+// Login   <hubert_s@epitech.net>
+// 
+// Started on  Mon Apr 11 11:04:25 2011 sevan hubert
+// Last update Mon Apr 11 12:50:00 2011 sevan hubert
+//
+
+#ifndef		_PROCESS_
+# define	_PROCESS_
+
+
+#include <unistd.h>
+
+
+class	Process
+{
+public :
+  Process(void *(*task)(void *));
+  ~Process();
+  
+  void	begin(void *arg);
+  void	plop();
+
+  //private :
+  pid_t	pid;
+  void	*(*task)(void *);
+};
+
+
+#endif

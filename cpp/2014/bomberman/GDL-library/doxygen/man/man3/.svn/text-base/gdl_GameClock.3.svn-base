@@ -1,0 +1,80 @@
+.TH "gdl::GameClock" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::GameClock \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GameClock.hpp>\fP
+.PP
+Inherits \fBgdl::IClock\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBplay\fP (void)"
+.br
+.ti -1c
+.RI "void \fBpause\fP (void)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset\fP (void)"
+.br
+.ti -1c
+.RI "float \fBgetElapsedTime\fP (void) const "
+.br
+.ti -1c
+.RI "float \fBgetTotalGameTime\fP (void) const "
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBGame\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBGameClock\fP provides a main clock for the entire game. 
+.SH "Member Function Documentation"
+.PP 
+.SS "float gdl::GameClock::getElapsedTime (void) const\fC [virtual]\fP"Return the time since the last Update call.
+.PP
+\fBReturns:\fP
+.RS 4
+The time in float. 
+.RE
+.PP
+
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "float gdl::GameClock::getTotalGameTime (void) const"Return the time between now and the start of the \fBGame\fP.
+.PP
+\fBReturns:\fP
+.RS 4
+The time in float. 
+.RE
+.PP
+
+.SS "void gdl::GameClock::pause (void)\fC [virtual]\fP"Stop the clock until you play it again. 
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "void gdl::GameClock::play (void)\fC [virtual]\fP"Start the clock. 
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "void gdl::GameClock::reset (void)\fC [virtual]\fP"Reset the clock to 0. 
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "void gdl::GameClock::update (void)\fC [virtual]\fP"Up the time of the clock. 
+.PP
+Implements \fBgdl::IClock\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

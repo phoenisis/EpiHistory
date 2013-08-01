@@ -1,0 +1,38 @@
+/*
+**  inc/Character.hh
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#ifndef	Character_hh_
+# define Character_hh_
+
+# include "Player.hh"
+# include "Setting.hh"
+# include "Mygame.hh"
+
+class Character: public Player
+{
+public:
+  Character(map::map &, Setting *, int);
+  ~Character();
+
+  void initialize();
+  void update(gdl::GameClock const &, gdl::Input &);
+  void draw();
+  void Action(gdl::Input &);
+  void checkBonus(int);
+  MenuCamera *camera_;
+
+private :
+  int choice;
+  gdl::Keys::Key	Up;
+  gdl::Keys::Key	Down;
+  gdl::Keys::Key	Right;
+  gdl::Keys::Key	Left;
+  gdl::Keys::Key	Space;
+};
+
+#endif

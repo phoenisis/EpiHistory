@@ -1,0 +1,25 @@
+\section{Class Hierarchy}
+This inheritance list is sorted roughly, but not completely, alphabetically:\begin{DoxyCompactList}
+\item \contentsline{section}{gdl::Color}{\pageref{structgdl_1_1Color}}{}
+\item \contentsline{section}{gdl::Game}{\pageref{classgdl_1_1Game}}{}
+\item \contentsline{section}{gdl::IClock}{\pageref{classgdl_1_1IClock}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{gdl::Clock}{\pageref{classgdl_1_1Clock}}{}
+\item \contentsline{section}{gdl::GameClock}{\pageref{classgdl_1_1GameClock}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{gdl::Input}{\pageref{classgdl_1_1Input}}{}
+\item \contentsline{section}{gdl::ModelException}{\pageref{classgdl_1_1ModelException}}{}
+\item \contentsline{section}{gdl::ResourceBase}{\pageref{classgdl_1_1ResourceBase}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{gdl::Resource$<$ Type $>$}{\pageref{classgdl_1_1Resource}}{}
+\item \contentsline{section}{gdl::Resource$<$ ImageImpl $>$}{\pageref{classgdl_1_1Resource}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{gdl::Image}{\pageref{classgdl_1_1Image}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{gdl::Resource$<$ ModelImpl $>$}{\pageref{classgdl_1_1Resource}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{gdl::Model}{\pageref{classgdl_1_1Model}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{gdl::Window}{\pageref{classgdl_1_1Window}}{}
+\end{DoxyCompactList}

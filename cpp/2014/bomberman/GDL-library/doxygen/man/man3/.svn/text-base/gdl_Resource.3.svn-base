@@ -1,0 +1,96 @@
+.TH "gdl::Resource" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Resource \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBgdl::ResourceBase\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBResource\fP (Type *val)"
+.br
+.ti -1c
+.RI "\fBResource\fP (\fBResource\fP const &)"
+.br
+.ti -1c
+.RI "\fBResource\fP & \fBoperator=\fP (\fBResource\fP const &)"
+.br
+.ti -1c
+.RI "virtual \fB~Resource\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisValid\fP () const "
+.br
+.ti -1c
+.RI "Type * \fBoperator->\fP ()"
+.br
+.ti -1c
+.RI "Type & \fBoperator*\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBHardReset\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "Type * \fBdata_\fP"
+.br
+.in -1c
+
+.SS "template<typename Type> class gdl::Resource< Type >"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename Type> \fBgdl::Resource\fP< Type >::\fBResource\fP (Type * val)\fC [inline, explicit]\fP"Explicit constructor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP The pointer on a resource. 
+.RE
+.PP
+
+.SS "template<typename Type> \fBgdl::Resource\fP< Type >::\fBResource\fP (\fBResource\fP< Type > const & right)\fC [inline]\fP"Copy constructor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIright\fP \fBResource\fP to copy. 
+.RE
+.PP
+
+.SS "template<typename Type > \fBgdl::Resource\fP< Type >::~\fBResource\fP ()\fC [inline, virtual]\fP"Default destructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename Type > void \fBgdl::Resource\fP< Type >::HardReset ()\fC [inline, protected]\fP"Reset the data. 
+.SS "template<typename Type > bool \fBgdl::Resource\fP< Type >::isValid () const\fC [inline]\fP"Check if the resource is valid.
+.PP
+\fBReturns:\fP
+.RS 4
+If valid, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SS "template<typename Type > Type & \fBgdl::Resource\fP< Type >::operator* ()\fC [inline]\fP"Overloading of the indirection operator. 
+.SS "template<typename Type > Type * \fBgdl::Resource\fP< Type >::operator-> ()\fC [inline]\fP"Overloading of the member operator. 
+.SS "template<typename Type > \fBgdl::Resource\fP< Type > & \fBgdl::Resource\fP< Type >::operator= (\fBResource\fP< Type > const & right)\fC [inline]\fP"Overloading of the assignment operator.
+.PP
+\fBReturns:\fP
+.RS 4
+An reference on the \fBResource\fP instance. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

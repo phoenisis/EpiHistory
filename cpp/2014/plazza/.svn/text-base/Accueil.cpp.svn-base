@@ -1,0 +1,24 @@
+//
+// Accueil.cpp for Plazza in /home/hubert_s//plazza-2014-pidoux_q
+// 
+// Made by sevan hubert
+// Login   <hubert_s@epitech.net>
+// 
+// Started on  Thu Apr  7 14:13:37 2011 sevan hubert
+// Last update Thu Apr  7 14:16:12 2011 sevan hubert
+//
+
+
+#include "Accueil.hh"
+
+
+Accueil::Accueil(int nb_c, int t_r, int c_m)
+{
+  this->nb_cuisto = nb_c;
+  this->temps_repop = t_r;
+  this->coef_mult = c_m;
+}
+
+Accueil::~Accueil()
+{}
+

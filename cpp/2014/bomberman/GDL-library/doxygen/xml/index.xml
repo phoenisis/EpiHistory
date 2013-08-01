@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.6.2-20100208">
+  <compound refid="classgdl_1_1Clock" kind="class"><name>gdl::Clock</name>
+    <member refid="classgdl_1_1Clock_1a2e9b672780cb595a5bb2a6e17a58a497" kind="variable"><name>clock_</name></member>
+    <member refid="classgdl_1_1Clock_1a6e3e6312ccc874c40b42e428dde12ed5" kind="variable"><name>isActiv_</name></member>
+    <member refid="classgdl_1_1Clock_1a3328f75ebbe3c839822c42d9e7cea6ee" kind="variable"><name>elapsedTime_</name></member>
+    <member refid="classgdl_1_1Clock_1add805001aa19af1644e8c7c133592f70" kind="variable"><name>savedTime_</name></member>
+    <member refid="classgdl_1_1Clock_1a4b2d96b211ecd3449775338f414966f2" kind="variable"><name>totalClock_</name></member>
+    <member refid="classgdl_1_1Clock_1aab3b54f0e335efd7136e8a2900da9c3e" kind="function"><name>Clock</name></member>
+    <member refid="classgdl_1_1Clock_1a54c8e0862b5903056d169195c0b22072" kind="function"><name>~Clock</name></member>
+    <member refid="classgdl_1_1Clock_1af1054a354823d2556a780ddec710e368" kind="function"><name>play</name></member>
+    <member refid="classgdl_1_1Clock_1afcd4590e0217065f7f2c9bd13cb6c3ad" kind="function"><name>pause</name></member>
+    <member refid="classgdl_1_1Clock_1acc748cbe2dc79ab94c7843e2f010d049" kind="function"><name>update</name></member>
+    <member refid="classgdl_1_1Clock_1a9a44b0217d50c216d2e94d0f174e3a67" kind="function"><name>reset</name></member>
+    <member refid="classgdl_1_1Clock_1a3b81a05f6b9d4af46b6c955017c8ddfd" kind="function"><name>getElapsedTime</name></member>
+    <member refid="classgdl_1_1Clock_1a1c7cb8d2c1c742db97cb667c2cfe5552" kind="function"><name>getTotalElapsedTime</name></member>
+  </compound>
+  <compound refid="structgdl_1_1Color" kind="struct"><name>gdl::Color</name>
+    <member refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kind="typedef"><name>uchar</name></member>
+    <member refid="structgdl_1_1Color_1aacd5f4d3c04fd4f47986f400a70c9143" kind="variable"><name>r</name></member>
+    <member refid="structgdl_1_1Color_1a47b05c3bbf1ece915e3cd7e260b5bfa4" kind="variable"><name>g</name></member>
+    <member refid="structgdl_1_1Color_1aa0b3ca9d0a465b76b4bc955ba2c38352" kind="variable"><name>b</name></member>
+    <member refid="structgdl_1_1Color_1af3fd2777ff073f3020d5d1fa1d25e38b" kind="variable"><name>a</name></member>
+    <member refid="structgdl_1_1Color_1aa898b04614ee1e721a5413cb9b6cae16" kind="function"><name>Color</name></member>
+    <member refid="structgdl_1_1Color_1a7c67cb8a5174ca1f0817857a6ef37fef" kind="function"><name>Color</name></member>
+    <member refid="structgdl_1_1Color_1a416bf40b4967d73bb91023ec8dd56994" kind="function"><name>Color</name></member>
+    <member refid="structgdl_1_1Color_1afb38b5f4475e657c82c6e0c4e835d1ea" kind="function"><name>~Color</name></member>
+    <member refid="structgdl_1_1Color_1a3ef6a664a4ae454eb846ea381c679dba" kind="function"><name>operator=</name></member>
+    <member refid="structgdl_1_1Color_1a90c8f9a5fe3bca45d2760619097f3be2" kind="function"><name>operator==</name></member>
+    <member refid="structgdl_1_1Color_1af2fbc33fd8ab45ab40fd61bc1acf67ad" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classgdl_1_1Game" kind="class"><name>gdl::Game</name>
+    <member refid="classgdl_1_1Game_1a0ff1750e43b4d276f64b25876b079bb4" kind="variable"><name>window_</name></member>
+    <member refid="classgdl_1_1Game_1a1cc7814ce34e89d8c09e6648640c5da8" kind="variable"><name>gameClock_</name></member>
+    <member refid="classgdl_1_1Game_1a43591b031a6f20da0cf41123efb8a26b" kind="variable"><name>input_</name></member>
+    <member refid="classgdl_1_1Game_1af2e99c2dd49de1ca556c7ac5e0c9329f" kind="variable"><name>gameInternal_</name></member>
+    <member refid="classgdl_1_1Game_1a6e82a8942734638e0f78f7308c0950fe" kind="function"><name>Game</name></member>
+    <member refid="classgdl_1_1Game_1a39acbe13be273b85570619bfff2f6135" kind="function"><name>~Game</name></member>
+    <member refid="classgdl_1_1Game_1aba4bb3b2f086d131a81ebe3de997938a" kind="function"><name>run</name></member>
+    <member refid="classgdl_1_1Game_1ad487d5d6e94f2e4d7bcfaf57626d93d4" kind="function"><name>getContentRoot</name></member>
+    <member refid="classgdl_1_1Game_1a42bb8fd2de5376f6c864a998690da48d" kind="function"><name>setContentRoot</name></member>
+    <member refid="classgdl_1_1Game_1a91948cfa194675d33b82c90eace878b2" kind="function"><name>initialize</name></member>
+    <member refid="classgdl_1_1Game_1ad1a107e2c31850be6ee9df77e69d3714" kind="function"><name>update</name></member>
+    <member refid="classgdl_1_1Game_1af09f81ba22b7c297fa2da73cd3fce8c5" kind="function"><name>draw</name></member>
+    <member refid="classgdl_1_1Game_1a34061b97583826e39d08d7e1c85a3c4c" kind="function"><name>unload</name></member>
+  </compound>
+  <compound refid="classgdl_1_1GameClock" kind="class"><name>gdl::GameClock</name>
+    <member refid="classgdl_1_1GameClock_1a079cb7ba9f4dbfcd182ae68b7ce48c10" kind="variable"><name>clock_</name></member>
+    <member refid="classgdl_1_1GameClock_1a9e69aa47099c106608cbeb0720d5e8d1" kind="variable"><name>isActiv_</name></member>
+    <member refid="classgdl_1_1GameClock_1a1e1d4dbba0469f7e367840efe9f99cb9" kind="variable"><name>elapsedTime_</name></member>
+    <member refid="classgdl_1_1GameClock_1a634e59317ff5a1f842a3de4cb78ac66d" kind="variable"><name>totalGameTime_</name></member>
+    <member refid="classgdl_1_1GameClock_1aa2fab026580d6f14280c2ffb8063a314" kind="friend"><name>Game</name></member>
+    <member refid="classgdl_1_1GameClock_1acad69430d62f1434cdcbef92ad2004ca" kind="function"><name>GameClock</name></member>
+    <member refid="classgdl_1_1GameClock_1ad48fd1a4a8e2fdf876ace25c26c59172" kind="function"><name>~GameClock</name></member>
+    <member refid="classgdl_1_1GameClock_1aa7ad30c03dec94bc5b21a4fcad290644" kind="function"><name>play</name></member>
+    <member refid="classgdl_1_1GameClock_1aab85df27e686f8dbc0bcdb009a6e9158" kind="function"><name>pause</name></member>
+    <member refid="classgdl_1_1GameClock_1adb1151b518f6ee38a169b25b75542311" kind="function"><name>update</name></member>
+    <member refid="classgdl_1_1GameClock_1af568839e075e6e3c2b7aad91450d16d2" kind="function"><name>reset</name></member>
+    <member refid="classgdl_1_1GameClock_1a4c089f024d7b1448bc0d24f6a2785281" kind="function"><name>getElapsedTime</name></member>
+    <member refid="classgdl_1_1GameClock_1a8769e925304d57d6c6949c8bedec7956" kind="function"><name>getTotalGameTime</name></member>
+  </compound>
+  <compound refid="classgdl_1_1IClock" kind="class"><name>gdl::IClock</name>
+    <member refid="classgdl_1_1IClock_1a99fa0615ad15521b475cd35cbf7dcf8a" kind="function"><name>~IClock</name></member>
+    <member refid="classgdl_1_1IClock_1af9f70e18cd6b9b39aca1a359412adf4d" kind="function"><name>play</name></member>
+    <member refid="classgdl_1_1IClock_1a7274430efa1f0e621bcce5d99d6abca7" kind="function"><name>pause</name></member>
+    <member refid="classgdl_1_1IClock_1a0489f6f9055df40116e98e7ed6ad4146" kind="function"><name>update</name></member>
+    <member refid="classgdl_1_1IClock_1a63cd29fcd9830e719d4cb82d5e993ec6" kind="function"><name>reset</name></member>
+    <member refid="classgdl_1_1IClock_1ad5c3e51562a10e319a3494785d077d1b" kind="function"><name>getElapsedTime</name></member>
+  </compound>
+  <compound refid="classgdl_1_1Image" kind="class"><name>gdl::Image</name>
+    <member refid="classgdl_1_1Image_1ad30335dc3a64ec73d35a335c53178345" kind="friend"><name>ImageImpl</name></member>
+    <member refid="classgdl_1_1Image_1a1ccd90e38aeef3b04ee4e62ad6928b06" kind="function"><name>Image</name></member>
+    <member refid="classgdl_1_1Image_1a2106e265d93d44829fe181009af0782f" kind="function"><name>~Image</name></member>
+    <member refid="classgdl_1_1Image_1a38b36eb4c9bb1ff523d56c8548e250ab" kind="function"><name>bind</name></member>
+    <member refid="classgdl_1_1Image_1afbfdaf5f3b8744d9903face66b730d93" kind="function"><name>getWidth</name></member>
+    <member refid="classgdl_1_1Image_1a92a2838f614afac73777e54e4a37eb4c" kind="function"><name>getHeight</name></member>
+    <member refid="classgdl_1_1Image_1af98213f37f91724b3c5b6999864239d1" kind="function"><name>getPixelPtr</name></member>
+    <member refid="classgdl_1_1Image_1a5fbf636e446bfa53e54f6664bbe49fb7" kind="function"><name>load</name></member>
+    <member refid="classgdl_1_1Image_1a738f9a5873aec7dba28cfd26a7dcf176" kind="function"><name>Image</name></member>
+  </compound>
+  <compound refid="classgdl_1_1Input" kind="class"><name>gdl::Input</name>
+    <member refid="classgdl_1_1Input_1ab700f6a73af763b8827138a318171f2f" kind="variable"><name>input_</name></member>
+    <member refid="classgdl_1_1Input_1aaaec080ed208c7a0e93160e11710a6db" kind="function"><name>Input</name></member>
+    <member refid="classgdl_1_1Input_1aa9c7fd004ef583434b65ddf7ebbad9bc" kind="function"><name>~Input</name></member>
+    <member refid="classgdl_1_1Input_1ae0bfa17187848fd6a1576eb1e8204230" kind="function"><name>isKeyDown</name></member>
+    <member refid="classgdl_1_1Input_1a893c44e94392d6d2d3c01f5ff4263f96" kind="function"><name>isMouseButtonDown</name></member>
+    <member refid="classgdl_1_1Input_1a1a9f9de83134c8ea6e62ece2163868ca" kind="function"><name>getMousePositionX</name></member>
+    <member refid="classgdl_1_1Input_1a8732662c038df92f1cb422973b675288" kind="function"><name>getMousePositionY</name></member>
+    <member refid="classgdl_1_1Input_1afbd8a611c72dda5a039347238a0964db" kind="function"><name>getInput</name></member>
+  </compound>
+  <compound refid="classgdl_1_1Model" kind="class"><name>gdl::Model</name>
+    <member refid="classgdl_1_1Model_1a2480dbae41214c8a84fe8cee712837c3" kind="typedef"><name>AnimationsType</name></member>
+    <member refid="classgdl_1_1Model_1ac142a878bd34fc2032627f30bee18446" kind="variable"><name>m_animations</name></member>
+    <member refid="classgdl_1_1Model_1afb81d2077780e342b8fd3654cabc4c19" kind="friend"><name>ModelImpl</name></member>
+    <member refid="classgdl_1_1Model_1a7afc1a807b9064f725fdcdce33639acb" kind="friend"><name>ResourceManagerImpl</name></member>
+    <member refid="classgdl_1_1Model_1a6b21fac6f31b4d9bf330a0fb00d2f8ec" kind="function"><name>CheckUniqueAnimation</name></member>
+    <member refid="classgdl_1_1Model_1ae89920968936a09f125bf1f9f2344402" kind="function"><name>Model</name></member>
+    <member refid="classgdl_1_1Model_1a48d0cb59ef4926b95b1a4504d6b6fbe0" kind="function"><name>Model</name></member>
+    <member refid="classgdl_1_1Model_1a76ba0ddf7db67016d0a72f0c22febca4" kind="function"><name>~Model</name></member>
+    <member refid="classgdl_1_1Model_1a9e5a520c27759a0913010e88262f87d0" kind="function"><name>update</name></member>
+    <member refid="classgdl_1_1Model_1af8cbb946c57ab177273521bb3c127fb4" kind="function"><name>draw</name></member>
+    <member refid="classgdl_1_1Model_1a4835d0ce38b458dc0b378f4a025c5a09" kind="function"><name>draw_pose</name></member>
+    <member refid="classgdl_1_1Model_1ae767b95441e66f3c5e8f06efd6f785fe" kind="function"><name>infos</name></member>
+    <member refid="classgdl_1_1Model_1abd7249531d6433c6a8c0970f931b16e6" kind="function"><name>play</name></member>
+    <member refid="classgdl_1_1Model_1a5046ca0821ca4c5a6a6ec33c51b41903" kind="function"><name>animation_hasStarted</name></member>
+    <member refid="classgdl_1_1Model_1a3fcf22fc2e37057fe047c3841d30c88b" kind="function"><name>anim_is_ended</name></member>
+    <member refid="classgdl_1_1Model_1a565112440d65142e71911e60cdb223bb" kind="function"><name>stop_animation</name></member>
+    <member refid="classgdl_1_1Model_1a5ccf274812bacb19062d4051fbe44b57" kind="function"><name>get_anim_speed</name></member>
+    <member refid="classgdl_1_1Model_1a97d6d0d3f9e6df95e20caf26e769bea4" kind="function"><name>get_anim_blendfactor</name></member>
+    <member refid="classgdl_1_1Model_1a5cb4cfea0c7f0819d0749baddd682f98" kind="function"><name>get_anim_state</name></member>
+    <member refid="classgdl_1_1Model_1a0cbcdc21c1962e7230fcba6b063b119a" kind="function"><name>set_anim_bendfactor</name></member>
+    <member refid="classgdl_1_1Model_1abebb3405288cef12250671957cda4925" kind="function"><name>set_anim_speed</name></member>
+    <member refid="classgdl_1_1Model_1a8bbdffaebc6ef023b84d609d9f00a43e" kind="function"><name>get_default_model_color</name></member>
+    <member refid="classgdl_1_1Model_1a5fe9cd2cbfe7a993505528832cdc0604" kind="function"><name>set_default_model_color</name></member>
+    <member refid="classgdl_1_1Model_1a7239d032a682d61fcf69194e34461102" kind="function"><name>set_anim_state</name></member>
+    <member refid="classgdl_1_1Model_1a2bf37d490e0dd0906d4ee7d74aca5df3" kind="function"><name>add_anim_state</name></member>
+    <member refid="classgdl_1_1Model_1af32a30b8fc163e1dc9d1a78eff49f2ea" kind="function"><name>remove_anim_state</name></member>
+    <member refid="classgdl_1_1Model_1accd5847c295adfc7cebcd2283ee2bfdf" kind="function"><name>get_stackanimation_names</name></member>
+    <member refid="classgdl_1_1Model_1a7f09fd45a42fd3314e320c0b969ab2bc" kind="function"><name>get_animation_names</name></member>
+    <member refid="classgdl_1_1Model_1a6f9c70f0e5b0b0c640d739a4fd1249cd" kind="function"><name>load</name></member>
+    <member refid="classgdl_1_1Model_1ad477ab8d1ffe487499886170a1b0d949" kind="function"><name>cut_animation</name></member>
+    <member refid="classgdl_1_1Model_1ae1ede142757404fb1869c62c682bc48b" kind="function"><name>Begin</name></member>
+    <member refid="classgdl_1_1Model_1a65b3733d5447e12316befa7a28eeadd7" kind="function"><name>End</name></member>
+  </compound>
+  <compound refid="classgdl_1_1ModelException" kind="class"><name>gdl::ModelException</name>
+    <member refid="classgdl_1_1ModelException_1a3adb1b1dd1f1d6b4c70eaaee728ffb85" kind="variable"><name>m_what</name></member>
+    <member refid="classgdl_1_1ModelException_1a20ca1764d4e9c7f247f35f873f111cef" kind="function"><name>ModelException</name></member>
+    <member refid="classgdl_1_1ModelException_1ad8f0b637c147e214c2c61ab57c0e7404" kind="function"><name>~ModelException</name></member>
+    <member refid="classgdl_1_1ModelException_1ac570e43873bd20fcc1f2ec3f3a09ed4d" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classgdl_1_1Resource" kind="class"><name>gdl::Resource</name>
+    <member refid="classgdl_1_1Resource_1acfc41dc044277eff21791ff867078989" kind="variable"><name>data_</name></member>
+    <member refid="classgdl_1_1Resource_1a149a477edeec7571d7664ac6be21f3ce" kind="function"><name>Resource</name></member>
+    <member refid="classgdl_1_1Resource_1a2110d7edf4e2864a70688a4279480e43" kind="function"><name>Resource</name></member>
+    <member refid="classgdl_1_1Resource_1a8d4f9966f9a8047d0830fc0ce4c15d37" kind="function"><name>operator=</name></member>
+    <member refid="classgdl_1_1Resource_1a52f5853b3028356acb3cfe8673fa4bd3" kind="function"><name>~Resource</name></member>
+    <member refid="classgdl_1_1Resource_1a3d8b62b778b5c598ee51a5edcdae05ef" kind="function"><name>isValid</name></member>
+    <member refid="classgdl_1_1Resource_1a0b869a1e27677c66bb78dec379e73658" kind="function"><name>operator-&gt;</name></member>
+    <member refid="classgdl_1_1Resource_1a750113d7aafe245fecb39089d15ebbe3" kind="function"><name>operator*</name></member>
+    <member refid="classgdl_1_1Resource_1a62cfa0d7b8f63c2d6be09a644e49028c" kind="function"><name>HardReset</name></member>
+    <member refid="classgdl_1_1Resource_1ac87633a87f1ff3ee85967eb624eda48a" kind="function"><name>destroy</name></member>
+  </compound>
+  <compound refid="classgdl_1_1ResourceBase" kind="class"><name>gdl::ResourceBase</name>
+    <member refid="classgdl_1_1ResourceBase_1ac2ad2e432df83a981c3dbc0d014b2b0e" kind="variable"><name>counter_</name></member>
+    <member refid="classgdl_1_1ResourceBase_1a0289636bcf3853381deb2325703d6d3d" kind="function"><name>ResourceBase</name></member>
+    <member refid="classgdl_1_1ResourceBase_1a8fc7453fe6219c010c42d31df1940e7e" kind="function"><name>ResourceBase</name></member>
+    <member refid="classgdl_1_1ResourceBase_1afc2de70f0ca229deef3e5a5af1399736" kind="function"><name>~ResourceBase</name></member>
+    <member refid="classgdl_1_1ResourceBase_1a6655b5024b90d376ba4ed4f807d03f90" kind="function"><name>operator=</name></member>
+    <member refid="classgdl_1_1ResourceBase_1add4498c5016ed85778964adc7b932412" kind="function"><name>check_destroy</name></member>
+    <member refid="classgdl_1_1ResourceBase_1a67b8fa5f5e258ef98acb12f6249c4ab9" kind="function"><name>destroy</name></member>
+    <member refid="classgdl_1_1ResourceBase_1a512623e648de3206fbb331491b980200" kind="function"><name>incCount</name></member>
+    <member refid="classgdl_1_1ResourceBase_1a6e4c55b014dcbd1da468d391456de881" kind="function"><name>decCount</name></member>
+  </compound>
+  <compound refid="classgdl_1_1Window" kind="class"><name>gdl::Window</name>
+    <member refid="classgdl_1_1Window_1a4f546444e7f94a497ab5e72b5354f3af" kind="friend"><name>InputImpl</name></member>
+    <member refid="classgdl_1_1Window_1abf913f35db6721c814d1ab563c446863" kind="variable"><name>window_</name></member>
+    <member refid="classgdl_1_1Window_1af775c74ba07b8ec16ed378b970406635" kind="function"><name>Window</name></member>
+    <member refid="classgdl_1_1Window_1adf0d05debac3ac1bc05a75b171746c27" kind="function"><name>~Window</name></member>
+    <member refid="classgdl_1_1Window_1a616a4e27c611911476e5bfa3e85e915d" kind="function"><name>create</name></member>
+    <member refid="classgdl_1_1Window_1a9c9db9cf7e7a9d5b8b3ab98f24057582" kind="function"><name>catchEvent</name></member>
+    <member refid="classgdl_1_1Window_1ab58fa5ccc3a51ae3393465fcb04f5157" kind="function"><name>display</name></member>
+    <member refid="classgdl_1_1Window_1a72e440ef14e7e19754d4d7a548fd2f63" kind="function"><name>close</name></member>
+    <member refid="classgdl_1_1Window_1a1d6572c0dde559d4f36608ddcc519e82" kind="function"><name>isOpened</name></member>
+    <member refid="classgdl_1_1Window_1a53e25fd5c288569ae28a01c56767a9c6" kind="function"><name>setTitle</name></member>
+    <member refid="classgdl_1_1Window_1a96e78a7ef90ba4f1166a282940f3990a" kind="function"><name>setWidth</name></member>
+    <member refid="classgdl_1_1Window_1a1be26b215f0ac9b3f075616d53927646" kind="function"><name>setHeight</name></member>
+    <member refid="classgdl_1_1Window_1abe7946e48e470c1e4ef6ae56a83ae620" kind="function"><name>getWidth</name></member>
+    <member refid="classgdl_1_1Window_1a9cb9feedb7ccdc129f9212448b4221b9" kind="function"><name>getHeight</name></member>
+    <member refid="classgdl_1_1Window_1a5834fddbeb60f10da3a7042f202e439c" kind="function"><name>setFullscreen</name></member>
+    <member refid="classgdl_1_1Window_1a75799cef28dc31c7333f73409a1d712a" kind="function"><name>setCursorAt</name></member>
+    <member refid="classgdl_1_1Window_1afea7afeccaf67cc6f93a4690cebfe529" kind="function"><name>showCursor</name></member>
+  </compound>
+  <compound refid="namespacegdl" kind="namespace"><name>gdl</name>
+    <member refid="namespacegdl_1a9dd4eb77180c672eede46c4019e98745" kind="function"><name>Assert</name></member>
+  </compound>
+  <compound refid="namespacegdl_1_1Keys" kind="namespace"><name>gdl::Keys</name>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143af" kind="enum"><name>Key</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7396681646eb698351dc13cb303f8e05" kind="enumvalue"><name>A</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf5a69af77b739ee6e7ae714abd57bf4f" kind="enumvalue"><name>B</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad190fefbacc8a05968b5f27505d07a16" kind="enumvalue"><name>C</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa142e4f614e9b3df805de8d1c5a0237de" kind="enumvalue"><name>D</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2b9b1f974131d2a5347c4c76305db15e" kind="enumvalue"><name>E</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2ed4450289b546233d2c96fe19041a95" kind="enumvalue"><name>F</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1a29eae7cecc8dff03885bfeaf2fe83a" kind="enumvalue"><name>G</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac9d08690aeb5b980907933979eb2a0dd" kind="enumvalue"><name>H</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa0394e91e6123693ffbbac95472fc4fd8" kind="enumvalue"><name>I</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa95955831a3c3ed726e8d1b50864af238" kind="enumvalue"><name>J</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac00f66b37d146d3cef3aa2954c0ee951" kind="enumvalue"><name>K</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad26ef173c8cda56dde2a3a704d492692" kind="enumvalue"><name>L</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa4973f2ca2d9c0cd1f9e558c4494b7667" kind="enumvalue"><name>M</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa866658b998c66fc52c678bbc11049ac3" kind="enumvalue"><name>N</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa9dcb183da86aad7086cdee12f77a69df" kind="enumvalue"><name>O</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1b57c460ba2baf5b6e471d41ad722ff6" kind="enumvalue"><name>P</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afafcd9f6d44f49c050f54eea129c43c88f" kind="enumvalue"><name>Q</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2a3e8dbd067676c68e2618e964eac08f" kind="enumvalue"><name>R</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afadf59acbe37b3adc62297cd8f25286287" kind="enumvalue"><name>S</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa22d51f20bf620033ae4754ec5120443d" kind="enumvalue"><name>T</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afadd2723ab767e523287ce33383d3c27fc" kind="enumvalue"><name>U</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa21ee75fdd66ef4040fae2d52fe7d6243" kind="enumvalue"><name>V</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa13ed39c3191f2ff4736601b981808ada" kind="enumvalue"><name>W</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa12afd986d8e3d18c222a431eb57a98f3" kind="enumvalue"><name>X</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac0f38089c2310f41bbd6b6052672e646" kind="enumvalue"><name>Y</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad3a724d1f0ac828b7933eeb6d7245c97" kind="enumvalue"><name>Z</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa39521bd7b7b1a5ec813169dd86351528" kind="enumvalue"><name>Num0</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7a616e3071daa4e2e67b819d875e510c" kind="enumvalue"><name>Num1</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5b188ea9265bfb414380e1d9720bed83" kind="enumvalue"><name>Num2</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaa43a8c3b2232d242c3d04f38be8089d7" kind="enumvalue"><name>Num3</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3b93396307265659e97b7feb62b606a5" kind="enumvalue"><name>Num4</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaffcaa2737e8a3712b9abd5433b780dc1" kind="enumvalue"><name>Num5</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3c2de166a2e30c56950ac5446dda2f7f" kind="enumvalue"><name>Num6</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa29c899c39594f8a6d264c5ed4fda5a1e" kind="enumvalue"><name>Num7</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa080d14da7e9487f1fcab1c5d4d0eb1c5" kind="enumvalue"><name>Num8</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afabdeecf4d633b5cfb3c6c2bd202866c36" kind="enumvalue"><name>Num9</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac9fd928fbe899ea0db129c829ca7ed55" kind="enumvalue"><name>Escape</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa4b6cae1076244c13dcc6e301db336615" kind="enumvalue"><name>LControl</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa222f7dd78cc6172934d8153ad6bb5fe1" kind="enumvalue"><name>LShift</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6c48d482856f5af4acf598be0bafbf2a" kind="enumvalue"><name>LAlt</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaad6e241a2bb615639933587b84396079" kind="enumvalue"><name>LSystem</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5d41c6acc07b711ff1dde34d4771f5b0" kind="enumvalue"><name>RControl</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaaebd9dece0aa7dd7fb64e6d919367e20" kind="enumvalue"><name>RShift</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6996cc10a4376ff83c4e20075cb5cf4f" kind="enumvalue"><name>RAlt</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3ec89bfa194fdc8fb0a71eee0a4312b5" kind="enumvalue"><name>RSystem</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3a5dba71fc393fdd6cc2fb6c6d56538e" kind="enumvalue"><name>Menu</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7be91c63747f1c47117ef17e2e3b33f8" kind="enumvalue"><name>LBracket</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5428eaf5137bf0ecc53cf3c5c7fc0a4c" kind="enumvalue"><name>RBracket</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa25786ba6267d8f58e5a0be2475861f16" kind="enumvalue"><name>SemiColon</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa9f8f944eb3a736e2bf2608dc58612807" kind="enumvalue"><name>Comma</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1387ee1ecfc30bd8503bb1033be4168c" kind="enumvalue"><name>Period</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaeae358b437110ac2bc24509235e79113" kind="enumvalue"><name>Quote</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afafac276c191214dde60e4e477d26ac9e4" kind="enumvalue"><name>Slash</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad3817ceba81cf887c90812c19d53516a" kind="enumvalue"><name>BackSlash</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa002dd56d392e1d380860cd38f85c15b3" kind="enumvalue"><name>Tilde</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa46688eea88ccdb7cf5f66e1de7af1e7a" kind="enumvalue"><name>Equal</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa08dcdbe5d8524dec2882e5fe428fbe45" kind="enumvalue"><name>Dash</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1a8a99d3f8bdf61e0d350f1167c1f035" kind="enumvalue"><name>Space</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa32efaf3cc304466f8758565d9a5abf01" kind="enumvalue"><name>Return</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7892748e7141d031c4bba280653f2550" kind="enumvalue"><name>Back</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa63d2a1d9e3fb67e5b5ec6ef90db3229c" kind="enumvalue"><name>Tab</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad790b4e273f905841ca57c9c801a2c6c" kind="enumvalue"><name>PageUp</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5139115a7c58180495e627379104bd4d" kind="enumvalue"><name>PageDown</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa09e9afb4ea721234d235a99deccc91d8" kind="enumvalue"><name>End</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad3f6d902f513265eb441220873901692" kind="enumvalue"><name>Home</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2fe826e438ca7d572d1e2c2688552030" kind="enumvalue"><name>Insert</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afab6f605352c103623d463b58f72bff43f" kind="enumvalue"><name>Delete</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa37458ee22a788374923605e12d5c0bc0" kind="enumvalue"><name>Add</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afab21e6be5837b2a52b4745c92e8542e5a" kind="enumvalue"><name>Subtract</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6e4e272abe98729246f1c2d4a958f7c6" kind="enumvalue"><name>Multiply</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac5ed0ee9084ee6ace542970fabd12ddb" kind="enumvalue"><name>Divide</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa800d9e82f3a61ed89a7a34c36ee26bb2" kind="enumvalue"><name>Left</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afae143ba57ed0856a12da77861e62b0802" kind="enumvalue"><name>Right</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf6bc095edda264ee791048c764642ac4" kind="enumvalue"><name>Up</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7a15772e591a51df7e09acbce0b067f4" kind="enumvalue"><name>Down</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaa846fe8a1be56037618ee83494836e8e" kind="enumvalue"><name>Numpad0</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa78a78fad1597d6e89afc358e6dcbeab5" kind="enumvalue"><name>Numpad1</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa853b5799df001401983c9913f7a06515" kind="enumvalue"><name>Numpad2</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaeaa5d051243014522420870df0b31753" kind="enumvalue"><name>Numpad3</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa8cad05d7dd19eae62bad255a28826cc9" kind="enumvalue"><name>Numpad4</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad1fa4b26b1cd869f5a944f4454442be0" kind="enumvalue"><name>Numpad5</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa80b825ca059ab06f1df96e4fdf3417f1" kind="enumvalue"><name>Numpad6</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa9e6b4d18a7c476f03b63dff8de316abb" kind="enumvalue"><name>Numpad7</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac4b1e1ff7eb4849b66ae971dde7c2257" kind="enumvalue"><name>Numpad8</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa0d2c6206607fcdcb047585446cf2f8f5" kind="enumvalue"><name>Numpad9</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa420ceb7241def2bc61ef4221482225bf" kind="enumvalue"><name>F1</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143aface63f520861aeb0fdb6c2d1b6b212ce5" kind="enumvalue"><name>F2</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa88ad9a9dc880a3628f2ecdfe4e2d1ac3" kind="enumvalue"><name>F3</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2a915c4e24a89f1dba9049b3978eec51" kind="enumvalue"><name>F4</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac97a40695539480db4d8713141f9cd4a" kind="enumvalue"><name>F5</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afae8fed326774d28299231b89515b053f6" kind="enumvalue"><name>F6</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6ea780c27ed7b2f5cf4110be79545c9c" kind="enumvalue"><name>F7</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afae8f9fa7285f5edf0b5c4da50f80b3cde" kind="enumvalue"><name>F8</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf2ab85e5895a718e12e8c214ec6c5a5a" kind="enumvalue"><name>F9</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf5d1d491071792ec9113c0ca2c349718" kind="enumvalue"><name>F10</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa41d79a605a77d512ff4c023d88e001b8" kind="enumvalue"><name>F11</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf15bb9d6b697d1b093b2c05da40a94ab" kind="enumvalue"><name>F12</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7315c741b9f9326c3f68ba112c6f4b97" kind="enumvalue"><name>F13</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3e9f2ce168cb2bac8d1aea35264c80a1" kind="enumvalue"><name>F14</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6d1ac5ade1c356c72be5275cdec45612" kind="enumvalue"><name>F15</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa877f51292e461bcd003d5fa0d3d46e2c" kind="enumvalue"><name>Pause</name></member>
+    <member refid="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaecf81a6d791f5dcd349b81ac9a2ead5c" kind="enumvalue"><name>Count</name></member>
+  </compound>
+  <compound refid="namespacegdl_1_1Mouse" kind="namespace"><name>gdl::Mouse</name>
+    <member refid="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79" kind="enum"><name>Button</name></member>
+    <member refid="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79aa40c87808830a7225ae0f4938c5a82ae" kind="enumvalue"><name>Left</name></member>
+    <member refid="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79aba355b63936dc41135ea312fe62dfc2c" kind="enumvalue"><name>Right</name></member>
+    <member refid="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79a976ccb90e726c90bc70faba14fbbe6cd" kind="enumvalue"><name>Middle</name></member>
+  </compound>
+  <compound refid="Assert_8cpp" kind="file"><name>Assert.cpp</name>
+  </compound>
+  <compound refid="Assert_8hpp" kind="file"><name>Assert.hpp</name>
+  </compound>
+  <compound refid="Clock_8cpp" kind="file"><name>Clock.cpp</name>
+  </compound>
+  <compound refid="Clock_8hpp" kind="file"><name>Clock.hpp</name>
+  </compound>
+  <compound refid="Color_8cpp" kind="file"><name>Color.cpp</name>
+  </compound>
+  <compound refid="Color_8hpp" kind="file"><name>Color.hpp</name>
+  </compound>
+  <compound refid="Config_8dox" kind="file"><name>Config.dox</name>
+  </compound>
+  <compound refid="Game_8cpp" kind="file"><name>Game.cpp</name>
+  </compound>
+  <compound refid="Game_8hpp" kind="file"><name>Game.hpp</name>
+  </compound>
+  <compound refid="GameClock_8cpp" kind="file"><name>GameClock.cpp</name>
+  </compound>
+  <compound refid="GameClock_8hpp" kind="file"><name>GameClock.hpp</name>
+  </compound>
+  <compound refid="IClock_8hpp" kind="file"><name>IClock.hpp</name>
+  </compound>
+  <compound refid="Image_8cpp" kind="file"><name>Image.cpp</name>
+  </compound>
+  <compound refid="Image_8hpp" kind="file"><name>Image.hpp</name>
+  </compound>
+  <compound refid="Input_8cpp" kind="file"><name>Input.cpp</name>
+  </compound>
+  <compound refid="Input_8hpp" kind="file"><name>Input.hpp</name>
+  </compound>
+  <compound refid="Model_8cpp" kind="file"><name>Model.cpp</name>
+  </compound>
+  <compound refid="Model_8hpp" kind="file"><name>Model.hpp</name>
+  </compound>
+  <compound refid="ModelException_8cpp" kind="file"><name>ModelException.cpp</name>
+  </compound>
+  <compound refid="ModelException_8hpp" kind="file"><name>ModelException.hpp</name>
+  </compound>
+  <compound refid="Resource_8hpp" kind="file"><name>Resource.hpp</name>
+  </compound>
+  <compound refid="Resource_8inl" kind="file"><name>Resource.inl</name>
+  </compound>
+  <compound refid="Window_8cpp" kind="file"><name>Window.cpp</name>
+  </compound>
+  <compound refid="Window_8hpp" kind="file"><name>Window.hpp</name>
+  </compound>
+</doxygenindex>

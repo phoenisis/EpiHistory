@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <list>
+
+namespace	map
+{
+
+  class		map
+  {
+  public:
+    map();
+    ~map();
+    void generate_map();
+
+  private:
+    std::list<...> _mymap;
+  };
+
+  typedef enum
+    {
+      PLAYER,
+      BOX,
+      WALL,
+      BONUS,
+      BOMB
+    }bloc_type;
+
+  class		bloc
+  {
+  public:
+    bloc();
+    ~bloc();
+
+  private:
+    bloc_type	_type;
+  };
+};

@@ -1,0 +1,28 @@
+\hypertarget{classgdl_1_1ModelException}{
+\section{gdl::ModelException Class Reference}
+\label{classgdl_1_1ModelException}\index{gdl::ModelException@{gdl::ModelException}}
+}
+
+
+{\ttfamily \#include $<$ModelException.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgdl_1_1ModelException_a20ca1764d4e9c7f247f35f873f111cef}{
+{\bfseries ModelException} (const std::string \&)}
+\label{classgdl_1_1ModelException_a20ca1764d4e9c7f247f35f873f111cef}
+
+\item 
+\hypertarget{classgdl_1_1ModelException_ac570e43873bd20fcc1f2ec3f3a09ed4d}{
+virtual const char $\ast$ {\bfseries what} () const   throw ()}
+\label{classgdl_1_1ModelException_ac570e43873bd20fcc1f2ec3f3a09ed4d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe used to decribe error from \hyperlink{classgdl_1_1Model}{Model} Manipulation 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+ModelException.hpp\item 
+ModelException.cpp\end{DoxyCompactItemize}

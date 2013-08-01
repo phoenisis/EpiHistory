@@ -1,0 +1,20 @@
+#include "../inc/Mygame.hh"
+
+Mygame::Mygame()
+{}
+
+Mygame::~Mygame()
+{}
+
+void Mygame::initialize()
+{
+  window_.create();
+}
+
+void Mygame::update()
+{}
+
+void Mygame::draw()
+{
+  this->window_.display();
+}

@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1Resource" kind="class" prot="public">
+    <compoundname>gdl::Resource</compoundname>
+    <basecompoundref refid="classgdl_1_1ResourceBase" prot="private" virt="non-virtual">gdl::ResourceBase</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Type</declname>
+        <defname>Type</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgdl_1_1Resource_1acfc41dc044277eff21791ff867078989" prot="protected" static="no" mutable="no">
+        <type>Type *</type>
+        <definition>Type* gdl::Resource&lt; Type &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="96" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1Resource_1a149a477edeec7571d7664ac6be21f3ce" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Resource&lt; Type &gt;::Resource</definition>
+        <argsstring>(Type *val)</argsstring>
+        <name>Resource</name>
+        <param>
+          <type>Type *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Explicit constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer on a resource. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="60" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Resource_1a2110d7edf4e2864a70688a4279480e43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Resource&lt; Type &gt;::Resource</definition>
+        <argsstring>(Resource const &amp;)</argsstring>
+        <name>Resource</name>
+        <param>
+          <type><ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref> const &amp;</type>
+          <defname>right</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref> to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="66" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Resource_1a8d4f9966f9a8047d0830fc0ce4c15d37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref> &amp;</type>
+        <definition>gdl::Resource&lt; Type &gt; &amp; gdl::Resource&lt; Type &gt;::operator=</definition>
+        <argsstring>(Resource const &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref> const &amp;</type>
+          <defname>right</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloading of the assignment operator.</para><para><simplesect kind="return"><para>An reference on the <ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="72" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="31" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Resource_1a52f5853b3028356acb3cfe8673fa4bd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>gdl::Resource&lt; Type &gt;::~Resource</definition>
+        <argsstring>()</argsstring>
+        <name>~Resource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="76" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Resource_1a3d8b62b778b5c598ee51a5edcdae05ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Resource&lt; Type &gt;::isValid</definition>
+        <argsstring>() const </argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the resource is valid.</para><para><simplesect kind="return"><para>If valid, true is returned. Otherwise, false is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="84" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Resource_1a0b869a1e27677c66bb78dec379e73658" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type *</type>
+        <definition>Type * gdl::Resource&lt; Type &gt;::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloading of the member operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="89" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Resource_1a750113d7aafe245fecb39089d15ebbe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Type &amp;</type>
+        <definition>Type &amp; gdl::Resource&lt; Type &gt;::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloading of the indirection operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="93" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="45" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgdl_1_1Resource_1a62cfa0d7b8f63c2d6be09a644e49028c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Resource&lt; Type &gt;::HardReset</definition>
+        <argsstring>()</argsstring>
+        <name>HardReset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="101" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgdl_1_1Resource_1ac87633a87f1ff3ee85967eb624eda48a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void gdl::Resource&lt; Type &gt;::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <reimplements refid="classgdl_1_1ResourceBase_1a67b8fa5f5e258ef98acb12f6249c4ab9">destroy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy the data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="107" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.inl" bodystart="57" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>gdl::ResourceBase</label>
+        <link refid="classgdl_1_1ResourceBase"/>
+      </node>
+      <node id="36">
+        <label>gdl::Resource&lt; Type &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="37" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>gdl::ResourceBase</label>
+        <link refid="classgdl_1_1ResourceBase"/>
+      </node>
+      <node id="40">
+        <label>Type</label>
+      </node>
+      <node id="38">
+        <label>gdl::Resource&lt; Type &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="39" relation="private-inheritance">
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>data_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="53" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" bodystart="52" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1ResourceBase_1add4498c5016ed85778964adc7b932412" prot="private" virt="non-virtual"><scope>gdl::Resource</scope><name>check_destroy</name></member>
+      <member refid="classgdl_1_1Resource_1acfc41dc044277eff21791ff867078989" prot="protected" virt="non-virtual"><scope>gdl::Resource</scope><name>data_</name></member>
+      <member refid="classgdl_1_1Resource_1ac87633a87f1ff3ee85967eb624eda48a" prot="private" virt="virtual"><scope>gdl::Resource</scope><name>destroy</name></member>
+      <member refid="classgdl_1_1Resource_1a62cfa0d7b8f63c2d6be09a644e49028c" prot="protected" virt="non-virtual"><scope>gdl::Resource</scope><name>HardReset</name></member>
+      <member refid="classgdl_1_1Resource_1a3d8b62b778b5c598ee51a5edcdae05ef" prot="public" virt="non-virtual"><scope>gdl::Resource</scope><name>isValid</name></member>
+      <member refid="classgdl_1_1Resource_1a750113d7aafe245fecb39089d15ebbe3" prot="public" virt="non-virtual"><scope>gdl::Resource</scope><name>operator*</name></member>
+      <member refid="classgdl_1_1Resource_1a0b869a1e27677c66bb78dec379e73658" prot="public" virt="non-virtual"><scope>gdl::Resource</scope><name>operator-&gt;</name></member>
+      <member refid="classgdl_1_1Resource_1a8d4f9966f9a8047d0830fc0ce4c15d37" prot="public" virt="non-virtual"><scope>gdl::Resource</scope><name>operator=</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a6655b5024b90d376ba4ed4f807d03f90" prot="private" virt="non-virtual" ambiguityscope="gdl::ResourceBase::"><scope>gdl::Resource</scope><name>operator=</name></member>
+      <member refid="classgdl_1_1Resource_1a149a477edeec7571d7664ac6be21f3ce" prot="public" virt="non-virtual"><scope>gdl::Resource</scope><name>Resource</name></member>
+      <member refid="classgdl_1_1Resource_1a2110d7edf4e2864a70688a4279480e43" prot="public" virt="non-virtual"><scope>gdl::Resource</scope><name>Resource</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a0289636bcf3853381deb2325703d6d3d" prot="private" virt="non-virtual"><scope>gdl::Resource</scope><name>ResourceBase</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a8fc7453fe6219c010c42d31df1940e7e" prot="private" virt="non-virtual"><scope>gdl::Resource</scope><name>ResourceBase</name></member>
+      <member refid="classgdl_1_1Resource_1a52f5853b3028356acb3cfe8673fa4bd3" prot="public" virt="virtual"><scope>gdl::Resource</scope><name>~Resource</name></member>
+      <member refid="classgdl_1_1ResourceBase_1afc2de70f0ca229deef3e5a5af1399736" prot="private" virt="virtual"><scope>gdl::Resource</scope><name>~ResourceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

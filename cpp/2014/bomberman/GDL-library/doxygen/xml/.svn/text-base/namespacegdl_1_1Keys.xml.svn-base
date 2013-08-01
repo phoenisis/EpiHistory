@@ -1,0 +1,737 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="namespacegdl_1_1Keys" kind="namespace">
+    <compoundname>gdl::Keys</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143af" prot="public" static="no">
+        <name>Key</name>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7396681646eb698351dc13cb303f8e05" prot="public">
+          <name>A</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf5a69af77b739ee6e7ae714abd57bf4f" prot="public">
+          <name>B</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad190fefbacc8a05968b5f27505d07a16" prot="public">
+          <name>C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa142e4f614e9b3df805de8d1c5a0237de" prot="public">
+          <name>D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2b9b1f974131d2a5347c4c76305db15e" prot="public">
+          <name>E</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2ed4450289b546233d2c96fe19041a95" prot="public">
+          <name>F</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1a29eae7cecc8dff03885bfeaf2fe83a" prot="public">
+          <name>G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac9d08690aeb5b980907933979eb2a0dd" prot="public">
+          <name>H</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa0394e91e6123693ffbbac95472fc4fd8" prot="public">
+          <name>I</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa95955831a3c3ed726e8d1b50864af238" prot="public">
+          <name>J</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac00f66b37d146d3cef3aa2954c0ee951" prot="public">
+          <name>K</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad26ef173c8cda56dde2a3a704d492692" prot="public">
+          <name>L</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa4973f2ca2d9c0cd1f9e558c4494b7667" prot="public">
+          <name>M</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa866658b998c66fc52c678bbc11049ac3" prot="public">
+          <name>N</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa9dcb183da86aad7086cdee12f77a69df" prot="public">
+          <name>O</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1b57c460ba2baf5b6e471d41ad722ff6" prot="public">
+          <name>P</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afafcd9f6d44f49c050f54eea129c43c88f" prot="public">
+          <name>Q</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2a3e8dbd067676c68e2618e964eac08f" prot="public">
+          <name>R</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afadf59acbe37b3adc62297cd8f25286287" prot="public">
+          <name>S</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa22d51f20bf620033ae4754ec5120443d" prot="public">
+          <name>T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afadd2723ab767e523287ce33383d3c27fc" prot="public">
+          <name>U</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa21ee75fdd66ef4040fae2d52fe7d6243" prot="public">
+          <name>V</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa13ed39c3191f2ff4736601b981808ada" prot="public">
+          <name>W</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa12afd986d8e3d18c222a431eb57a98f3" prot="public">
+          <name>X</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac0f38089c2310f41bbd6b6052672e646" prot="public">
+          <name>Y</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad3a724d1f0ac828b7933eeb6d7245c97" prot="public">
+          <name>Z</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa39521bd7b7b1a5ec813169dd86351528" prot="public">
+          <name>Num0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7a616e3071daa4e2e67b819d875e510c" prot="public">
+          <name>Num1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5b188ea9265bfb414380e1d9720bed83" prot="public">
+          <name>Num2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaa43a8c3b2232d242c3d04f38be8089d7" prot="public">
+          <name>Num3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3b93396307265659e97b7feb62b606a5" prot="public">
+          <name>Num4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaffcaa2737e8a3712b9abd5433b780dc1" prot="public">
+          <name>Num5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3c2de166a2e30c56950ac5446dda2f7f" prot="public">
+          <name>Num6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa29c899c39594f8a6d264c5ed4fda5a1e" prot="public">
+          <name>Num7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa080d14da7e9487f1fcab1c5d4d0eb1c5" prot="public">
+          <name>Num8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afabdeecf4d633b5cfb3c6c2bd202866c36" prot="public">
+          <name>Num9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac9fd928fbe899ea0db129c829ca7ed55" prot="public">
+          <name>Escape</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa4b6cae1076244c13dcc6e301db336615" prot="public">
+          <name>LControl</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa222f7dd78cc6172934d8153ad6bb5fe1" prot="public">
+          <name>LShift</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6c48d482856f5af4acf598be0bafbf2a" prot="public">
+          <name>LAlt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaad6e241a2bb615639933587b84396079" prot="public">
+          <name>LSystem</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5d41c6acc07b711ff1dde34d4771f5b0" prot="public">
+          <name>RControl</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaaebd9dece0aa7dd7fb64e6d919367e20" prot="public">
+          <name>RShift</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6996cc10a4376ff83c4e20075cb5cf4f" prot="public">
+          <name>RAlt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3ec89bfa194fdc8fb0a71eee0a4312b5" prot="public">
+          <name>RSystem</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3a5dba71fc393fdd6cc2fb6c6d56538e" prot="public">
+          <name>Menu</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7be91c63747f1c47117ef17e2e3b33f8" prot="public">
+          <name>LBracket</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5428eaf5137bf0ecc53cf3c5c7fc0a4c" prot="public">
+          <name>RBracket</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa25786ba6267d8f58e5a0be2475861f16" prot="public">
+          <name>SemiColon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa9f8f944eb3a736e2bf2608dc58612807" prot="public">
+          <name>Comma</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1387ee1ecfc30bd8503bb1033be4168c" prot="public">
+          <name>Period</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaeae358b437110ac2bc24509235e79113" prot="public">
+          <name>Quote</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afafac276c191214dde60e4e477d26ac9e4" prot="public">
+          <name>Slash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad3817ceba81cf887c90812c19d53516a" prot="public">
+          <name>BackSlash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa002dd56d392e1d380860cd38f85c15b3" prot="public">
+          <name>Tilde</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa46688eea88ccdb7cf5f66e1de7af1e7a" prot="public">
+          <name>Equal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa08dcdbe5d8524dec2882e5fe428fbe45" prot="public">
+          <name>Dash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa1a8a99d3f8bdf61e0d350f1167c1f035" prot="public">
+          <name>Space</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa32efaf3cc304466f8758565d9a5abf01" prot="public">
+          <name>Return</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7892748e7141d031c4bba280653f2550" prot="public">
+          <name>Back</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa63d2a1d9e3fb67e5b5ec6ef90db3229c" prot="public">
+          <name>Tab</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad790b4e273f905841ca57c9c801a2c6c" prot="public">
+          <name>PageUp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa5139115a7c58180495e627379104bd4d" prot="public">
+          <name>PageDown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa09e9afb4ea721234d235a99deccc91d8" prot="public">
+          <name>End</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad3f6d902f513265eb441220873901692" prot="public">
+          <name>Home</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2fe826e438ca7d572d1e2c2688552030" prot="public">
+          <name>Insert</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afab6f605352c103623d463b58f72bff43f" prot="public">
+          <name>Delete</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa37458ee22a788374923605e12d5c0bc0" prot="public">
+          <name>Add</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afab21e6be5837b2a52b4745c92e8542e5a" prot="public">
+          <name>Subtract</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6e4e272abe98729246f1c2d4a958f7c6" prot="public">
+          <name>Multiply</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac5ed0ee9084ee6ace542970fabd12ddb" prot="public">
+          <name>Divide</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa800d9e82f3a61ed89a7a34c36ee26bb2" prot="public">
+          <name>Left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afae143ba57ed0856a12da77861e62b0802" prot="public">
+          <name>Right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf6bc095edda264ee791048c764642ac4" prot="public">
+          <name>Up</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7a15772e591a51df7e09acbce0b067f4" prot="public">
+          <name>Down</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaa846fe8a1be56037618ee83494836e8e" prot="public">
+          <name>Numpad0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa78a78fad1597d6e89afc358e6dcbeab5" prot="public">
+          <name>Numpad1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa853b5799df001401983c9913f7a06515" prot="public">
+          <name>Numpad2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaeaa5d051243014522420870df0b31753" prot="public">
+          <name>Numpad3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa8cad05d7dd19eae62bad255a28826cc9" prot="public">
+          <name>Numpad4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afad1fa4b26b1cd869f5a944f4454442be0" prot="public">
+          <name>Numpad5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa80b825ca059ab06f1df96e4fdf3417f1" prot="public">
+          <name>Numpad6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa9e6b4d18a7c476f03b63dff8de316abb" prot="public">
+          <name>Numpad7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac4b1e1ff7eb4849b66ae971dde7c2257" prot="public">
+          <name>Numpad8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa0d2c6206607fcdcb047585446cf2f8f5" prot="public">
+          <name>Numpad9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa420ceb7241def2bc61ef4221482225bf" prot="public">
+          <name>F1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143aface63f520861aeb0fdb6c2d1b6b212ce5" prot="public">
+          <name>F2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa88ad9a9dc880a3628f2ecdfe4e2d1ac3" prot="public">
+          <name>F3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa2a915c4e24a89f1dba9049b3978eec51" prot="public">
+          <name>F4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afac97a40695539480db4d8713141f9cd4a" prot="public">
+          <name>F5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afae8fed326774d28299231b89515b053f6" prot="public">
+          <name>F6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6ea780c27ed7b2f5cf4110be79545c9c" prot="public">
+          <name>F7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afae8f9fa7285f5edf0b5c4da50f80b3cde" prot="public">
+          <name>F8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf2ab85e5895a718e12e8c214ec6c5a5a" prot="public">
+          <name>F9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf5d1d491071792ec9113c0ca2c349718" prot="public">
+          <name>F10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa41d79a605a77d512ff4c023d88e001b8" prot="public">
+          <name>F11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaf15bb9d6b697d1b093b2c05da40a94ab" prot="public">
+          <name>F12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa7315c741b9f9326c3f68ba112c6f4b97" prot="public">
+          <name>F13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa3e9f2ce168cb2bac8d1aea35264c80a1" prot="public">
+          <name>F14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa6d1ac5ade1c356c72be5275cdec45612" prot="public">
+          <name>F15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afa877f51292e461bcd003d5fa0d3d46e2c" prot="public">
+          <name>Pause</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Keys_1acb05339dd6018f44e9d1f8c3a99143afaecf81a6d791f5dcd349b81ac9a2ead5c" prot="public">
+          <name>Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum of keys. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="19" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" bodystart="18" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="14"/>
+  </compounddef>
+</doxygen>

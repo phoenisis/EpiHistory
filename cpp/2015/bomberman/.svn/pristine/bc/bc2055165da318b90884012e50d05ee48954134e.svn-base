@@ -1,0 +1,58 @@
+#include "map.hh"
+
+map::map::map(int length, int width, int nbPlayeur)
+{
+  int	i;
+
+  if (((((length - 2) * 2) + ((width - 2) * 2) - 4) / nbPlayeur) < 11)
+    {
+      std::cout << "too many player for thid map" << std::endl;
+    }
+  else
+    {
+      this->_mymap = new int*[width + 1];
+      for(i = 0; i < width; i++)
+	this->_mymap[i] = new int[length + 1];
+      this->generateMap(length, width, nbPlayeur);
+    }
+}
+
+map::map::~map()
+{
+  int i;
+
+    for(i = 0; this->_mymap[i]; i++)
+      delete[] this->_mymap[i];
+  delete[] this->_mymap;
+}
+
+void	map::map::generateMap(int length, int width, int nbPlayeur)
+{
+  int	i;
+  int	y;
+
+  for(i = 0; i < width; i++)
+    for(y = 0; y < length; y++)
+      {
+	if (i == 0 || y == 0 || y == (length - 1) || i == (width - 1))
+	  this->_mymap[i][y] = 3;
+	else
+	  this->_mymap[i][y] = 2;
+      }
+
+}
+
+void	map::map::affMap() const
+{
+  int	i;
+  int	y;
+
+  for(i = 0; this->_mymap[i]; i++)
+    {
+      for(y = 0; this->_mymap[i][y]; y++)
+	{
+	  std::cout << this->_mymap[i][y];
+	}
+      std::cout << std::endl;
+    }
+}

@@ -1,0 +1,138 @@
+//
+// Bloc.cpp for  in /home/fleuro_m//work/tmp
+//
+// Made by matthieu fleurot
+// Login   <fleuro_m@epitech.net>
+//
+// Started on  Fri Jun  1 16:01:25 2012 matthieu fleurot
+// Last update Fri Jun  1 16:55:33 2012 matthieu fleurot
+//
+
+#include "Bloc.hh"
+
+void	Bloc::Bloc::update(gdl::GameClock const & clock, gdl::Input &input)
+{
+}
+
+void	Bloc::Bloc::draw_object(Vector3f *position)
+{
+  gdl::Model::Begin();
+
+  this->_mymodel.play("Take 001");
+  glPushMatrix();
+  glTranslatef(position->x + 0.50, 0.0f, position->y - 0.50);
+  glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+  this->_mymodel.draw();
+  glPopMatrix();
+
+  gdl::Model::End();
+}
+
+// --------------------------Wall------------------------
+
+BLoc::Wall::Wall(map::map &my_map) : _map(my_map)
+{
+}
+
+BLoc::Wall::~Wall()
+{
+}
+
+void	BLoc::Wall::initialize()
+{
+  this->_mymodel = my_model.find(3)->second;
+}
+
+void	Bloc::Wall::draw()
+{
+  int		x;
+  int		y;
+  vector3f	vec;
+
+  for (y = 0; this->_map[y]; y++)
+    {
+      for(y = 0; this->_map[y][x]; x++)
+	{
+	  if (this->_map[y][x] == 3)
+	    {
+	      vec.setX(x);
+	      vec.setY(y);
+	      vec.setZ(0);
+	      this->draw_object(&vec);
+	    }
+	}
+    }
+}
+
+// --------------------------BOX------------------------
+
+BLoc::Box::Box(map::map &my_map) : _map(my_map)
+{
+}
+
+BLoc::Box::~Box()
+{
+}
+
+void	BLoc::Box::initialize()
+{
+  this->_mymodel = my_model.find(2)->second;
+}
+
+void	Bloc::Box::draw()
+{
+  int		x;
+  int		y;
+  vector3f	vec;
+
+  for (y = 0; this->_map[y]; y++)
+    {
+      for(y = 0; this->_map[y][x]; x++)
+	{
+	  if (this->_map[y][x] == 2)
+	    {
+	      vec.setX(x);
+	      vec.setY(y);
+	      vec.setZ(0);
+	      this->draw_object(&vec);
+	    }
+	}
+    }
+}
+
+// --------------------------Blank------------------------
+
+BLoc::Blank::Blank(map::map &my_map) : _map(my_map)
+{
+}
+
+BLoc::Blank::~Blank()
+{
+}
+
+void	BLoc::Blank::initialize()
+{
+  this->_mymodel = my_model.find(9)->second;
+}
+
+void	Bloc::Blank::draw()
+{
+  int		x;
+  int		y;
+  vector3f	vec;
+
+  for (y = 0; this->_map[y]; y++)
+    {
+      for(y = 0; this->_map[y][x]; x++)
+	{
+	  if (this->_map[y][x] == 9)
+	    {
+	      vec.setX(x);
+	      vec.setY(y);
+	      vec.setZ(0);
+	      this->draw_object(&vec);
+	    }
+	}
+    }
+}
+

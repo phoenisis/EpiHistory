@@ -1,0 +1,5 @@
+Ce qui reste a faire :
+Imprimer la doc pour chacun;
+Imprimer les schemas;
+Imprimer le diagramme de Gantt;
+Imprimer l'UML au format A3;

@@ -1,0 +1,182 @@
+\hypertarget{classgdl_1_1Window}{
+\section{gdl::Window Class Reference}
+\label{classgdl_1_1Window}\index{gdl::Window@{gdl::Window}}
+}
+
+
+{\ttfamily \#include $<$Window.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgdl_1_1Window_af775c74ba07b8ec16ed378b970406635}{Window} (void)
+\item 
+\hyperlink{classgdl_1_1Window_adf0d05debac3ac1bc05a75b171746c27}{$\sim$Window} (void)
+\item 
+void \hyperlink{classgdl_1_1Window_a616a4e27c611911476e5bfa3e85e915d}{create} (void)
+\item 
+void \hyperlink{classgdl_1_1Window_a9c9db9cf7e7a9d5b8b3ab98f24057582}{catchEvent} (void)
+\item 
+void \hyperlink{classgdl_1_1Window_ab58fa5ccc3a51ae3393465fcb04f5157}{display} (void)
+\item 
+void \hyperlink{classgdl_1_1Window_a72e440ef14e7e19754d4d7a548fd2f63}{close} (void)
+\item 
+bool \hyperlink{classgdl_1_1Window_a1d6572c0dde559d4f36608ddcc519e82}{isOpened} (void)
+\item 
+void \hyperlink{classgdl_1_1Window_a53e25fd5c288569ae28a01c56767a9c6}{setTitle} (std::string const \&title)
+\item 
+void \hyperlink{classgdl_1_1Window_a96e78a7ef90ba4f1166a282940f3990a}{setWidth} (size\_\-t const width)
+\item 
+void \hyperlink{classgdl_1_1Window_a1be26b215f0ac9b3f075616d53927646}{setHeight} (size\_\-t const height)
+\item 
+size\_\-t \hyperlink{classgdl_1_1Window_abe7946e48e470c1e4ef6ae56a83ae620}{getWidth} () const 
+\item 
+size\_\-t \hyperlink{classgdl_1_1Window_a9cb9feedb7ccdc129f9212448b4221b9}{getHeight} () const 
+\item 
+void \hyperlink{classgdl_1_1Window_a5834fddbeb60f10da3a7042f202e439c}{setFullscreen} (bool const state)
+\item 
+void \hyperlink{classgdl_1_1Window_a75799cef28dc31c7333f73409a1d712a}{setCursorAt} (unsigned int const x, unsigned int const y)
+\item 
+void \hyperlink{classgdl_1_1Window_afea7afeccaf67cc6f93a4690cebfe529}{showCursor} (bool const status)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgdl_1_1Window_a4f546444e7f94a497ab5e72b5354f3af}{InputImpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classgdl_1_1Window}{Window} class offert you an OpenGL context. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgdl_1_1Window_af775c74ba07b8ec16ed378b970406635}{
+\index{gdl::Window@{gdl::Window}!Window@{Window}}
+\index{Window@{Window}!gdl::Window@{gdl::Window}}
+\subsubsection[{Window}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Window::Window (void)}}
+\label{classgdl_1_1Window_af775c74ba07b8ec16ed378b970406635}
+Construct \hyperlink{classgdl_1_1Window}{Window} object with default values.\par
+ Title : \char`\"{}Game\char`\"{}\par
+ Width : 800\par
+ Height : 600\par
+ Fullscreen mode : false\par
+ \hypertarget{classgdl_1_1Window_adf0d05debac3ac1bc05a75b171746c27}{
+\index{gdl::Window@{gdl::Window}!$\sim$Window@{$\sim$Window}}
+\index{$\sim$Window@{$\sim$Window}!gdl::Window@{gdl::Window}}
+\subsubsection[{$\sim$Window}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Window::$\sim$Window (void)}}
+\label{classgdl_1_1Window_adf0d05debac3ac1bc05a75b171746c27}
+Destroy \hyperlink{classgdl_1_1Window}{Window} object. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1Window_a9c9db9cf7e7a9d5b8b3ab98f24057582}{
+\index{gdl::Window@{gdl::Window}!catchEvent@{catchEvent}}
+\index{catchEvent@{catchEvent}!gdl::Window@{gdl::Window}}
+\subsubsection[{catchEvent}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::catchEvent (void)}}
+\label{classgdl_1_1Window_a9c9db9cf7e7a9d5b8b3ab98f24057582}
+Catch the event when the user closes the window. \hypertarget{classgdl_1_1Window_a72e440ef14e7e19754d4d7a548fd2f63}{
+\index{gdl::Window@{gdl::Window}!close@{close}}
+\index{close@{close}!gdl::Window@{gdl::Window}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::close (void)}}
+\label{classgdl_1_1Window_a72e440ef14e7e19754d4d7a548fd2f63}
+Close the window \hypertarget{classgdl_1_1Window_a616a4e27c611911476e5bfa3e85e915d}{
+\index{gdl::Window@{gdl::Window}!create@{create}}
+\index{create@{create}!gdl::Window@{gdl::Window}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::create (void)}}
+\label{classgdl_1_1Window_a616a4e27c611911476e5bfa3e85e915d}
+Create (or recreate) the \hyperlink{classgdl_1_1Window}{Window}. \hypertarget{classgdl_1_1Window_ab58fa5ccc3a51ae3393465fcb04f5157}{
+\index{gdl::Window@{gdl::Window}!display@{display}}
+\index{display@{display}!gdl::Window@{gdl::Window}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::display (void)}}
+\label{classgdl_1_1Window_ab58fa5ccc3a51ae3393465fcb04f5157}
+Display the window on screen. \hypertarget{classgdl_1_1Window_a9cb9feedb7ccdc129f9212448b4221b9}{
+\index{gdl::Window@{gdl::Window}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!gdl::Window@{gdl::Window}}
+\subsubsection[{getHeight}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t gdl::Window::getHeight (void) const}}
+\label{classgdl_1_1Window_a9cb9feedb7ccdc129f9212448b4221b9}
+Get the Windows's Height \hypertarget{classgdl_1_1Window_abe7946e48e470c1e4ef6ae56a83ae620}{
+\index{gdl::Window@{gdl::Window}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!gdl::Window@{gdl::Window}}
+\subsubsection[{getWidth}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t gdl::Window::getWidth (void) const}}
+\label{classgdl_1_1Window_abe7946e48e470c1e4ef6ae56a83ae620}
+Get the Windows's Width \hypertarget{classgdl_1_1Window_a1d6572c0dde559d4f36608ddcc519e82}{
+\index{gdl::Window@{gdl::Window}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!gdl::Window@{gdl::Window}}
+\subsubsection[{isOpened}]{\setlength{\rightskip}{0pt plus 5cm}bool gdl::Window::isOpened (void)}}
+\label{classgdl_1_1Window_a1d6572c0dde559d4f36608ddcc519e82}
+Tell if the window is open.
+
+\begin{DoxyReturn}{Returns}
+If the window is open, true is returned. Otherwise, false is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Window_a75799cef28dc31c7333f73409a1d712a}{
+\index{gdl::Window@{gdl::Window}!setCursorAt@{setCursorAt}}
+\index{setCursorAt@{setCursorAt}!gdl::Window@{gdl::Window}}
+\subsubsection[{setCursorAt}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::setCursorAt (unsigned int const  {\em x}, \/  unsigned int const  {\em y})}}
+\label{classgdl_1_1Window_a75799cef28dc31c7333f73409a1d712a}
+Set the cursor at a specified position.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em x}]Position on x-\/axis (from left) \item[\mbox{$\leftarrow$} {\em y}]Position on y-\/axis (from top) \end{DoxyParams}
+\hypertarget{classgdl_1_1Window_a5834fddbeb60f10da3a7042f202e439c}{
+\index{gdl::Window@{gdl::Window}!setFullscreen@{setFullscreen}}
+\index{setFullscreen@{setFullscreen}!gdl::Window@{gdl::Window}}
+\subsubsection[{setFullscreen}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::setFullscreen (bool const  {\em state})}}
+\label{classgdl_1_1Window_a5834fddbeb60f10da3a7042f202e439c}
+Set the fullscreen mode to the window.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em state}]True to set the fullscreen mode. False to set windowed mode. \end{DoxyParams}
+\hypertarget{classgdl_1_1Window_a1be26b215f0ac9b3f075616d53927646}{
+\index{gdl::Window@{gdl::Window}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!gdl::Window@{gdl::Window}}
+\subsubsection[{setHeight}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::setHeight (size\_\-t const  {\em height})}}
+\label{classgdl_1_1Window_a1be26b215f0ac9b3f075616d53927646}
+Set the height to the window. Must be called before create method.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em height}]New height. \end{DoxyParams}
+\hypertarget{classgdl_1_1Window_a53e25fd5c288569ae28a01c56767a9c6}{
+\index{gdl::Window@{gdl::Window}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!gdl::Window@{gdl::Window}}
+\subsubsection[{setTitle}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::setTitle (std::string const \& {\em title})}}
+\label{classgdl_1_1Window_a53e25fd5c288569ae28a01c56767a9c6}
+Set the title to the window. Must be called before create method.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em title}]New title. \end{DoxyParams}
+\hypertarget{classgdl_1_1Window_a96e78a7ef90ba4f1166a282940f3990a}{
+\index{gdl::Window@{gdl::Window}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!gdl::Window@{gdl::Window}}
+\subsubsection[{setWidth}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::setWidth (size\_\-t const  {\em width})}}
+\label{classgdl_1_1Window_a96e78a7ef90ba4f1166a282940f3990a}
+Set the width to the window. Must be called before create method.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em width}]New width. \end{DoxyParams}
+\hypertarget{classgdl_1_1Window_afea7afeccaf67cc6f93a4690cebfe529}{
+\index{gdl::Window@{gdl::Window}!showCursor@{showCursor}}
+\index{showCursor@{showCursor}!gdl::Window@{gdl::Window}}
+\subsubsection[{showCursor}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Window::showCursor (bool const  {\em status})}}
+\label{classgdl_1_1Window_afea7afeccaf67cc6f93a4690cebfe529}
+Show or hide the mouse cursor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em status}]True to show the cursor. False to hide it. \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgdl_1_1Window_a4f546444e7f94a497ab5e72b5354f3af}{
+\index{gdl::Window@{gdl::Window}!InputImpl@{InputImpl}}
+\index{InputImpl@{InputImpl}!gdl::Window@{gdl::Window}}
+\subsubsection[{InputImpl}]{\setlength{\rightskip}{0pt plus 5cm}friend class InputImpl\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classgdl_1_1Window_a4f546444e7f94a497ab5e72b5354f3af}
+To reach private members of InputImpl. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Window.hpp\item 
+Window.cpp\end{DoxyCompactItemize}

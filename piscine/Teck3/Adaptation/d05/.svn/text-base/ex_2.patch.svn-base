@@ -1,0 +1,124 @@
+Only in lol/applets: bin
+Only in lol/applets: Kbuild
+Only in lol/archival: Config.in
+Only in lol/archival: Kbuild
+Only in lol/archival/libarchive: Kbuild
+Only in lol: .config
+Only in lol: .config.old
+Only in lol/console-tools: Config.in
+Only in lol/console-tools: Kbuild
+diff -rauB busybox-1.20.2/coreutils/cat.c lol/coreutils/cat.c
+--- busybox-1.20.2/coreutils/cat.c	2012-06-26 15:35:45.000000000 +0200
++++ lol/coreutils/cat.c	2012-09-08 17:06:55.585009138 +0200
+@@ -63,7 +62,21 @@
+ int cat_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
+ int cat_main(int argc UNUSED_PARAM, char **argv)
+ {
+-	getopt32(argv, "u");
+-	argv += optind;
+-	return bb_cat(argv);
++  char ca;
++  
++  ca = getopt32(argv, "ux");
++
++  if(ca == 1)
++    fprintf(stderr, "cat: invalid option -- 'u'\n");
++  if(ca == 2){
++    fprintf(stderr, "cat: invalid option -- 'x'\n");
++    return 0;
++  }
++  if(ca == 3){
++    fprintf(stderr, "cat: invalid option -- 'x'\n");
++    return 0;
++ }
++
++  argv += optind;
++  return bb_cat(argv);
+ }
+Only in lol/coreutils: Config.in
+Only in lol/coreutils: Kbuild
+Only in lol/coreutils/libcoreutils: Kbuild
+Only in lol/debianutils: Config.in
+Only in lol/debianutils: Kbuild
+Only in lol/docs: busybox.1
+Only in lol/docs: BusyBox.html
+Only in lol/docs: busybox.net
+Only in lol/docs: busybox.pod
+Only in lol/docs: BusyBox.txt
+Only in lol/e2fsprogs: Config.in
+Only in lol/e2fsprogs: Kbuild
+Only in lol/e2fsprogs/old_e2fsprogs/blkid: Kbuild
+Only in lol/e2fsprogs/old_e2fsprogs: Config.in
+Only in lol/e2fsprogs/old_e2fsprogs/e2p: Kbuild
+Only in lol/e2fsprogs/old_e2fsprogs/ext2fs: Kbuild
+Only in lol/e2fsprogs/old_e2fsprogs: Kbuild
+Only in lol/e2fsprogs/old_e2fsprogs/uuid: Kbuild
+Only in lol/editors: Config.in
+Only in lol/editors: Kbuild
+Only in lol/findutils: Config.in
+Only in lol/findutils: Kbuild
+Only in lol/include: applets.h
+Only in lol/include: applet_tables.h
+Only in lol/include: autoconf.h
+Only in lol/include: bbconfigopts_bz2.h
+Only in lol/include: bbconfigopts.h
+Only in lol/include: config
+Only in lol/include: NUM_APPLETS.h
+Only in lol/include: usage_compressed.h
+Only in lol/include: usage.h
+Only in lol/init: Config.in
+Only in lol/init: Kbuild
+Only in lol: jesus
+Only in lol/libbb: Config.in
+Only in lol/libbb: Kbuild
+Only in lol/libpwdgrp: Kbuild
+Only in lol/loginutils: Config.in
+Only in lol/loginutils: Kbuild
+Only in lol/mailutils: Config.in
+Only in lol/mailutils: Kbuild
+Only in lol/miscutils: Config.in
+Only in lol/miscutils: Kbuild
+Only in lol/modutils: Config.in
+Only in lol/modutils: Kbuild
+Only in lol/networking: Config.in
+Only in lol/networking: Kbuild
+Only in lol/networking/libiproute: Kbuild
+Only in lol/networking/udhcp: Config.in
+Only in lol/networking/udhcp: Kbuild
+Only in lol/printutils: Config.in
+Only in lol/printutils: Kbuild
+Only in lol/procps: Config.in
+Only in lol/procps: Kbuild
+Only in lol/runit: Config.in
+Only in lol/runit: Kbuild
+Only in lol/scripts/basic: docproc
+Only in lol/scripts/basic: fixdep
+Only in lol/scripts/basic: split-include
+Only in lol/scripts: Kbuild
+Only in lol/scripts/kconfig: conf
+Only in lol/scripts/kconfig: lex.zconf.c
+Only in lol/scripts/kconfig/lxdialog: lxdialog
+Only in lol/scripts/kconfig: mconf
+Only in lol/scripts/kconfig: zconf.hash.c
+Only in lol/scripts/kconfig: zconf.tab.c
+Only in lol/selinux: Config.in
+Only in lol/selinux: Kbuild
+diff -rauB busybox-1.20.2/shell/ash.c lol/shell/ash.c
+--- busybox-1.20.2/shell/ash.c	2012-07-02 16:19:22.000000000 +0200
++++ lol/shell/ash.c	2012-09-08 17:06:55.593009038 +0200
+@@ -1187,7 +1187,7 @@
+ static void
+ ash_vmsg(const char *msg, va_list ap)
+ {
+-	fprintf(stderr, "%s: ", arg0);
++	fprintf(stderr, "%s: ", "CafTomorrow Shell");
+ 	if (commandname) {
+ 		if (strcmp(arg0, commandname))
+ 			fprintf(stderr, "%s: ", commandname);
+Only in lol/shell: Config.in
+Only in lol/shell: Kbuild
+Only in lol/sysklogd: Config.in
+Only in lol/sysklogd: Kbuild
+Only in lol/util-linux: Config.in
+Only in lol/util-linux: Kbuild
+Only in lol/util-linux/volume_id: Kbuild

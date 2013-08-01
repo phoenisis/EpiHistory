@@ -1,0 +1,62 @@
+//
+// Bloc.hh for  in /home/fleuro_m//work/tmp
+//
+// Made by matthieu fleurot
+// Login   <fleuro_m@epitech.net>
+//
+// Started on  Fri Jun  1 15:42:41 2012 matthieu fleurot
+// Last update Fri Jun  1 16:55:38 2012 matthieu fleurot
+//
+
+#ifndef		BLOC_HH
+# define	BLOC_HH
+
+#include "AObject.hh"
+#include "Vector3f.hh"
+
+namespace Bloc
+{
+  class ABloc: public AObject
+  {
+  public:
+    virtual void	initialize() = 0;
+    virtual void	draw() = 0;
+    virtual void	update(gdl::GameClock const &, gdl::Input &);
+    virtual void	draw_object(Vector3f *);
+
+  protected:
+    gdl::Model		_mymodel;
+    map::map		&_map;
+
+  private:
+  };
+
+  class Wall : public ABloc
+  {
+  public:
+    Wall();
+    ~Wall();
+    virtual void	initialize();
+    virtual void	draw();
+  };
+
+  class Box : public ABloc
+  {
+  public:
+    Box();
+    ~Box();
+    virtual void	initialize();
+    virtual void	draw();
+  };
+
+  class Blank : public ABloc
+  {
+  public:
+    Blank();
+    ~Blank();
+    virtual void	initialize();
+    virtual void	draw();
+  };
+};
+
+#endif

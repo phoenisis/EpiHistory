@@ -1,0 +1,53 @@
+#ifndef  __PRIMITIVE_H__
+#define  __PRIMITIVE_H__
+
+#include "AObject.hh"
+#include "Vector3f.hh"
+
+namespace Primitive
+{
+  class Triangle : public AObject
+  {
+    void initialize(void);
+    void update(gdl::GameClock const &, gdl::Input &);
+    void draw(void);
+  };
+  class Rectangle : public AObject
+  {
+  public :
+    Rectangle(int x, int y, int sizeX, int sizeY);
+    void initialize(void);
+    void update(gdl::GameClock const &, gdl::Input &);
+    void draw(void);
+    void draw_object(Vector3f *position);
+
+  private :
+    gdl::Image	texture_;
+    int	x;
+    int	y;
+    int	sizeX;
+    int	sizeY;
+  };
+
+   class MenuLabel : public AObject
+  {
+  public :
+    MenuLabel(int x, int y, int sizeX, int sizeY);
+    void initialize(void);
+    void update(gdl::GameClock const &, gdl::Input &);
+    void draw(void);
+
+    int MenuCurr;
+    bool MenuDecide;
+
+  private :
+    gdl::Image	texture_;
+    int	x;
+    int	y;
+    int	sizeX;
+    int	sizeY;
+
+  };
+}
+
+#endif

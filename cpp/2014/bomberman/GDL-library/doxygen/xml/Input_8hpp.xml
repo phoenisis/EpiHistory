@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="Input_8hpp" kind="file">
+    <compoundname>Input.hpp</compoundname>
+    <includes refid="Window_8hpp" local="yes">Window.hpp</includes>
+    <includedby refid="Game_8hpp" local="yes">Game.hpp</includedby>
+    <includedby refid="Input_8cpp" local="yes">Input.cpp</includedby>
+    <includedby refid="Window_8cpp" local="yes">Window.cpp</includedby>
+    <incdepgraph>
+      <node id="77">
+        <label>Input.hpp</label>
+        <link refid="Input.hpp"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>Window.hpp</label>
+        <link refid="Window_8hpp_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="81">
+        <label>Game.hpp</label>
+        <link refid="Game_8hpp_source"/>
+      </node>
+      <node id="80">
+        <label>Input.hpp</label>
+        <link refid="Input.hpp"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgdl_1_1Input" prot="public">gdl::Input</innerclass>
+    <innernamespace refid="namespacegdl">gdl</innernamespace>
+    <innernamespace refid="namespacegdl_1_1Keys">gdl::Keys</innernamespace>
+    <innernamespace refid="namespacegdl_1_1Mouse">gdl::Mouse</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INPUT_HPP</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>INPUT_HPP</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;Window.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gdl</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">InputImpl;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Keys</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Key</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A,<sp/>B,<sp/>C,<sp/>D,<sp/>E,<sp/>F,<sp/>G,<sp/>H,<sp/>I,<sp/>J,<sp/>K,<sp/>L,<sp/>M,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N,<sp/>O,<sp/>P,<sp/>Q,<sp/>R,<sp/>S,<sp/>T,<sp/>U,<sp/>V,<sp/>W,<sp/>X,<sp/>Y,<sp/>Z,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Num0,<sp/>Num1,<sp/>Num2,<sp/>Num3,<sp/>Num4,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Num5,<sp/>Num6,<sp/>Num7,<sp/>Num8,<sp/>Num9,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Escape,<sp/>LControl,<sp/>LShift,<sp/>LAlt,<sp/>LSystem,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RControl,<sp/>RShift,<sp/>RAlt,<sp/>RSystem,<sp/>Menu,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LBracket,<sp/>RBracket,<sp/>SemiColon,<sp/>Comma,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Period,<sp/>Quote,<sp/>Slash,<sp/>BackSlash,<sp/>Tilde,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Equal,<sp/>Dash,<sp/>Space,<sp/>Return,<sp/>Back,<sp/>Tab,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PageUp,<sp/>PageDown,<sp/>End,<sp/>Home,<sp/>Insert,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delete,<sp/>Add,<sp/>Subtract,<sp/>Multiply,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Divide,<sp/>Left,<sp/>Right,<sp/>Up,<sp/>Down,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Numpad0,<sp/>Numpad1,<sp/>Numpad2,<sp/>Numpad3,<sp/>Numpad4,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Numpad5,<sp/>Numpad6,<sp/>Numpad7,<sp/>Numpad8,<sp/>Numpad9,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>F1,<sp/>F2,<sp/>F3,<sp/>F4,<sp/>F5,<sp/>F6,<sp/>F7,<sp/>F8,<sp/>F9,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>F10,<sp/>F11,<sp/>F12,<sp/>F13,<sp/>F14,<sp/>F15,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pause,<sp/>Count</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">Mouse</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Left,<sp/>Right,<sp/>Middle</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classgdl_1_1Input" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="classgdl_1_1Input" kindref="compound">Input</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Input_1aaaec080ed208c7a0e93160e11710a6db" kindref="member">Input</ref>(<ref refid="classgdl_1_1Window" kindref="compound">gdl::Window</ref><sp/>&amp;<sp/>window);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Input_1aa9c7fd004ef583434b65ddf7ebbad9bc" kindref="member">~Input</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Input_1ae0bfa17187848fd6a1576eb1e8204230" kindref="member">isKeyDown</ref>(gdl::Keys::Key<sp/>key);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Input_1a893c44e94392d6d2d3c01f5ff4263f96" kindref="member">isMouseButtonDown</ref>(gdl::Mouse::Button<sp/>button);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Input_1a1a9f9de83134c8ea6e62ece2163868ca" kindref="member">getMousePositionX</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Input_1a8732662c038df92f1cb422973b675288" kindref="member">getMousePositionY</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getInput(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>InputImpl&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input_;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp"/>
+  </compounddef>
+</doxygen>

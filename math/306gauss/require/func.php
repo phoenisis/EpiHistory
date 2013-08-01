@@ -1,0 +1,178 @@
+<?php
+
+  /*
+   *  Fonction qui fait permuter la ligne du pivot avec la ligne ou la diagonale coupe la colonne courante.
+   */
+
+function permut(&$matrix, &$vector, $first, $second) {
+  $tmp = array_pad($matrix[$first], 0, 0);
+  $matrix[$first] = array_pad($matrix[$second], 0, 0);
+  $matrix[$second] = array_pad($tmp, 0, 0);
+  $tmp = $vector[$first];
+  $vector[$first] = $vector[$second];
+  $vector[$second] = $tmp;
+  }
+
+    /*
+     *  Fonction qui cherche le pivot en utilisant deux methodes differentes en fonction de l'option.
+     */
+
+function find_pivot_in_column($matrix, $col, $opt) {
+  $tmp = 0;
+  $res = -1;
+
+  foreach ($matrix AS $key=>$value) {
+    if ($opt == 0) {
+      if ($key >= $col && abs($value[$col]) > 0)
+	return $key;
+    }
+
+    else {
+      if ($key >= $col && abs($value[$col]) > $tmp) {
+	$tmp = abs($value[$col]);
+	$res = $key;
+      }
+    }
+  }
+  return ($res);
+}
+
+    /*
+     *  Fonction qui applique la methode des Pivots de Gauss. Elle appelle la fonction
+     *  qui cherche le pivot dans la colonne et ensuite elle fait permuter la ligne avant
+     *  de se lancer dans les calcules. Elle ne stocke aucune matrice intermediare,
+     *  elle fait ses calculs a la vole et fonction avec n x n.
+     */
+
+function pivot(&$matrix, &$vector, $size, $opt) {
+  $i = 0;
+
+  while ($i < $size) {
+    $pivot = find_pivot_in_column($matrix, $i, $opt);
+    if ($pivot == -1)
+      return FALSE;
+
+    permut($matrix, $vector, $i, $pivot);
+    $pivot = $matrix[$i][$i];
+
+    for ($li = $i + 1; $li < $size; $li++) {
+      for ($co = $i + 1; $co < $size; $co++)  {
+	if ($li + 1 == $size) {
+	  $vector[$co] = bcsub($vector[$co], bcdiv(bcmul($vector[$i], $matrix[$co][$i]), $pivot));
+	}
+	$matrix[$li][$co] = bcsub($matrix[$li][$co], bcdiv(bcmul($matrix[$li][$i], $matrix[$i][$co]), $pivot));
+      }
+    }
+    $i++;
+  }
+  return TRUE;
+}
+
+    /*
+     *  Fonction qui calcule le vecteur resultat en utilisant la matrice et le vecteur
+     *  calcules a partir de la methode des pivots de Gausse.
+     */
+
+function calc_res($matrix, $vector, $size) {
+  $result = array();
+  $result[$size - 1] = bcdiv($vector[$size - 1], $matrix[$size - 1][$size - 1]);
+
+  for ($i = $size - 2; $i >= 0; $i--) {
+    $s = 0;
+    for ($j = $i + 1; $j < $size; $j++) {
+      $s = bcadd($s, bcmul($matrix[$i][$j], $result[$j]));
+      $result[$i] = bcdiv(bcsub($vector[$i], $s), $matrix[$i][$i]);
+    }
+  }
+  return ($result);
+}
+
+    /*
+     *  Fonction qui calcul et retourne la norme : || Ax - B ||
+     */
+
+function	 calc_norme($matrix, $vector, $result) {
+  $tmp = array();
+
+  foreach ($matrix AS $value) {
+    $sum = 0.00000000000000000000000000;
+    foreach ($value AS $key=>$line) {
+      $sum += bcmul($line, $result[$key]);
+    }
+    $tmp[] = $sum;
+  }
+  $res = 0.000000000000000000000000000;
+  foreach ($vector AS $key=>$value) {
+    $tmp[$key] = bcsub($tmp[$key], $value);
+    $res = bcadd($res, bcpow($tmp[$key], 2));
+  }
+  $res = bcsqrt($res);
+  return $res;
+}
+
+    /*
+     *  Fonction principale du programme qui appelle la fonction de lecture du fichier
+     *  et la fonction qui applique la methode des pivot. Ensuite elle appelle la fonction
+     *  qui calcule le vecteur resultat.
+     */
+
+function	 gauss($filename, $opt = 0) {
+  $size = 0;
+  $matrix = array();
+  $vector = array();
+  getFile($filename, $size, $matrix, $vector);
+  echo "Dimension du systeme : \033[32m$size\033[0m\n";
+  $matrix_save = $matrix;
+  $vector_save = $vector;
+  if (!pivot($matrix, $vector, $size, $opt))
+    echo "Il semble que votre systeme ne soit pas correct.\033[0m\n";
+  else {
+    $result = calc_res($matrix, $vector, $size);
+    for ($i = 0; $i < $size; $i++) {
+      echo "x".($i + 1)." : \033[32m".$result[$i]."\033[0m\n";
+    }
+    $norme = calc_norme($matrix_save, $vector_save, $result);
+    echo "Norme || Ax - B || : \033[32m$norme\033[0m\n";
+  }
+}
+
+/*
+ *  Fonction qui parse le data du fichier et qui le met dans un tableau.
+ */
+
+function getDataFile($data, &$size, &$matrix, &$vector)
+{
+  $newData = explode("\n", $data);
+  $flag = 0; // 1 = dimension, 2 = matrice, 3 = vecteur
+
+  foreach ($newData AS $key=>$value) {
+    if ($flag == 1) {
+      $size = $value;
+      $flag = 0;
+    }
+    if ($value == "dimension")
+      $flag = 1;
+
+    if ($flag == 2 && $value != "vecteur") {
+      $subtab = explode(" ", $value);
+      $tmp = array();
+      foreach ($subtab AS $value) {
+
+	if ($value != '')
+	  $tmp[] = $value;
+      }
+      $matrix[] = $tmp;
+    }
+
+    if ($value == "matrice")
+      $flag = 2;
+
+    if ($flag == 3 && $value != '')
+      $vector[] = trim($value);
+
+    if ($value == "vecteur")
+      $flag = 3;
+  }
+}
+
+?>

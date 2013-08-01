@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1ResourceBase" kind="class" prot="public">
+    <compoundname>gdl::ResourceBase</compoundname>
+    <derivedcompoundref refid="classgdl_1_1Resource" prot="private" virt="non-virtual">gdl::Resource&lt; Type &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classgdl_1_1Resource" prot="private" virt="non-virtual">gdl::Resource&lt; ImageImpl &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classgdl_1_1Resource" prot="private" virt="non-virtual">gdl::Resource&lt; ModelImpl &gt;</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgdl_1_1ResourceBase_1ac2ad2e432df83a981c3dbc0d014b2b0e" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* gdl::ResourceBase::counter_</definition>
+        <argsstring></argsstring>
+        <name>counter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="48" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1a0289636bcf3853381deb2325703d6d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::ResourceBase::ResourceBase</definition>
+        <argsstring>()</argsstring>
+        <name>ResourceBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1a8fc7453fe6219c010c42d31df1940e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::ResourceBase::ResourceBase</definition>
+        <argsstring>(ResourceBase const &amp;right)</argsstring>
+        <name>ResourceBase</name>
+        <param>
+          <type><ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref> const &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1afc2de70f0ca229deef3e5a5af1399736" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual gdl::ResourceBase::~ResourceBase</definition>
+        <argsstring>()</argsstring>
+        <name>~ResourceBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1a6655b5024b90d376ba4ed4f807d03f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref> &amp;</type>
+        <definition>ResourceBase&amp; gdl::ResourceBase::operator=</definition>
+        <argsstring>(ResourceBase const &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overloading of the assignment operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1add4498c5016ed85778964adc7b932412" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::ResourceBase::check_destroy</definition>
+        <argsstring>()</argsstring>
+        <name>check_destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the data pointer can be destroyed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1a67b8fa5f5e258ef98acb12f6249c4ab9" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::ResourceBase::destroy</definition>
+        <argsstring>()=0</argsstring>
+        <name>destroy</name>
+        <reimplementedby refid="classgdl_1_1Resource_1ac87633a87f1ff3ee85967eb624eda48a">destroy</reimplementedby>
+        <reimplementedby refid="classgdl_1_1Resource_1ac87633a87f1ff3ee85967eb624eda48a">destroy</reimplementedby>
+        <reimplementedby refid="classgdl_1_1Resource_1ac87633a87f1ff3ee85967eb624eda48a">destroy</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy the data pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1a512623e648de3206fbb331491b980200" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::ResourceBase::incCount</definition>
+        <argsstring>()</argsstring>
+        <name>incCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increase the reference counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1ResourceBase_1a6e4c55b014dcbd1da468d391456de881" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::ResourceBase::decCount</definition>
+        <argsstring>()</argsstring>
+        <name>decCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrease the reference counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="44">
+        <label>gdl::Image</label>
+        <link refid="classgdl_1_1Image"/>
+        <childnode refid="43" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gdl::ResourceBase</label>
+        <link refid="classgdl_1_1ResourceBase"/>
+      </node>
+      <node id="43">
+        <label>gdl::Resource&lt; ImageImpl &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="41" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>gdl::Resource&lt; Type &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="41" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>gdl::Resource&lt; ModelImpl &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="41" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>gdl::Model</label>
+        <link refid="classgdl_1_1Model"/>
+        <childnode refid="45" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" line="8" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp" bodystart="7" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1ResourceBase_1add4498c5016ed85778964adc7b932412" prot="protected" virt="non-virtual"><scope>gdl::ResourceBase</scope><name>check_destroy</name></member>
+      <member refid="classgdl_1_1ResourceBase_1ac2ad2e432df83a981c3dbc0d014b2b0e" prot="private" virt="non-virtual"><scope>gdl::ResourceBase</scope><name>counter_</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a6e4c55b014dcbd1da468d391456de881" prot="private" virt="non-virtual"><scope>gdl::ResourceBase</scope><name>decCount</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a67b8fa5f5e258ef98acb12f6249c4ab9" prot="private" virt="pure-virtual"><scope>gdl::ResourceBase</scope><name>destroy</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a512623e648de3206fbb331491b980200" prot="private" virt="non-virtual"><scope>gdl::ResourceBase</scope><name>incCount</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a6655b5024b90d376ba4ed4f807d03f90" prot="public" virt="non-virtual"><scope>gdl::ResourceBase</scope><name>operator=</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a0289636bcf3853381deb2325703d6d3d" prot="public" virt="non-virtual"><scope>gdl::ResourceBase</scope><name>ResourceBase</name></member>
+      <member refid="classgdl_1_1ResourceBase_1a8fc7453fe6219c010c42d31df1940e7e" prot="public" virt="non-virtual"><scope>gdl::ResourceBase</scope><name>ResourceBase</name></member>
+      <member refid="classgdl_1_1ResourceBase_1afc2de70f0ca229deef3e5a5af1399736" prot="public" virt="virtual"><scope>gdl::ResourceBase</scope><name>~ResourceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

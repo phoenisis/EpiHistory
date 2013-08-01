@@ -1,0 +1,83 @@
+.TH "gdl::Clock" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Clock \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Clock.hpp>\fP
+.PP
+Inherits \fBgdl::IClock\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBClock\fP ()"
+.br
+.ti -1c
+.RI "\fB~Clock\fP ()"
+.br
+.ti -1c
+.RI "void \fBplay\fP (void)"
+.br
+.ti -1c
+.RI "void \fBpause\fP (void)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset\fP (void)"
+.br
+.ti -1c
+.RI "float \fBgetElapsedTime\fP (void) const "
+.br
+.ti -1c
+.RI "float \fBgetTotalElapsedTime\fP (void) const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBClock\fP is used to force a specific time implementation. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::Clock::Clock ()"Default constructror. 
+.SS "gdl::Clock::~Clock ()"Default destructror. 
+.SH "Member Function Documentation"
+.PP 
+.SS "float gdl::Clock::getElapsedTime (void) const\fC [virtual]\fP"Return the time between two call of the update method.
+.PP
+\fBReturns:\fP
+.RS 4
+The time in float. 
+.RE
+.PP
+
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "float gdl::Clock::getTotalElapsedTime (void) const"Return the time between now and the instantiation of the \fBGame\fP class.
+.PP
+\fBReturns:\fP
+.RS 4
+The time in float. 
+.RE
+.PP
+
+.SS "void gdl::Clock::pause (void)\fC [virtual]\fP"Pause the clock until you play it again. 
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "void gdl::Clock::play (void)\fC [virtual]\fP"Start the clock. 
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "void gdl::Clock::reset (void)\fC [virtual]\fP"Reset the clock to 0. 
+.PP
+Implements \fBgdl::IClock\fP.
+.SS "void gdl::Clock::update (void)\fC [virtual]\fP"Up the time of the clock. 
+.PP
+Implements \fBgdl::IClock\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

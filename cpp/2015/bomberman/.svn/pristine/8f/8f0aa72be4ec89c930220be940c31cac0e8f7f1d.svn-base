@@ -1,0 +1,69 @@
+/*
+**  src/Player.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 01/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Player.hh"
+
+std::vector<std::pair<Vector3f*, float> > Player::getBomb() const
+{
+  return( this->bomb->getposition_b());
+}
+
+float Player::getPosX() const
+{
+  return(this->position_->x);
+}
+
+float Player::getPosY() const
+{
+  return(this->position_->y);
+}
+
+int Player::getNbBombs() const
+{
+  return(this->_nbBombs);
+}
+
+int Player::getPower() const
+{
+  return(this->_power);
+}
+
+void Player::setNbBombs(const int bombes)
+{
+  this->_nbBombs = bombes;
+}
+
+void Player::setPower(const int pow)
+{
+  this->_power = pow;
+}
+
+void Player::setPosX(const int x)
+{
+  this->position_->setX((float)x);
+}
+
+void Player::setPosY(const int y)
+{
+  this->position_->setY((float)y);
+}
+
+bool Player::isAlive() const
+{
+  return this->alive;
+}
+
+void Player::isKill()
+{
+  this->alive = false;
+}
+
+void Player::Action(gdl::Input &input)
+{
+  (void)input;
+}

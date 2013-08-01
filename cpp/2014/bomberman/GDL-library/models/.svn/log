@@ -1,0 +1,82 @@
+<modify-entry
+   name="fire2.FBX"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/fire2.FBX.svn-base"
+   name=".svn/prop-base/svn-w9njDy"/>
+<readonly
+   name=".svn/prop-base/fire2.FBX.svn-base"/>
+<modify-entry
+   committed-rev="28"
+   committed-date="2011-06-04T16:49:24.309935Z"
+   name="fire2.FBX"
+   last-author="hubert_s"
+   uuid="e1b11efa-2d9a-4264-bc46-35cc25309095"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="fire2.FBX"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="49"/>
+<cp-and-translate
+   dest="fire2.FBX"
+   name=".svn/tmp/text-base/fire2.FBX.svn-base"/>
+<mv
+   dest=".svn/text-base/fire2.FBX.svn-base"
+   name=".svn/tmp/text-base/fire2.FBX.svn-base"/>
+<readonly
+   name=".svn/text-base/fire2.FBX.svn-base"/>
+<modify-entry
+   name="fire2.FBX"
+   checksum="9e39975590617c6620cc2d7c993f2069"/>
+<modify-entry
+   name="fire2.FBX"
+   text-time="working"/>
+<modify-entry
+   name="fire2.FBX"
+   working-size="working"/>
+<modify-entry
+   name="fire2.fbx"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/fire2.fbx.svn-base"
+   name=".svn/prop-base/svn-G3PHKF"/>
+<readonly
+   name=".svn/prop-base/fire2.fbx.svn-base"/>
+<modify-entry
+   committed-rev="28"
+   committed-date="2011-06-04T16:49:24.309935Z"
+   name="fire2.fbx"
+   last-author="hubert_s"
+   uuid="e1b11efa-2d9a-4264-bc46-35cc25309095"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="fire2.fbx"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="49"/>
+<cp-and-translate
+   dest="fire2.fbx"
+   name=".svn/tmp/text-base/fire2.fbx.svn-base"/>
+<mv
+   dest=".svn/text-base/fire2.fbx.svn-base"
+   name=".svn/tmp/text-base/fire2.fbx.svn-base"/>
+<readonly
+   name=".svn/text-base/fire2.fbx.svn-base"/>
+<modify-entry
+   name="fire2.fbx"
+   checksum="aa09acb909d1c9eece7122802fb6422f"/>
+<modify-entry
+   name="fire2.fbx"
+   text-time="working"/>
+<modify-entry
+   name="fire2.fbx"
+   working-size="working"/>

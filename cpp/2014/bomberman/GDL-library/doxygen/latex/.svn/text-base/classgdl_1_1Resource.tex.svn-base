@@ -1,0 +1,114 @@
+\hypertarget{classgdl_1_1Resource}{
+\section{gdl::Resource$<$ Type $>$ Class Template Reference}
+\label{classgdl_1_1Resource}\index{gdl::Resource@{gdl::Resource}}
+}
+Inheritance diagram for gdl::Resource$<$ Type $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classgdl_1_1Resource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgdl_1_1Resource_a149a477edeec7571d7664ac6be21f3ce}{Resource} (Type $\ast$val)
+\item 
+\hyperlink{classgdl_1_1Resource_a2110d7edf4e2864a70688a4279480e43}{Resource} (\hyperlink{classgdl_1_1Resource}{Resource} const \&)
+\item 
+\hyperlink{classgdl_1_1Resource}{Resource} \& \hyperlink{classgdl_1_1Resource_a8d4f9966f9a8047d0830fc0ce4c15d37}{operator=} (\hyperlink{classgdl_1_1Resource}{Resource} const \&)
+\item 
+virtual \hyperlink{classgdl_1_1Resource_a52f5853b3028356acb3cfe8673fa4bd3}{$\sim$Resource} ()
+\item 
+bool \hyperlink{classgdl_1_1Resource_a3d8b62b778b5c598ee51a5edcdae05ef}{isValid} () const 
+\item 
+Type $\ast$ \hyperlink{classgdl_1_1Resource_a0b869a1e27677c66bb78dec379e73658}{operator-\/$>$} ()
+\item 
+Type \& \hyperlink{classgdl_1_1Resource_a750113d7aafe245fecb39089d15ebbe3}{operator$\ast$} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgdl_1_1Resource_a62cfa0d7b8f63c2d6be09a644e49028c}{HardReset} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgdl_1_1Resource_acfc41dc044277eff21791ff867078989}{
+Type $\ast$ {\bfseries data\_\-}}
+\label{classgdl_1_1Resource_acfc41dc044277eff21791ff867078989}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename Type$>$ class gdl::Resource$<$ Type $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgdl_1_1Resource_a149a477edeec7571d7664ac6be21f3ce}{
+\index{gdl::Resource@{gdl::Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ {\bf gdl::Resource}$<$ Type $>$::{\bf Resource} (Type $\ast$ {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, explicit\mbox{]}}}}
+\label{classgdl_1_1Resource_a149a477edeec7571d7664ac6be21f3ce}
+Explicit constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em val}]The pointer on a resource. \end{DoxyParams}
+\hypertarget{classgdl_1_1Resource_a2110d7edf4e2864a70688a4279480e43}{
+\index{gdl::Resource@{gdl::Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ {\bf gdl::Resource}$<$ Type $>$::{\bf Resource} ({\bf Resource}$<$ Type $>$ const \& {\em right})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgdl_1_1Resource_a2110d7edf4e2864a70688a4279480e43}
+Copy constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em right}]\hyperlink{classgdl_1_1Resource}{Resource} to copy. \end{DoxyParams}
+\hypertarget{classgdl_1_1Resource_a52f5853b3028356acb3cfe8673fa4bd3}{
+\index{gdl::Resource@{gdl::Resource}!$\sim$Resource@{$\sim$Resource}}
+\index{$\sim$Resource@{$\sim$Resource}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{$\sim$Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ {\bf gdl::Resource}$<$ Type $>$::$\sim${\bf Resource} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classgdl_1_1Resource_a52f5853b3028356acb3cfe8673fa4bd3}
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1Resource_a62cfa0d7b8f63c2d6be09a644e49028c}{
+\index{gdl::Resource@{gdl::Resource}!HardReset@{HardReset}}
+\index{HardReset@{HardReset}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{HardReset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ void {\bf gdl::Resource}$<$ Type $>$::HardReset ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classgdl_1_1Resource_a62cfa0d7b8f63c2d6be09a644e49028c}
+Reset the data. \hypertarget{classgdl_1_1Resource_a3d8b62b778b5c598ee51a5edcdae05ef}{
+\index{gdl::Resource@{gdl::Resource}!isValid@{isValid}}
+\index{isValid@{isValid}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{isValid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ bool {\bf gdl::Resource}$<$ Type $>$::isValid () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgdl_1_1Resource_a3d8b62b778b5c598ee51a5edcdae05ef}
+Check if the resource is valid.
+
+\begin{DoxyReturn}{Returns}
+If valid, true is returned. Otherwise, false is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Resource_a750113d7aafe245fecb39089d15ebbe3}{
+\index{gdl::Resource@{gdl::Resource}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ Type \& {\bf gdl::Resource}$<$ Type $>$::operator$\ast$ ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgdl_1_1Resource_a750113d7aafe245fecb39089d15ebbe3}
+Overloading of the indirection operator. \hypertarget{classgdl_1_1Resource_a0b869a1e27677c66bb78dec379e73658}{
+\index{gdl::Resource@{gdl::Resource}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ Type $\ast$ {\bf gdl::Resource}$<$ Type $>$::operator-\/$>$ ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgdl_1_1Resource_a0b869a1e27677c66bb78dec379e73658}
+Overloading of the member operator. \hypertarget{classgdl_1_1Resource_a8d4f9966f9a8047d0830fc0ce4c15d37}{
+\index{gdl::Resource@{gdl::Resource}!operator=@{operator=}}
+\index{operator=@{operator=}!gdl::Resource@{gdl::Resource}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ {\bf gdl::Resource}$<$ Type $>$ \& {\bf gdl::Resource}$<$ Type $>$::operator= ({\bf Resource}$<$ Type $>$ const \& {\em right})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgdl_1_1Resource_a8d4f9966f9a8047d0830fc0ce4c15d37}
+Overloading of the assignment operator.
+
+\begin{DoxyReturn}{Returns}
+An reference on the \hyperlink{classgdl_1_1Resource}{Resource} instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Resource.hpp\item 
+Resource.inl\end{DoxyCompactItemize}

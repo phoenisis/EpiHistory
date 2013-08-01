@@ -1,0 +1,46 @@
+##
+##  Makefile
+##  Bomberman
+##
+##  Created by Quentin PIDOUX on 30/04/12.
+##  Copyright (c) 2012 EPITECH. All rights reserved.
+##
+
+SDIR    =       ./src/
+
+IDIR    =       ./include/
+
+NAME	=	bomberman
+
+<<<<<<< .mine
+SRCS	= 	$(SDIR)/Graph.cpp
+=======
+SRCS	=
+>>>>>>> .r7
+
+OBJS	= 	$(SRCS:.cpp=.o)
+CXXFLAGS= 	-W -Wall -Wextra -pedantic
+LFLAGS  =       -L ./Lib/libgdl_gl-2012.1/lib/ -Wl, --rpath=./Lib/libgdl_gl-2012.1/lib/ -lgdl_gl -lGL -lGLU -lSDL -lSDL_mixer
+CC	= 	g++
+RM	= 	rm -rfv
+HFILE   =       -I ./inc/ -I ./Lib/libgdl_gl-2012.1/include
+
+$(NAME) : 	$(OBJS)
+	  	$(CC) -o $(NAME) $(OBJS)
+
+all	: 	$(NAME)
+
+clean   :
+	 	@$(RM) ./*~
+	 	@$(RM) ./#*#
+	 	@$(RM) $(OBJS)
+
+fclean  : 	clean
+	  	@$(RM) $(NAME)
+
+re	: 	all
+
+.PHONY  : 	all clean fclean re cclean
+
+.c.o   	:
+		$(CC) $(CFLAGS) -c $< -o $(<:.c=.o) $(HFILES)

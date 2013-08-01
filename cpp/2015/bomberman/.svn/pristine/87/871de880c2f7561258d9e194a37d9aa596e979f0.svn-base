@@ -1,0 +1,102 @@
+/*
+**  src/Graph.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Graph.hh"
+#include <string>
+#include <iostream>
+
+namespace Display
+{
+  Menu::Menu(int x, int y, int sizeX, int sizeY)
+  {
+    window_.create();
+    this->camera_.initialize();
+    this->x = x;
+    this->y = y;
+    this->sizeX = sizeX;
+    this->sizeY = sizeY;
+    this->MenuCurr = 1;
+    this->MenuDecide = false;
+  }
+
+  Menu::~Memu()
+  {}
+
+  void Menu::update(gdl::GameClock const & gameClock, gdl::Input & input)
+  {
+    if (this->MenuDecide == false) {
+      if (input.isKeyDown(gdl::Keys::Up) == true)
+	{
+	  this->texture_ = gdl::Image::load("../asserts/");
+	  this->MenuCurr = 1;
+	}
+      if (input.isKeyDown(gdl::Keys::Left) == true)
+	{
+	  this->texture_ = gdl::Image::load("../asserts/");
+	  this->MenuCurr = 2;
+	}
+      if (input.isKeyDown(gdl::Keys::Right) == true)
+	{
+	  this->texture_ = gdl::Image::load("../asserts/");
+	  this->MenuCurr = 3;
+	}
+      if (input.isKeyDown(gdl::Keys::Down) == true)
+	{
+	  this->texture_ = gdl::Image::load("../asserts/");
+	  this->MenuCurr = 4;
+	}
+      if (input.isKeyDown(gdl::Keys::Space) == true)
+	{
+	  this->MenuDecide = true;
+	}
+    }
+  }
+
+  Graph::Graph()
+  {
+    gdl::Model Bombe = gdl::Model::load("../asserts/bombe.FBX");;
+    gdl::Model Marvin = gdl::Model::load("../marvin.fbx");;
+    gdl::Model Fire = gdl::Model::load("../fire.FBX");;
+    gdl::Model Dalle = gdl::Model::load("../asserts/dalle.FBX");;
+    gdl::Model Bonus_Fire = gdl::Model::load("../asserts/bonus_flamme.FBX");;
+    gdl::Model Bonus_Bombe = gdl::Model::load("../asserts/bonus_bombe.FBX");;
+
+    this->my_model[1]=Bombe;
+    this->my_model[2]=Marvin;
+    this->my_model[3]=Fire;
+    this->my_model[4]=Dalle;
+    this->my_model[5]=Bonus_Fire;
+    this->my_model[6]=Bonus_Bombe;
+  }
+
+  Graph::~Graph()
+  {}
+
+    void	Graph::draw(const Vector3f *position, int nb)
+  {
+    gdl::Model::Begin();
+
+    gdl::Model _model = mymap.find(nb)->second;
+
+    _model.play("Take 001");
+    glPushMatrix();
+    glTranslatef(position->z + 0.50, 0.0f, position->x - 0.50);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    _model.draw();
+    glPopMatrix();
+
+    gdl::Model::End();
+  }
+}
+
+
+
+int main()
+{
+  return 0;
+}

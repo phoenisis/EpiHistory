@@ -1,0 +1,130 @@
+//
+// Bloc.cpp for  in /home/fleuro_m//work/tmp
+//
+// Made by matthieu fleurot
+// Login   <fleuro_m@epitech.net>
+//
+// Started on  Fri Jun  1 16:01:25 2012 matthieu fleurot
+// Last update Fri Jun  1 18:28:40 2012 quentin pidoux
+//
+
+#include "../inc/Bloc.hh"
+
+void	Bloc::ABloc::update(gdl::GameClock const & clock, gdl::Input &input)
+{}
+
+void	Bloc::ABloc::draw_object(Vector3f *position)
+{
+  gdl::Model::Begin();
+
+  this->_mymodel.play("Take 001");
+  glPushMatrix();
+  glTranslatef(position->x + 0.50, 0.0f, position->y - 0.50);
+  glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+  this->_mymodel.draw();
+  glPopMatrix();
+
+  gdl::Model::End();
+}
+
+// --------------------------Wall------------------------
+
+Bloc::Wall::Wall(map::map &my_map) : _map(my_map)
+{}
+
+Bloc::Wall::~Wall()
+{}
+
+void	Bloc::Wall::initialize()
+{
+  this->_mymodel = gdl::Model::load("./asserts/stone.FBX");
+}
+
+void	Bloc::Wall::draw()
+{
+  int		x;
+  int		y;
+  Vector3f	vec;
+
+  for (y = 0; y < this->_map.getWidth(); y++)
+    {
+      for(x = 0; x < this->_map.getLength(); x++)
+	{
+	  if (this->_map.getPos(x, y) == 3)
+	    {
+	      vec.setX(x);
+	      vec.setY(y);
+	      vec.setZ(0);
+	      this->draw_object(&vec);
+	    }
+	}
+    }
+}
+
+// --------------------------BOX------------------------
+
+Bloc::Box::Box(map::map &my_map) : _map(my_map)
+{}
+
+Bloc::Box::~Box()
+{}
+
+void	Bloc::Box::initialize()
+{
+  this->_mymodel = gdl::Model::load("./asserts/box.FBX");
+}
+
+void	Bloc::Box::draw()
+{
+  int		x;
+  int		y;
+  Vector3f	vec;
+
+  for (y = 0; y < this->_map.getWidth(); y++)
+    {
+      for(x = 0; x < this->_map.getLength(); x++)
+	{
+	  if (this->_map.getPos(x, y) == 2)
+	    {
+	      vec.setX(x);
+	      vec.setY(y);
+	      vec.setZ(0);
+	      this->draw_object(&vec);
+	    }
+	}
+    }
+}
+
+// --------------------------Blank------------------------
+
+Bloc::Blank::Blank(map::map &my_map) : _map(my_map)
+{}
+
+Bloc::Blank::~Blank()
+{}
+
+void	Bloc::Blank::initialize()
+{
+  this->_mymodel = gdl::Model::load("./asserts/ground.FBX");
+}
+
+void	Bloc::Blank::draw()
+{
+  int		x;
+  int		y;
+  Vector3f	vec;
+
+  for (y = 0; y < this->_map.getWidth(); y++)
+    {
+      for(x = 0; x < this->_map.getLength(); x++)
+	{
+	  if (this->_map.getPos(x, y) == 9)
+	    {
+	      vec.setX(x);
+	      vec.setY(y);
+	      vec.setZ(0);
+	      this->draw_object(&vec);
+	    }
+	}
+    }
+}

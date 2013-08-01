@@ -1,0 +1,46 @@
+.TH "gdl::ResourceBase" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::ResourceBase \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBgdl::Resource< Type >\fP\fC [private]\fP, \fBgdl::Resource< ImageImpl >\fP\fC [private]\fP, and \fBgdl::Resource< ModelImpl >\fP\fC [private]\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBResourceBase\fP ()"
+.br
+.ti -1c
+.RI "\fBResourceBase\fP (\fBResourceBase\fP const &right)"
+.br
+.ti -1c
+.RI "virtual \fB~ResourceBase\fP ()"
+.br
+.ti -1c
+.RI "\fBResourceBase\fP & \fBoperator=\fP (\fBResourceBase\fP const &)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcheck_destroy\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::ResourceBase::ResourceBase ()"Default constructor. 
+.SS "gdl::ResourceBase::ResourceBase (\fBResourceBase\fP const & right)"Copy constructor. 
+.SS "virtual gdl::ResourceBase::~ResourceBase ()\fC [virtual]\fP"Default destructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void gdl::ResourceBase::check_destroy ()\fC [protected]\fP"Check if the data pointer can be destroyed. 
+.SS "\fBResourceBase\fP& gdl::ResourceBase::operator= (\fBResourceBase\fP const &)"Overloading of the assignment operator. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="namespacegdl_1_1Mouse" kind="namespace">
+    <compoundname>gdl::Mouse</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79" prot="public" static="no">
+        <name>Button</name>
+        <enumvalue id="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79aa40c87808830a7225ae0f4938c5a82ae" prot="public">
+          <name>Left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79aba355b63936dc41135ea312fe62dfc2c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegdl_1_1Mouse_1aa4b6ef213f0d8610d2a37f60aa829e79a976ccb90e726c90bc70faba14fbbe6cd" prot="public">
+          <name>Middle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum of mouse&apos;s buttons </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="46" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="41"/>
+  </compounddef>
+</doxygen>

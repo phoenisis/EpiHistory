@@ -1,0 +1,109 @@
+/*
+**  src/Character.cpp
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Character.hh"
+
+Character::Character(int posX, int posY, std::string name) : _posX(posX) , _posY(posY), _name(name), _nbBombs(1), _power(1), _speed(1)
+{}
+
+Character::~Character()
+{}
+
+int		Character::getPosX()
+{
+  return this->_posX;
+}
+
+void		Character::setPosX(int x)
+{
+  this->_posX = x;
+}
+
+int		Character::getPosY()
+{
+  return this->_posY;
+}
+
+void		Character::setPosY(int y)
+{
+  this->_posY = y;
+}
+
+int		Character::getNbBombs()
+{
+  return this->_nbBombs;
+}
+
+void		Character::setNbBombs(int nb)
+{
+  this->_nbBombs = nb;
+}
+
+int		Character::getPower()
+{
+  return this->_power;
+}
+
+void		Character::setPower(int pow)
+{
+  this->_power = pow;
+}
+
+float		Character::Speed()
+{
+  return this->_speed;
+}
+
+void		Character::setSpeed(float s)
+{
+  this->_speed = s;
+}
+
+void    Character::checkBonus(map map)
+{
+  if (map::block_type == MOREBOMB || map::block_type == LESSBOMB)
+    {
+      if (map::block_type == MOREBOMB)
+        this->_nbBombs = this->_nbBombs + 1;
+      else if (map::block_type == LESSBOMB && this->_nbBombs > 1)
+        this->_nbBombs = this->_nbBombs - 1;
+      map::map.setMyMap(this->_posX, this->_posY == 9);
+    }
+  else if (map::block_type == MOREPOWER || map::block_type == LESSPOWER)
+    {
+      if (map::block_type == MOREPOWER)
+	this->_power = this->_power + 1;
+      else if (map::block_type == LESSPOWER && this->_power > 2)
+        this->_power = this->_power - 1;
+      map::map.setMyMap(this->_posX, this->_posY == 9);
+    }
+}
+
+void    Character::movePlayer(map map, action act)
+{
+ // ex de l'enum : enum action
+ //{
+ //   RIGHT,
+ //   LEFT,
+ //   UP,
+ //   DOWN,
+ //   BOMB,
+ //}
+
+  if ((act == RIGHT) && map::map.getMyMap(this->_posX + 1, this->_posY) == PLAYER || map::map.getMyMap(this->_posX + 1, this->_posY) >= 5 && map::map.getMyMap(this->_posX + 1, this->_posY) <= 8)
+    this->_posX = this->_posX + 1;
+  if ((act == LEFT) && map::map.getMyMap(this->_posX - 1, this->_posY) == PLAYER || map::map.getMyMap(this->_posX - 1, this->_posY) >= 5 && map::map.getMyMap(this->_posX - 1, this->posY) <= 8);
+    this->_posX = this->_posX - 1;
+  if ((act == UP) && map::map.getMyMap(this->_posX, this->_posY) + 1 == PLAYER || map::map.getMyMap(this->_posX, this->_posY + 1) >= 5 && map::map.getMyMap(this->_posX, this->posY + 1) <= 8);
+    this->_posY = this->_posY + 1;
+  if ((act == DOWN) && map::map.getMyMap(this->_posX, this->_posY - 1) == PLAYER || map::map.getMyMap(this->_posX, this->_posY - 1) >= 5 && map::map.getMyMap(this->_posX, this->posY - 1) <= 8);
+    this->_posY = this->_posY - 1;
+  if (act == BOMB)
+    doBomb( );
+  checkBonus(map map);
+}

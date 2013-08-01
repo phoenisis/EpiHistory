@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1ModelException" kind="class" prot="public">
+    <compoundname>gdl::ModelException</compoundname>
+    <includes refid="ModelException_8hpp" local="no">ModelException.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgdl_1_1ModelException_1a3adb1b1dd1f1d6b4c70eaaee728ffb85" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gdl::ModelException::m_what</definition>
+        <argsstring></argsstring>
+        <name>m_what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" line="15" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1ModelException_1a20ca1764d4e9c7f247f35f873f111cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::ModelException::ModelException</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>ModelException</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>_what</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" line="18" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.cpp" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1ModelException_1ad8f0b637c147e214c2c61ab57c0e7404" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual gdl::ModelException::~ModelException</definition>
+        <argsstring>()</argsstring>
+        <name>~ModelException</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" line="19" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1ModelException_1ac570e43873bd20fcc1f2ec3f3a09ed4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * gdl::ModelException::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" line="21" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe used to decribe error from <ref refid="classgdl_1_1Model" kindref="compound">Model</ref> Manipulation </para>    </detaileddescription>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" line="13" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/ModelException.hpp" bodystart="12" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1ModelException_1a3adb1b1dd1f1d6b4c70eaaee728ffb85" prot="private" virt="non-virtual"><scope>gdl::ModelException</scope><name>m_what</name></member>
+      <member refid="classgdl_1_1ModelException_1a20ca1764d4e9c7f247f35f873f111cef" prot="public" virt="non-virtual"><scope>gdl::ModelException</scope><name>ModelException</name></member>
+      <member refid="classgdl_1_1ModelException_1ac570e43873bd20fcc1f2ec3f3a09ed4d" prot="public" virt="virtual"><scope>gdl::ModelException</scope><name>what</name></member>
+      <member refid="classgdl_1_1ModelException_1ad8f0b637c147e214c2c61ab57c0e7404" prot="public" virt="virtual"><scope>gdl::ModelException</scope><name>~ModelException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

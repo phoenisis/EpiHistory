@@ -1,0 +1,10 @@
+dimension
+3
+matrice
+  0  0  9
+  0 10  7
+  9  7  4
+vecteur
+ 45
+125
+101

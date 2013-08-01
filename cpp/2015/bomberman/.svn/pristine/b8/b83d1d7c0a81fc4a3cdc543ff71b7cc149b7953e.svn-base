@@ -1,0 +1,20 @@
+#include "../inc/Graph.hh"
+#include <string>
+#include <iostream>
+
+namespace Model
+{
+  Graph::Graph()
+  {
+    std::string bomb_path = "../GDL-library/models/bombe.FBX";
+    this->bomb = gdl::Model::load(bomb_path);
+  }
+
+  Graph::~Graph()
+  {}
+
+  int main()
+  {
+    return 0;
+  }
+}

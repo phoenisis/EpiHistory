@@ -1,0 +1,35 @@
+//
+// main.cpp for ex_0 in /home/pidoux_q/rendu/cpp/d10/ex_0
+// 
+// Made by quentin PIDOUX
+// Login   <pidoux_q@epitech.net>
+// 
+// Started on  Thu Jan 13 18:15:04 2011 quentin PIDOUX
+// Last update Thu Jan 13 18:15:06 2011 quentin PIDOUX
+//
+
+#include "Character.hh"
+#include <string>
+
+int	main()
+{
+  std::string	C1 = "Sevan";
+  std::string	C2 = "Un Suisse";
+
+  Character	Sevan(C1, 100);
+  Character	A(C2, 1);
+
+  A.TakeDamage(Sevan.RangeAttack());
+  A.TakeDamage(Sevan.RangeAttack());
+  A.TakeDamage(Sevan.RangeAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+  A.TakeDamage(Sevan.CloseAttack());
+}

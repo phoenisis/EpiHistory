@@ -1,0 +1,54 @@
+/*
+**  src/Character.hh
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#ifndef		__CHARACTER_HH__
+#define		__CHARACTER_HH__
+
+#include	<string>
+#include	"Map.hh"
+#include	"Bomb.hh"
+
+class		Character
+{
+public:
+  typedef enum e_action
+    {
+      RIGHT,
+      LEFT,
+      UP,
+      DOWN,
+      BOMB
+    }	       action;
+
+  Character(int, int, std::string);
+  ~Character();
+
+  //Coplien
+  Character(const Character &);
+  Character&	operator=(const Character &);
+  int		getPosX() const;
+  void		setPosX(int);
+  int		getPosY() const;
+  void		setPosY(int);
+  int		getNbBombs() const;
+  void		setNbBombs(int);
+  int		getPower() const;
+  void		setPower(int);
+  void		checkBonus(map::map &, int);
+  void		doBomb();
+  void		movePlayer(map::map &, action);
+
+private:
+  int		_posX;
+  int		_posY;
+  std::string	_name;
+  int		_nbBombs;
+  int		_power;
+};
+
+#endif		//!__CHARACTER__HH__

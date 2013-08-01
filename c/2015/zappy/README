@@ -1,0 +1,13 @@
+
+TOUT DOUX (TODO ahahahahah): rajoute le fd dans display func et team_name.c
+     	  		     ajoute les messages d erreur (il est dans le protocol serveur client)
+			     ajouter les messages pour le client graphique
+
+Alors ya qd mm bcp d'erreurs qui restent et de warnings MAIS c'est toutes les mêmes...
+     J'ai débugué le max que je pouvais dans broadcast.c et le reste,
+Les lignes ou j'ai rien pu faire c'est celles ou tu fais map[] mais map c'est un pointeur (dans t_env *e) sur la struct map.
+Et ensuite en débuguant j'ai remarqué un gros problème c'est que ok tu passes les arguments a jete2 et prends2 donc ca c'est bon.
+Mais tu retournes rien donc les valeurs que tu met dans prend2 et jete2 elles ne serviront pas pr prend et jete donc tes else et else if marcheront pas puisque les valeurs ne seront pas communes aux fonctions paires.
+Enfin ptete que j'ai tord mais j'ai eu ce problème justement en mettant a la norme mes fonctions et j'ai du créer une autre struture encore pour tt mettre dedan et renvoyer que cette structure.
+
+voila sinn ya des fonctions genre display_case, display_all_case, pose etc que javais pas donc j'y ai pas touché

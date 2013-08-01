@@ -1,0 +1,102 @@
+.TH "gdl::Image" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Image \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Image.hpp>\fP
+.PP
+Inherits \fBResource< ImageImpl >\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBImage\fP (void)"
+.br
+.ti -1c
+.RI "\fB~Image\fP (void)"
+.br
+.ti -1c
+.RI "void \fBbind\fP (void)"
+.br
+.ti -1c
+.RI "unsigned int \fBgetWidth\fP (void) const "
+.br
+.ti -1c
+.RI "unsigned int \fBgetHeight\fP (void) const "
+.br
+.ti -1c
+.RI "unsigned char const * \fBgetPixelPtr\fP (void) const "
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBImage\fP \fBload\fP (std::string const &filename)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBImageImpl\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBImage\fP class provides image loading and image binding. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::Image::Image (void)"Default constructor. 
+.SS "gdl::Image::~Image (void)"Default destructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void gdl::Image::bind (void)"Bind the texture on the GPU. 
+.SS "unsigned int gdl::Image::getHeight (void) const"Get the height of the image.
+.PP
+\fBReturns:\fP
+.RS 4
+Height of the image. 
+.RE
+.PP
+
+.SS "unsigned char const * gdl::Image::getPixelPtr (void) const"Get a pointer to the pixel array of the image.
+.PP
+\fBReturns:\fP
+.RS 4
+Pointer to the pixel array. 
+.RE
+.PP
+
+.SS "unsigned int gdl::Image::getWidth (void) const"Get the width of the image.
+.PP
+\fBReturns:\fP
+.RS 4
+Width of the image. 
+.RE
+.PP
+
+.SS "\fBImage\fP gdl::Image::load (std::string const & filename)\fC [static]\fP"Load an image from a file.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilename\fP Filename of the image with extension. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+An instance of the resource. 
+.RE
+.PP
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class ImageImpl\fC [friend]\fP"\fBImage\fP implementation. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

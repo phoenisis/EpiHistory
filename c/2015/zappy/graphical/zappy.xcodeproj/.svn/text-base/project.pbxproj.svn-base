@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D04AC89158F72B1001D6CCE /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D04AC87158F72B1001D6CCE /* Food.png */; };
+		2D0BA40D1590B77400601E6D /* ConnectionLost.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BA40C1590B77400601E6D /* ConnectionLost.png */; };
+		2D151908159B36FC00659E44 /* ItemBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D151907159B36FC00659E44 /* ItemBox.png */; };
+		2D15190B159B376900659E44 /* CommunicationBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D15190A159B376900659E44 /* CommunicationBox.png */; };
+		2D15190E159B481100659E44 /* ClockBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D15190C159B481100659E44 /* ClockBack.png */; };
+		2D15190F159B481100659E44 /* ClockForward.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D15190D159B481100659E44 /* ClockForward.png */; };
+		2D71AA771598A66E00025C05 /* Pineapple.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D71AA761598A66E00025C05 /* Pineapple.ttf */; };
+		2D8C7D6B159B9F5E006AF9C2 /* TimeControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C7D6A159B9F5E006AF9C2 /* TimeControl.png */; };
+		2D8C7D6E159E14BE006AF9C2 /* Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C7D6D159E14BE006AF9C2 /* Client.cpp */; };
+		2DA8314315AF157D0056C4E5 /* Win.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8314215AF157D0056C4E5 /* Win.png */; };
+		2DACBBBB158F32D2002A58FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DACBBBA158F32D2002A58FB /* Foundation.framework */; };
+		2DACBBC0158F32D2002A58FB /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DACBBBF158F32D2002A58FB /* ResourcePath.mm */; };
+		2DACBBC8158F32D3002A58FB /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBC7158F32D3002A58FB /* nice_music.ogg */; };
+		2DACBBCD158F32D3002A58FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBCB158F32D3002A58FB /* InfoPlist.strings */; };
+		2DACBBD8158F333A002A58FB /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DACBBD7158F333A002A58FB /* Graph.cpp */; };
+		2DACBBDB158F3359002A58FB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DACBBDA158F3359002A58FB /* main.cpp */; };
+		2DACBBE2158F3B9A002A58FB /* Thystame.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBE1158F3B9A002A58FB /* Thystame.png */; };
+		2DACBBE4158F3BA0002A58FB /* Phiras.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBE3158F3BA0002A58FB /* Phiras.png */; };
+		2DACBBE6158F3BAA002A58FB /* Mendiane.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBE5158F3BAA002A58FB /* Mendiane.png */; };
+		2DACBBE8158F3BB1002A58FB /* Sibur.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBE7158F3BB1002A58FB /* Sibur.png */; };
+		2DACBBEA158F3BC1002A58FB /* Deraumere.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBE9158F3BC1002A58FB /* Deraumere.png */; };
+		2DACBBEC158F3BC7002A58FB /* Linemate.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DACBBEB158F3BC7002A58FB /* Linemate.png */; };
+		2DE524DA15987E4900AB1E20 /* Trantorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE524D915987E4900AB1E20 /* Trantorian.png */; };
+		2DE5E8E015992645009C3276 /* Grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5E8DF15992645009C3276 /* Grass.png */; };
+		2DE5E8E8159927C6009C3276 /* zapp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5E8E7159927C6009C3276 /* zapp.icns */; };
+		2DFA3A671590F13300F6852E /* NothingFound.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA3A661590F13300F6852E /* NothingFound.png */; };
+		2DFA3A6B1591C38E00F6852E /* Egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA3A6A1591C38E00F6852E /* Egg.png */; };
+		2DFA3A72159209E900F6852E /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA3A71159209E900F6852E /* Menu.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D04AC87158F72B1001D6CCE /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
+		2D0BA40C1590B77400601E6D /* ConnectionLost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConnectionLost.png; sourceTree = "<group>"; };
+		2D151907159B36FC00659E44 /* ItemBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ItemBox.png; sourceTree = "<group>"; };
+		2D15190A159B376900659E44 /* CommunicationBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CommunicationBox.png; sourceTree = "<group>"; };
+		2D15190C159B481100659E44 /* ClockBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClockBack.png; sourceTree = "<group>"; };
+		2D15190D159B481100659E44 /* ClockForward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClockForward.png; sourceTree = "<group>"; };
+		2D71AA761598A66E00025C05 /* Pineapple.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pineapple.ttf; sourceTree = "<group>"; };
+		2D8C7D6A159B9F5E006AF9C2 /* TimeControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeControl.png; sourceTree = "<group>"; };
+		2D8C7D6C159E14B1006AF9C2 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		2D8C7D6D159E14BE006AF9C2 /* Client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Client.cpp; sourceTree = "<group>"; };
+		2D9934C215AF265D00D6C578 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = /Users/pidoux_q/Dropbox/zappy/zappy/fr.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
+		2DA8314215AF157D0056C4E5 /* Win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Win.png; sourceTree = "<group>"; };
+		2DACBBB6158F32D2002A58FB /* zappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DACBBBA158F32D2002A58FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2DACBBBF158F32D2002A58FB /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		2DACBBC1158F32D2002A58FB /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		2DACBBC7158F32D3002A58FB /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		2DACBBCA158F32D3002A58FB /* zappy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zappy-Info.plist"; sourceTree = "<group>"; };
+		2DACBBCC158F32D3002A58FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2DACBBD7158F333A002A58FB /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
+		2DACBBD9158F3341002A58FB /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		2DACBBDA158F3359002A58FB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2DACBBE1158F3B9A002A58FB /* Thystame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thystame.png; sourceTree = "<group>"; };
+		2DACBBE3158F3BA0002A58FB /* Phiras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phiras.png; sourceTree = "<group>"; };
+		2DACBBE5158F3BAA002A58FB /* Mendiane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mendiane.png; sourceTree = "<group>"; };
+		2DACBBE7158F3BB1002A58FB /* Sibur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sibur.png; sourceTree = "<group>"; };
+		2DACBBE9158F3BC1002A58FB /* Deraumere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deraumere.png; sourceTree = "<group>"; };
+		2DACBBEB158F3BC7002A58FB /* Linemate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linemate.png; sourceTree = "<group>"; };
+		2DE524D915987E4900AB1E20 /* Trantorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trantorian.png; sourceTree = "<group>"; };
+		2DE5E8DF15992645009C3276 /* Grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grass.png; sourceTree = "<group>"; };
+		2DE5E8E7159927C6009C3276 /* zapp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = zapp.icns; sourceTree = "<group>"; };
+		2DFA3A661590F13300F6852E /* NothingFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NothingFound.png; sourceTree = "<group>"; };
+		2DFA3A6A1591C38E00F6852E /* Egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egg.png; sourceTree = "<group>"; };
+		2DFA3A71159209E900F6852E /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DACBBB3158F32D2002A58FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DACBBBB158F32D2002A58FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D151909159B370000659E44 /* MenuInGame */ = {
+			isa = PBXGroup;
+			children = (
+				2D151907159B36FC00659E44 /* ItemBox.png */,
+				2D15190A159B376900659E44 /* CommunicationBox.png */,
+				2D8C7D6A159B9F5E006AF9C2 /* TimeControl.png */,
+				2D15190C159B481100659E44 /* ClockBack.png */,
+				2D15190D159B481100659E44 /* ClockForward.png */,
+			);
+			name = MenuInGame;
+			sourceTree = "<group>";
+		};
+		2DACBBAA158F32D1002A58FB = {
+			isa = PBXGroup;
+			children = (
+				2DACBBBC158F32D2002A58FB /* zappy */,
+				2DACBBB9158F32D2002A58FB /* Frameworks */,
+				2DACBBB7158F32D2002A58FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DACBBB7158F32D2002A58FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DACBBB6158F32D2002A58FB /* zappy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DACBBB9158F32D2002A58FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DACBBBA158F32D2002A58FB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DACBBBC158F32D2002A58FB /* zappy */ = {
+			isa = PBXGroup;
+			children = (
+				2DACBBD5158F3319002A58FB /* inc */,
+				2DACBBD6158F3320002A58FB /* src */,
+				2DACBBC2158F32D2002A58FB /* Resources */,
+				2DACBBC9158F32D3002A58FB /* Supporting Files */,
+			);
+			path = zappy;
+			sourceTree = "<group>";
+		};
+		2DACBBC2158F32D2002A58FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA3A621590E96800F6852E /* Menus */,
+				2DFA3A6C1591C3C300F6852E /* Tentorian */,
+				2DACBBE0158F3B7D002A58FB /* Stone Picture */,
+				2DFA3A641590E99100F6852E /* Divers */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2DACBBC9158F32D3002A58FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DACBBCA158F32D3002A58FB /* zappy-Info.plist */,
+				2DACBBCB158F32D3002A58FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DACBBD5158F3319002A58FB /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C7D6C159E14B1006AF9C2 /* Client.h */,
+				2DACBBD9158F3341002A58FB /* Graph.h */,
+				2DACBBC1158F32D2002A58FB /* ResourcePath.hpp */,
+			);
+			name = inc;
+			sourceTree = "<group>";
+		};
+		2DACBBD6158F3320002A58FB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C7D6D159E14BE006AF9C2 /* Client.cpp */,
+				2DACBBD7158F333A002A58FB /* Graph.cpp */,
+				2DACBBDA158F3359002A58FB /* main.cpp */,
+				2DACBBBF158F32D2002A58FB /* ResourcePath.mm */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		2DACBBE0158F3B7D002A58FB /* Stone Picture */ = {
+			isa = PBXGroup;
+			children = (
+				2D04AC87158F72B1001D6CCE /* Food.png */,
+				2DACBBEB158F3BC7002A58FB /* Linemate.png */,
+				2DACBBE9158F3BC1002A58FB /* Deraumere.png */,
+				2DACBBE7158F3BB1002A58FB /* Sibur.png */,
+				2DACBBE5158F3BAA002A58FB /* Mendiane.png */,
+				2DACBBE3158F3BA0002A58FB /* Phiras.png */,
+				2DACBBE1158F3B9A002A58FB /* Thystame.png */,
+			);
+			name = "Stone Picture";
+			sourceTree = "<group>";
+		};
+		2DFA3A621590E96800F6852E /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA3A71159209E900F6852E /* Menu.png */,
+				2D0BA40C1590B77400601E6D /* ConnectionLost.png */,
+				2DFA3A661590F13300F6852E /* NothingFound.png */,
+				2DA8314215AF157D0056C4E5 /* Win.png */,
+				2D151909159B370000659E44 /* MenuInGame */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		2DFA3A641590E99100F6852E /* Divers */ = {
+			isa = PBXGroup;
+			children = (
+				2DE5E8DF15992645009C3276 /* Grass.png */,
+				2DE5E8E7159927C6009C3276 /* zapp.icns */,
+				2D71AA761598A66E00025C05 /* Pineapple.ttf */,
+				2DACBBC7158F32D3002A58FB /* nice_music.ogg */,
+			);
+			name = Divers;
+			sourceTree = "<group>";
+		};
+		2DFA3A6C1591C3C300F6852E /* Tentorian */ = {
+			isa = PBXGroup;
+			children = (
+				2DE524D915987E4900AB1E20 /* Trantorian.png */,
+				2DFA3A6A1591C38E00F6852E /* Egg.png */,
+			);
+			name = Tentorian;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DACBBB5158F32D2002A58FB /* zappy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DACBBD0158F32D3002A58FB /* Build configuration list for PBXNativeTarget "zappy" */;
+			buildPhases = (
+				2DACBBB1158F32D2002A58FB /* ShellScript */,
+				2DACBBB2158F32D2002A58FB /* Sources */,
+				2DACBBB3158F32D2002A58FB /* Frameworks */,
+				2DACBBB4158F32D2002A58FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zappy;
+			productName = zappy;
+			productReference = 2DACBBB6158F32D2002A58FB /* zappy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DACBBAC158F32D1002A58FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2DACBBAF158F32D1002A58FB /* Build configuration list for PBXProject "zappy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2DACBBAA158F32D1002A58FB;
+			productRefGroup = 2DACBBB7158F32D2002A58FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DACBBB5158F32D2002A58FB /* zappy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DACBBB4158F32D2002A58FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DACBBC8158F32D3002A58FB /* nice_music.ogg in Resources */,
+				2DACBBCD158F32D3002A58FB /* InfoPlist.strings in Resources */,
+				2DACBBE2158F3B9A002A58FB /* Thystame.png in Resources */,
+				2DACBBE4158F3BA0002A58FB /* Phiras.png in Resources */,
+				2DACBBE6158F3BAA002A58FB /* Mendiane.png in Resources */,
+				2DACBBE8158F3BB1002A58FB /* Sibur.png in Resources */,
+				2DACBBEA158F3BC1002A58FB /* Deraumere.png in Resources */,
+				2DACBBEC158F3BC7002A58FB /* Linemate.png in Resources */,
+				2D04AC89158F72B1001D6CCE /* Food.png in Resources */,
+				2D0BA40D1590B77400601E6D /* ConnectionLost.png in Resources */,
+				2DFA3A671590F13300F6852E /* NothingFound.png in Resources */,
+				2DFA3A6B1591C38E00F6852E /* Egg.png in Resources */,
+				2DFA3A72159209E900F6852E /* Menu.png in Resources */,
+				2DE524DA15987E4900AB1E20 /* Trantorian.png in Resources */,
+				2D71AA771598A66E00025C05 /* Pineapple.ttf in Resources */,
+				2DE5E8E015992645009C3276 /* Grass.png in Resources */,
+				2DE5E8E8159927C6009C3276 /* zapp.icns in Resources */,
+				2D151908159B36FC00659E44 /* ItemBox.png in Resources */,
+				2D15190B159B376900659E44 /* CommunicationBox.png in Resources */,
+				2D15190E159B481100659E44 /* ClockBack.png in Resources */,
+				2D15190F159B481100659E44 /* ClockForward.png in Resources */,
+				2D8C7D6B159B9F5E006AF9C2 /* TimeControl.png in Resources */,
+				2DA8314315AF157D0056C4E5 /* Win.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DACBBB1158F32D2002A58FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required sfml dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# Are we building a project that uses framework or dylibs ?\nif [ $SFML_LINK_PREFIX = $SFML_LINK_FRAMEWORKS_PREFIX ]\nthen\n    frameworks=1\nelse\n    frameworks=0\nfi\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Frameworks\n    \n    if [ -z $1 ]\n    then\n        echo \"no parameter! ERROR!\"\n        exit\n    else\n        # clean potentially old stuff\n        rm -f $dest/libsfml-$1.2.dylib\n        rm -f $dest/libsfml-$1-d.2.dylib\n        rm -fr $dest/sfml-$1.framework\n    \n        # copy SFML libraries\n        if [ $frameworks ]\n        then\n            ditto \"/Library/Frameworks/sfml-$1.framework\" \"$dest/sfml-$1.framework\"\n        elif [ $CONFIGURATION = \"Debug\" ]\n        then\n            ditto \"/usr/local/lib/libsfml-$1-d.2.dylib\" \"$dest/libsfml-$1-d.2.dylib\"\n        else\n            ditto \"/usr/local/lib/libsfml-$1.2.dylib\" \"$dest/libsfml-$1.2.dylib\"\n        fi\n        \n        if [ $1 = \"audio\" ]\n        then\n            # copy sndfile framework too\n            ditto \"/Library/Frameworks/sndfile.framework\" \"$dest/sndfile.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DACBBB2158F32D2002A58FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DACBBC0158F32D2002A58FB /* ResourcePath.mm in Sources */,
+				2DACBBD8158F333A002A58FB /* Graph.cpp in Sources */,
+				2DACBBDB158F3359002A58FB /* main.cpp in Sources */,
+				2D8C7D6E159E14BE006AF9C2 /* Client.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DACBBCB158F32D3002A58FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DACBBCC158F32D3002A58FB /* en */,
+				2D9934C215AF265D00D6C578 /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DACBBCE158F32D3002A58FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = "";
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.9.4;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = macosx;
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "-d";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_FRAMEWORKS_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_FRAMEWORKS_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX)sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		2DACBBCF158F32D3002A58FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = "";
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 0.9.4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HEADER_SEARCH_PATHS)";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = macosx;
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_FRAMEWORKS_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_FRAMEWORKS_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX)sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2DACBBD1158F32D3002A58FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "zappy/zappy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2DACBBD2158F32D3002A58FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "zappy/zappy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DACBBAF158F32D1002A58FB /* Build configuration list for PBXProject "zappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DACBBCE158F32D3002A58FB /* Debug */,
+				2DACBBCF158F32D3002A58FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DACBBD0158F32D3002A58FB /* Build configuration list for PBXNativeTarget "zappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DACBBD1158F32D3002A58FB /* Debug */,
+				2DACBBD2158F32D3002A58FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DACBBAC158F32D1002A58FB /* Project object */;
+}

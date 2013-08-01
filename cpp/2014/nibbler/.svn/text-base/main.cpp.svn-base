@@ -1,0 +1,112 @@
+//
+// Ncurse.cpp for pouet in /home/hubert_s//nibbler-2014-pidoux_q/test
+// 
+// Made by sevan hubert
+// Login   <hubert_s@epitech.net>
+// 
+// Started on  Wed Mar  9 13:26:17 2011 sevan hubert
+// Last update Sat Mar 19 17:12:33 2011 sevan hubert
+//
+
+#include <cstdlib>
+#include <iostream>
+#include <unistd.h>
+#include <dlfcn.h>
+
+#include "Head.hh"
+#include "Snake.hh"
+#include "Map.hh"
+#include "Apple.hh"
+
+#include "IDisplay.hh"
+
+#define ESCAPE 27
+
+
+
+void	print(IDisplay *aff, Map map, Head *snake, Apple *app)
+{
+  Snake	*verif = snake;
+  
+  aff->print_map(map.getSizeX(), map.getSizeY());
+  
+  aff->print_snake(verif->getPosX(), verif->getPosY(), true);
+  verif = verif->getNext();
+  while (verif != NULL)
+    {
+      aff->print_snake(verif->getPosX(), verif->getPosY(), false);
+      verif = verif->getNext();
+    }
+
+  aff->print_apple(app->get_posx(), app->get_posy());
+
+  snake->set_highscore(snake->get_score());
+  aff->print_score(snake->get_highscore(), snake->get_score(), \
+		   snake->get_apple_eat(), map.getSizeY());
+}
+
+bool	game(IDisplay *aff, int x, int y)
+{
+  Map	map(x, y);
+  Head	*snake = new Head(map);
+  Apple	*app = new Apple(snake, map.getSizeX(), map.getSizeY());
+  int	key = 3;
+  
+  do {
+    print(aff, map, snake, app);
+    usleep(150000);
+    key = aff->get_key();
+    if (key >= 258 && key <= 261)
+      snake->setDir(key - 258);
+    snake->move();
+    if (app->is_eat(snake, map))
+      {
+	delete app;
+	app = new Apple(snake, map.getSizeX(), map.getSizeY());
+      }	
+  } while (key != ESCAPE && snake->has_snap() == false && snake->is_out(map) == false);
+  delete app;
+  delete snake;
+  if (key == ESCAPE)
+    return false;
+  return true;
+}
+
+
+int main(int argc, char **argv)
+{
+  void	*handle = dlopen(argv[3], RTLD_LAZY);
+  IDisplay* (*Display_builder)();
+  IDisplay *aff;
+  bool	flag;
+
+  if (argc != 4)
+    {
+      std::cout << "usage : ./nibbler sizeX sizeY graphic_lib." << std::endl;
+      exit(0);
+    }
+  if (!handle)
+    {
+      std::cout << dlerror() << std::endl;
+      exit(0);
+    }
+  Display_builder = reinterpret_cast<IDisplay* (*)()>(dlsym(handle, "Display_builder"));
+  if (!Display_builder)
+    {
+      std::cout << dlerror() << std::endl;
+      exit(0);
+    }
+  if (atoi(argv[1]) <= 9 || atoi(argv[1]) >= 61 || atoi(argv[2]) <= 9 || atoi(argv[2]) >= 51)
+    {
+      std::cout << "Usage: sizeX need to be betwwen [10 60] and sizeY need to be between [9 50]." << std::endl;
+      exit(0);
+    }
+  aff = Display_builder();
+  aff->init(atoi(argv[1]), atoi(argv[2]));
+  do {
+    flag = game(aff, atoi(argv[1]), atoi(argv[2]));
+  } while (flag && aff->new_game() == 0);
+  aff->close();
+  dlclose(handle);
+  return 0;
+}

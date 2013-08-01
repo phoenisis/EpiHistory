@@ -1,0 +1,118 @@
+\hypertarget{classgdl_1_1Image}{
+\section{gdl::Image Class Reference}
+\label{classgdl_1_1Image}\index{gdl::Image@{gdl::Image}}
+}
+
+
+{\ttfamily \#include $<$Image.hpp$>$}Inheritance diagram for gdl::Image::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classgdl_1_1Image}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgdl_1_1Image_a1ccd90e38aeef3b04ee4e62ad6928b06}{Image} (void)
+\item 
+\hyperlink{classgdl_1_1Image_a2106e265d93d44829fe181009af0782f}{$\sim$Image} (void)
+\item 
+void \hyperlink{classgdl_1_1Image_a38b36eb4c9bb1ff523d56c8548e250ab}{bind} (void)
+\item 
+unsigned int \hyperlink{classgdl_1_1Image_afbfdaf5f3b8744d9903face66b730d93}{getWidth} (void) const 
+\item 
+unsigned int \hyperlink{classgdl_1_1Image_a92a2838f614afac73777e54e4a37eb4c}{getHeight} (void) const 
+\item 
+unsigned char const $\ast$ \hyperlink{classgdl_1_1Image_af98213f37f91724b3c5b6999864239d1}{getPixelPtr} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classgdl_1_1Image}{Image} \hyperlink{classgdl_1_1Image_a5fbf636e446bfa53e54f6664bbe49fb7}{load} (std::string const \&filename)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgdl_1_1Image_ad30335dc3a64ec73d35a335c53178345}{ImageImpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classgdl_1_1Image}{Image} class provides image loading and image binding. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgdl_1_1Image_a1ccd90e38aeef3b04ee4e62ad6928b06}{
+\index{gdl::Image@{gdl::Image}!Image@{Image}}
+\index{Image@{Image}!gdl::Image@{gdl::Image}}
+\subsubsection[{Image}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Image::Image (void)}}
+\label{classgdl_1_1Image_a1ccd90e38aeef3b04ee4e62ad6928b06}
+Default constructor. \hypertarget{classgdl_1_1Image_a2106e265d93d44829fe181009af0782f}{
+\index{gdl::Image@{gdl::Image}!$\sim$Image@{$\sim$Image}}
+\index{$\sim$Image@{$\sim$Image}!gdl::Image@{gdl::Image}}
+\subsubsection[{$\sim$Image}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Image::$\sim$Image (void)}}
+\label{classgdl_1_1Image_a2106e265d93d44829fe181009af0782f}
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1Image_a38b36eb4c9bb1ff523d56c8548e250ab}{
+\index{gdl::Image@{gdl::Image}!bind@{bind}}
+\index{bind@{bind}!gdl::Image@{gdl::Image}}
+\subsubsection[{bind}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Image::bind (void)}}
+\label{classgdl_1_1Image_a38b36eb4c9bb1ff523d56c8548e250ab}
+Bind the texture on the GPU. \hypertarget{classgdl_1_1Image_a92a2838f614afac73777e54e4a37eb4c}{
+\index{gdl::Image@{gdl::Image}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!gdl::Image@{gdl::Image}}
+\subsubsection[{getHeight}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int gdl::Image::getHeight (void) const}}
+\label{classgdl_1_1Image_a92a2838f614afac73777e54e4a37eb4c}
+Get the height of the image.
+
+\begin{DoxyReturn}{Returns}
+Height of the image. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Image_af98213f37f91724b3c5b6999864239d1}{
+\index{gdl::Image@{gdl::Image}!getPixelPtr@{getPixelPtr}}
+\index{getPixelPtr@{getPixelPtr}!gdl::Image@{gdl::Image}}
+\subsubsection[{getPixelPtr}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char const $\ast$ gdl::Image::getPixelPtr (void) const}}
+\label{classgdl_1_1Image_af98213f37f91724b3c5b6999864239d1}
+Get a pointer to the pixel array of the image.
+
+\begin{DoxyReturn}{Returns}
+Pointer to the pixel array. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Image_afbfdaf5f3b8744d9903face66b730d93}{
+\index{gdl::Image@{gdl::Image}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!gdl::Image@{gdl::Image}}
+\subsubsection[{getWidth}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int gdl::Image::getWidth (void) const}}
+\label{classgdl_1_1Image_afbfdaf5f3b8744d9903face66b730d93}
+Get the width of the image.
+
+\begin{DoxyReturn}{Returns}
+Width of the image. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Image_a5fbf636e446bfa53e54f6664bbe49fb7}{
+\index{gdl::Image@{gdl::Image}!load@{load}}
+\index{load@{load}!gdl::Image@{gdl::Image}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} gdl::Image::load (std::string const \& {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classgdl_1_1Image_a5fbf636e446bfa53e54f6664bbe49fb7}
+Load an image from a file.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em filename}]Filename of the image with extension. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of the resource. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgdl_1_1Image_ad30335dc3a64ec73d35a335c53178345}{
+\index{gdl::Image@{gdl::Image}!ImageImpl@{ImageImpl}}
+\index{ImageImpl@{ImageImpl}!gdl::Image@{gdl::Image}}
+\subsubsection[{ImageImpl}]{\setlength{\rightskip}{0pt plus 5cm}friend class ImageImpl\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classgdl_1_1Image_ad30335dc3a64ec73d35a335c53178345}
+\hyperlink{classgdl_1_1Image}{Image} implementation. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Image.hpp\item 
+Image.cpp\end{DoxyCompactItemize}

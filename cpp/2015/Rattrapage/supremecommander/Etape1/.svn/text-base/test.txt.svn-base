@@ -1,0 +1,9 @@
+# Landing at Blasted Rock
+# MAP W H
+MAP 20 20
+# CODE X Y
+MDP 18 2
+PG2 1 1
+MF3 4 1 # Mass Fabricator
+PG2 3 4
+

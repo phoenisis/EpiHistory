@@ -1,0 +1,233 @@
+#include <cstdlib>
+
+#include "Vector3f.hh"
+#include "Blocs.hh"
+#include "Object.hh"
+#include "Bonus.hh"
+
+Bloc::Breakable::Breakable()
+  : Cube(1.0f, 1.0f, 1.0f)
+{}
+
+void	Bloc::Breakable::initialize(void)
+{
+  this->texture_ = gdl::Image::load("../GDL-library/textures/caisse2.png");
+}
+
+void Bloc::Breakable::draw_object(Vector3f *position)
+{ 
+  this->texture_.bind();
+  glEnable(GL_TEXTURE_2D);
+
+  glBegin(GL_QUADS);
+  
+  
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur gauche
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x, 0.0f, position->y + this->sizeY);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y + this->sizeY);
+  /// Vertex superieur droit
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y + this->sizeY);
+  
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x, this->sizeZ, position->y + this->sizeY);
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x, 0.0f, position->y + this->sizeY);
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x, 0.0f, position->y);
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x, this->sizeZ, position->y);
+  
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y);
+  /// Vertex inferieur gauche
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x, 0.0f, position->y);
+  /// Vertex superieur droit
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x, this->sizeZ, position->y);
+
+  //face droite
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur gauche
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y + this->sizeY);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y);
+  /// Vertex superieur droit
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y);
+  
+
+  //dessus
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur gauche
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x, this->sizeZ, position->y);
+  /// Vertex superieur droit
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y);
+  
+  glEnd();
+}
+
+void Bloc::Breakable::draw(void)
+{
+  std::vector<std::pair<Vector3f*, float> >::iterator it;
+  int	i = 0;
+  
+  for (it = this->positions.begin() ; it != this->positions.end() ; it++)
+    this->draw_object(this->positions[i++].first);
+}
+
+void Bloc::Breakable::SetBonus(Bonus::Flamme *flamme, Bonus::Bombe *bombe)
+{
+  this->flamme = flamme;
+  this->bombe  = bombe;
+}
+
+void Bloc::Breakable::remove(float x, float y)
+{
+  std::vector<std::pair<Vector3f*, float> >::iterator it;
+  int	i = 0;
+  
+  it = this->positions.begin();
+  it++;
+  while ((it != this->positions.end()) && ((this->positions[i].first->y != x) 
+					   || (this->positions[i].first->x != y)))
+    {
+      it++;
+      i++;
+    }
+  if (it != this->positions.end())
+    this->positions.erase(--it);
+  else
+    this->positions.erase(this->positions.end());
+
+  if (rand() % 100 <= 10)
+    {
+      if (rand() % 2 == 0)
+	this->flamme->add_positions(new Vector3f(x, 0.1f, y), 0.0f);
+      else
+	this->bombe->add_positions(new Vector3f(x, 0.1f, y), 0.0f);
+    }
+}
+
+Bonus::Flamme *Bloc::Breakable::getBonus_f() const
+{
+  return this->flamme;
+}
+
+Bonus::Bombe *Bloc::Breakable::getBonus_b() const
+{
+  return this->bombe;
+}
+
+Bloc::Unbreakable::Unbreakable()
+  : Cube(1, 1, 1)
+{}
+
+void Bloc::Unbreakable::initialize(void)
+{
+  this->texture_ = gdl::Image::load("../GDL-library/textures/metal2.png");
+}
+
+void Bloc::Unbreakable::draw_object(Vector3f *position)
+{
+  this->texture_.bind();
+  glEnable(GL_TEXTURE_2D);
+  glBegin(GL_QUADS);
+    
+    
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur gauche
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x, 0.0f, position->y + this->sizeY);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y + this->sizeY);
+  /// Vertex superieur droit
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y + this->sizeY);
+
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x, this->sizeZ, position->y + this->sizeY);
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x, 0.0f, position->y + this->sizeY);
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x, 0.0f, position->y);
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x, this->sizeZ, position->y);
+
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y);
+  /// Vertex inferieur gauche
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x, 0.0f, position->y);
+  /// Vertex superieur droit
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x, this->sizeZ, position->y);
+  
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur gauche
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y + this->sizeY);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, 0.0f, position->y);
+  /// Vertex superieur droit
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y);
+  
+  /// Vertex superieur gauche
+  glTexCoord2f(0.0f, 0.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur gauche
+  glTexCoord2f(1.0f, 0.0f);
+  glVertex3f(position->x, this->sizeZ, position->y + this->sizeY);
+  /// Vertex inferieur droit
+  glTexCoord2f(1.0f, 1.0f);
+  glVertex3f(position->x, this->sizeZ, position->y);
+  /// Vertex superieur droit
+  glTexCoord2f(0.0f, 1.0f);
+  glVertex3f(position->x + this->sizeX, this->sizeZ, position->y);
+  
+  glEnd();
+}
+
+void Bloc::Unbreakable::draw(void)
+{
+  std::vector<std::pair<Vector3f*, float> >::iterator it;
+  int	i = 0;
+  
+    for (it = this->positions.begin() ; it != this->positions.end() ; it++)
+      this->draw_object(this->positions[i++].first);
+}

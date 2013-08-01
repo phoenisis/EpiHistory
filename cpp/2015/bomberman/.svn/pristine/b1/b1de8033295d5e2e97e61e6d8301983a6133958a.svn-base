@@ -1,0 +1,71 @@
+/*
+**  src/Mygame.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Mygame.hh"
+#include "../inc/Map.hh"
+#include "../inc/Character.hh"
+
+#include <string>
+#include <fstream>
+#include <iostream>
+
+MyGame::MyGame()
+{}
+
+void MyGame::initialize(void)
+{
+    window_.create();
+
+    std::list<AObject*>::iterator itb = this->objects_.begin();
+
+    for (; itb != this->objects_.end(); ++itb)
+        (*itb)->initialize();
+}
+
+void MyGame::update(void)
+{
+    std::list<AObject*>::iterator itb = this->objects_.begin();
+
+    for (; itb != this->objects_.end(); ++itb)
+        (*itb)->update(gameClock_, input_);
+}
+
+void MyGame::draw(void)
+{
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClearColor(0.74f, 0.84f, 95.0f, 1.0f);
+    glClearDepth(1.0f);
+    std::list<AObject*>::iterator itb = this->objects_.begin();
+
+    for (; itb != this->objects_.end(); ++itb)
+        (*itb)->draw();
+
+    this->window_.display();
+}
+
+void MyGame::unload(void)
+{}
+
+void MyGame::add_object(AObject *obj)
+{
+  this->objects_.push_front(obj);
+}
+
+void MyGame::setMap(Map *M)
+{
+  this->map = M;
+}
+
+void MyGame::save_game(std::string str)
+{
+
+  this->str = str;
+  mkdir(str.data(), 0777);
+  // save_player();
+  // save_bomb();
+}

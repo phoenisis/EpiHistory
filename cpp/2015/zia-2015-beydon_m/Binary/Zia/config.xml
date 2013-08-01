@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<!-- server configuration -->
+<server port="80" buffsize="512" nbthread="2" clientmax="256" path="C:\Zia\www\"/>
+
+<!-- module declaration -->
+<modulelist>
+    <module name="php" directory="php.dll"/>
+    </modulelist>

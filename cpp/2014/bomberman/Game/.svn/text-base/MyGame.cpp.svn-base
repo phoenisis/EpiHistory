@@ -1,0 +1,162 @@
+#include <string>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fstream>
+#include <iostream>
+#include <cstdlib>
+
+#include "MyGame.hh"
+#include "Camera.hh"
+#include "Map.hh"
+#include "Player.hh"
+
+MyGame::MyGame()
+{
+  this->player1 = NULL;
+  this->player2 = NULL;
+}
+
+void MyGame::initialize(void)
+{
+    window_.create();
+    this->player1->camera_->initialize();
+
+    std::list<AObject*>::iterator itb = this->objects_.begin();
+
+    for (; itb != this->objects_.end(); ++itb)
+        (*itb)->initialize();
+}
+
+
+void MyGame::update(void)
+{
+    std::list<AObject*>::iterator itb = this->objects_.begin();
+
+    for (; itb != this->objects_.end(); ++itb)
+        (*itb)->update(gameClock_, input_);
+    if (this->player1 != NULL)
+      this->player1->camera_->update(gameClock_, input_);
+
+    if (!this->player1->isAlive() && !this->player2->isAlive())
+      this->unload();
+}
+
+
+void MyGame::draw(void)
+{
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClearColor(0.74f, 0.84f, 95.0f, 1.0f);
+    glClearDepth(1.0f);
+    std::list<AObject*>::iterator itb = this->objects_.begin();
+
+    for (; itb != this->objects_.end(); ++itb)
+        (*itb)->draw();
+
+    this->window_.display();
+}
+
+
+void MyGame::unload(void)
+{
+  
+}
+
+
+void MyGame::add_object(AObject *obj)
+{
+  this->objects_.push_front(obj);
+}
+
+
+void MyGame::setMap(Map *M)
+{
+  this->map = M;
+}
+
+
+void MyGame::setPlayer1(Player *player)
+{
+  this->player1 = player;
+}
+
+
+void MyGame::setPlayer2(Player *player)
+{
+  this->player2 = player;
+}
+
+Model::Bomberman *MyGame::getPlayer1() const
+{
+  return this->player1;
+}
+
+Model::Bomberman *MyGame::getPlayer2() const
+{
+  return this->player2;
+}
+
+void MyGame::save_game(std::string str)
+{
+
+  this->str = str;
+  mkdir(str.data(), 0777);
+  save_player();
+  save_bomb();
+}
+
+
+void MyGame::save_player()
+{
+  FILE * file;
+
+  int fire = this->player1->getnb_fire();
+  int bomb = this->player1->getnb_bomb(); 
+
+  std::string name = "/player.tmp";
+  std::string start = "./";
+  start += this-> str;
+  start += name;
+
+  file = fopen (start.data() , "w");
+  fprintf (file, "%d, %d, %d, %d\n",(int)this->player1->getposition_x(), (int)this->player1->getposition_z(), fire, bomb);
+  fclose (file);
+
+}
+
+
+void MyGame::save_bomb()
+{
+  FILE * file;
+  std::vector<std::pair<Vector3f*, float> >::iterator it;
+
+  int	i = 0;  
+  std::vector<std::pair<Vector3f*, float> > recive = this->player1->getBomb();
+
+  std::string name = "/bomb.tmp";
+  std::string start = "./";
+  start += this-> str;
+  start += name;
+
+  file = fopen (start.data(), "w");
+
+  it = recive.begin();
+
+  if (!recive.empty())
+    {
+      while (it != recive.end())
+	{
+	  fprintf (file, "%d, %d, %d\n",(int)recive[i].first->x, (int)recive[i].first->y , (int)recive[i].second );
+	  it++;
+	  i++;
+	}
+      fclose (file);
+    }
+}
+
+bool MyGame::didYouFail() const
+{
+  if ((this->player1 && this->player1->isAlive())
+      || (this->player2 && this->player2->isAlive()))
+    return false;
+  return true;
+}

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="Resource_8hpp" kind="file">
+    <compoundname>Resource.hpp</compoundname>
+    <includedby refid="Image_8hpp" local="yes">Image.hpp</includedby>
+    <includedby refid="Model_8hpp" local="yes">Model.hpp</includedby>
+    <includedby refid="Resource_8inl" local="yes">Resource.inl</includedby>
+    <invincdepgraph>
+      <node id="120">
+        <label>Model.hpp</label>
+        <link refid="Model_8hpp_source"/>
+      </node>
+      <node id="119">
+        <label>Image.hpp</label>
+        <link refid="Image_8hpp_source"/>
+      </node>
+      <node id="118">
+        <label>Resource.hpp</label>
+        <link refid="Resource.hpp"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgdl_1_1ResourceBase" prot="public">gdl::ResourceBase</innerclass>
+    <innerclass refid="classgdl_1_1Resource" prot="public">gdl::Resource</innerclass>
+    <innernamespace refid="namespacegdl">gdl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__RESOURCE_HPP__</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__RESOURCE_HPP__</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gdl</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classgdl_1_1ResourceBase" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1ResourceBase_1a0289636bcf3853381deb2325703d6d3d" kindref="member">ResourceBase</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1ResourceBase_1a0289636bcf3853381deb2325703d6d3d" kindref="member">ResourceBase</ref>(<ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/>right);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classgdl_1_1ResourceBase_1afc2de70f0ca229deef3e5a5af1399736" kindref="member">~ResourceBase</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref>&amp;<sp/><ref refid="classgdl_1_1ResourceBase_1a6655b5024b90d376ba4ed4f807d03f90" kindref="member">operator=</ref>(<ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgdl_1_1ResourceBase_1add4498c5016ed85778964adc7b932412" kindref="member">check_destroy</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroy()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>incCount();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>decCount();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>counter_;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="52" refid="classgdl_1_1Resource" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref><sp/>:<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classgdl_1_1ResourceBase" kindref="compound">ResourceBase</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classgdl_1_1Resource_1a149a477edeec7571d7664ac6be21f3ce" kindref="member">Resource</ref>(Type*<sp/>val);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Resource_1a149a477edeec7571d7664ac6be21f3ce" kindref="member">Resource</ref>(<ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref>&amp;<sp/><ref refid="classgdl_1_1Resource_1a8d4f9966f9a8047d0830fc0ce4c15d37" kindref="member">operator=</ref>(<ref refid="classgdl_1_1Resource" kindref="compound">Resource</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classgdl_1_1Resource_1a52f5853b3028356acb3cfe8673fa4bd3" kindref="member">~Resource</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classgdl_1_1Resource_1a3d8b62b778b5c598ee51a5edcdae05ef" kindref="member">isValid</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>Type*<sp/><ref refid="classgdl_1_1Resource_1a0b869a1e27677c66bb78dec379e73658" kindref="member">operator-&gt;</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>Type&amp;<sp/><ref refid="classgdl_1_1Resource_1a750113d7aafe245fecb39089d15ebbe3" kindref="member">operator*</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>Type*<sp/>data_;<sp/></highlight><highlight class="comment">//Template<sp/>type<sp/>to<sp/>point<sp/>the<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classgdl_1_1Resource_1a62cfa0d7b8f63c2d6be09a644e49028c" kindref="member">HardReset</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroy();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__RESOURCE_HPP__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Resource.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+.TH "gdl::Game" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Game \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Game.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGame\fP (void)"
+.br
+.ti -1c
+.RI "virtual \fB~Game\fP (void)"
+.br
+.ti -1c
+.RI "void \fBrun\fP (void)"
+.br
+.ti -1c
+.RI "std::string const & \fBgetContentRoot\fP (void) const "
+.br
+.ti -1c
+.RI "void \fBsetContentRoot\fP (std::string const &)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBinitialize\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual void \fBunload\fP (void)=0"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBWindow\fP \fBwindow_\fP"
+.br
+.ti -1c
+.RI "\fBGameClock\fP \fBgameClock_\fP"
+.br
+.ti -1c
+.RI "\fBInput\fP \fBinput_\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBWindow\fP class offers you an easier way to develop a game. You just need to inherite from it and override three methods : initialize, update and draw. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::Game::Game (void)"Default constructor. 
+.SS "gdl::Game::~Game (void)\fC [virtual]\fP"Default destructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void gdl::Game::draw (void)\fC [protected, pure virtual]\fP"To override. 
+.SS "const std::string & gdl::Game::getContentRoot (void) const"Get the root for the Content.
+.PP
+\fBReturns:\fP
+.RS 4
+Path to the Root. 
+.RE
+.PP
+
+.SS "virtual void gdl::Game::initialize (void)\fC [protected, pure virtual]\fP"To override. 
+.SS "void gdl::Game::run (void)"Call the initialize methode, create the window. While the window is open call update, draw and display the window. 
+.SS "void gdl::Game::setContentRoot (std::string const & name)"Set the root for the Content.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Path to the Root. 
+.RE
+.PP
+
+.SS "virtual void gdl::Game::unload (void)\fC [protected, pure virtual]\fP"To override. 
+.SS "virtual void gdl::Game::update (void)\fC [protected, pure virtual]\fP"To override. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGameClock\fP \fBgdl::Game::gameClock_\fP\fC [protected]\fP"\fBGame\fP clock. 
+.SS "\fBInput\fP \fBgdl::Game::input_\fP\fC [protected]\fP"\fBInput\fP manager. 
+.SS "\fBWindow\fP \fBgdl::Game::window_\fP\fC [protected]\fP"\fBGame\fP window. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1IClock" kind="class" prot="public">
+    <compoundname>gdl::IClock</compoundname>
+    <derivedcompoundref refid="classgdl_1_1Clock" prot="public" virt="non-virtual">gdl::Clock</derivedcompoundref>
+    <derivedcompoundref refid="classgdl_1_1GameClock" prot="public" virt="non-virtual">gdl::GameClock</derivedcompoundref>
+    <includes refid="IClock_8hpp" local="no">IClock.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1IClock_1a99fa0615ad15521b475cd35cbf7dcf8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual gdl::IClock::~IClock</definition>
+        <argsstring>(void)</argsstring>
+        <name>~IClock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" line="13" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1IClock_1af9f70e18cd6b9b39aca1a359412adf4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::IClock::play</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>play</name>
+        <reimplementedby refid="classgdl_1_1GameClock_1aa7ad30c03dec94bc5b21a4fcad290644">play</reimplementedby>
+        <reimplementedby refid="classgdl_1_1Clock_1af1054a354823d2556a780ddec710e368">play</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the clock. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" line="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1IClock_1a7274430efa1f0e621bcce5d99d6abca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::IClock::pause</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>pause</name>
+        <reimplementedby refid="classgdl_1_1GameClock_1aab85df27e686f8dbc0bcdb009a6e9158">pause</reimplementedby>
+        <reimplementedby refid="classgdl_1_1Clock_1afcd4590e0217065f7f2c9bd13cb6c3ad">pause</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the clock until you play it again. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" line="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1IClock_1a0489f6f9055df40116e98e7ed6ad4146" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::IClock::update</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>update</name>
+        <reimplementedby refid="classgdl_1_1GameClock_1adb1151b518f6ee38a169b25b75542311">update</reimplementedby>
+        <reimplementedby refid="classgdl_1_1Clock_1acc748cbe2dc79ab94c7843e2f010d049">update</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Up the time of the clock. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1IClock_1a63cd29fcd9830e719d4cb82d5e993ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::IClock::reset</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classgdl_1_1GameClock_1af568839e075e6e3c2b7aad91450d16d2">reset</reimplementedby>
+        <reimplementedby refid="classgdl_1_1Clock_1a9a44b0217d50c216d2e94d0f174e3a67">reset</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the clock to 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1IClock_1ad5c3e51562a10e319a3494785d077d1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gdl::IClock::getElapsedTime</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>getElapsedTime</name>
+        <reimplementedby refid="classgdl_1_1GameClock_1a4c089f024d7b1448bc0d24f6a2785281">getElapsedTime</reimplementedby>
+        <reimplementedby refid="classgdl_1_1Clock_1a3b81a05f6b9d4af46b6c955017c8ddfd">getElapsedTime</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the time between now and the last call of the update method.</para><para><simplesect kind="return"><para>The time in float. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" line="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface <ref refid="classgdl_1_1IClock" kindref="compound">IClock</ref> is used to force a specific time implementation. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="16">
+        <label>gdl::IClock</label>
+        <link refid="classgdl_1_1IClock"/>
+      </node>
+      <node id="18">
+        <label>gdl::GameClock</label>
+        <link refid="classgdl_1_1GameClock"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gdl::Clock</label>
+        <link refid="classgdl_1_1Clock"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" line="11" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/IClock.hpp" bodystart="10" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1IClock_1ad5c3e51562a10e319a3494785d077d1b" prot="public" virt="pure-virtual"><scope>gdl::IClock</scope><name>getElapsedTime</name></member>
+      <member refid="classgdl_1_1IClock_1a7274430efa1f0e621bcce5d99d6abca7" prot="public" virt="pure-virtual"><scope>gdl::IClock</scope><name>pause</name></member>
+      <member refid="classgdl_1_1IClock_1af9f70e18cd6b9b39aca1a359412adf4d" prot="public" virt="pure-virtual"><scope>gdl::IClock</scope><name>play</name></member>
+      <member refid="classgdl_1_1IClock_1a63cd29fcd9830e719d4cb82d5e993ec6" prot="public" virt="pure-virtual"><scope>gdl::IClock</scope><name>reset</name></member>
+      <member refid="classgdl_1_1IClock_1a0489f6f9055df40116e98e7ed6ad4146" prot="public" virt="pure-virtual"><scope>gdl::IClock</scope><name>update</name></member>
+      <member refid="classgdl_1_1IClock_1a99fa0615ad15521b475cd35cbf7dcf8a" prot="public" virt="virtual"><scope>gdl::IClock</scope><name>~IClock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

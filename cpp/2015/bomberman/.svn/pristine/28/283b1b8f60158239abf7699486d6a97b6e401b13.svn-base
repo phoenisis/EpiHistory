@@ -1,0 +1,49 @@
+/*
+**  src/Character.hh
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#ifndef		__CHARACTER_HH__
+#define		__CHARACTER_HH__
+
+#include	<string>
+#include	"../inc/Map.hh"
+
+//Player : 1
+//box : 2
+//wall : 3
+//bonus : 4
+//bomb : 5
+
+class		Character
+{
+public:
+  Character(int, int, std::string);
+  ~Character();
+
+  int		getPosX();
+  void		setPosX(int);
+  int		getPosY();
+  void		setPosY(int);
+  int		getNbBombs();
+  void		setNbBombs(int);
+  int		getPower();
+  void		setPower(int);
+  float		getSpeed();
+  void		checkBonus(map map);
+  void		doBomb();
+  void		movePlayer(map);
+
+private:
+  int		_posX;
+  int		_posY;
+  std::string	_name;
+  int		_nbBombs;
+  int		_power;
+  float		_speed;
+};
+
+#endif

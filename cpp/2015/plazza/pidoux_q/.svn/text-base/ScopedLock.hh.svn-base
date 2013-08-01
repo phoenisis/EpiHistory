@@ -1,0 +1,16 @@
+#ifndef		__SCOPEDLOCK__
+# define	__SCOPEDLOCK__
+# include <pthread.h>
+# include "Mutex.hh"
+
+class	ScopedLock
+{
+public :
+  ScopedLock(Mutex *m);
+  ~ScopedLock();
+
+private :
+  Mutex	*mutex;
+};
+
+#endif

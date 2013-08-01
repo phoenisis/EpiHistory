@@ -1,0 +1,13 @@
+push int8(87)
+push int8(3)
+dump
+add
+print
+assert 90
+push float(42.5450)
+sub
+dump
+push int8(87)
+print
+;
+exit

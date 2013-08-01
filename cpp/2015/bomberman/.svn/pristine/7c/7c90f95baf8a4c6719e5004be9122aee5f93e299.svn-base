@@ -1,0 +1,49 @@
+/*
+**  inc/Map.hh
+**  Bomberman
+**
+**  Created by Matthieu FLEUROT on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#ifndef Map_hh_
+# define Map_hh_
+
+# include <iostream>
+# include <string>
+
+namespace	map
+{
+ typedef enum
+    {
+      PLAYER = 1,
+      BOX,
+      WALL,
+      BOMB,
+      MOREBOMB,
+      LESSBOMB,
+      MOREPOWER,
+      LESSPOWER,
+      BLANK
+    }bloc_type;
+
+  class		map
+  {
+  public:
+    map(int length = 20, int width = 20, int nbPlayeur = 5);
+    ~map();
+    void	generateMap();
+    void	affMap() const;
+    void	setPos(int bloc, int x, int y);
+    int		getPos(int x, int y) const;
+
+  private:
+    int	_length;
+    int	_width;
+    int	_nbPlayer;
+    int **_mymap;
+    bool posibility;
+  };
+};
+
+#endif

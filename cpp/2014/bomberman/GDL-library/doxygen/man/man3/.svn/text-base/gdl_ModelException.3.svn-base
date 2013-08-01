@@ -1,0 +1,27 @@
+.TH "gdl::ModelException" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::ModelException \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ModelException.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBModelException\fP (const std::string &)"
+.br
+.ti -1c
+.RI "virtual const char * \fBwhat\fP () const   throw ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Classe used to decribe error from \fBModel\fP Manipulation 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

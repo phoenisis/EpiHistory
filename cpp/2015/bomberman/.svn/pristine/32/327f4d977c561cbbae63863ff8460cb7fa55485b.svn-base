@@ -1,0 +1,96 @@
+/*
+**  src/Bomb.cpp
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include "Bomb.hh"
+
+Bomb::Bomb(int posX, int posY, int power) : _posX(posX), _posY(posY), _power(power)
+{
+  srand(time(NULL));
+}
+
+void		Bomb::generateBonus(map::map &map, int res, int x, int y)
+{
+  if (res == 0)
+    map.setPos(5, x, y);
+  if (res == 1)
+    map.setPos(6, x, y);
+  if (res == 2)
+    map.setPos(7, x, y);
+  if (res == 3)
+    map.setPos(8, x, y);
+}
+
+void	Bomb::explose(map::map &map, int i, int y, int posx, int posy, int power)
+{
+  if (power >= 0)
+    {
+      if (y == 0)
+	{
+	  if (explose2(map, posx, posy) == 1)
+	    explose(map, i, y, posx + i, posy, power -1);
+	  else
+	    return;
+	}
+      if (y == 1)
+	{
+	  if (explose2(map, posx, posy) == 1)
+	    explose(map, i, y, posx, posy + i, power -1);
+	  else
+	    return;
+	}
+      map.setPos(1, this->_posX, this->_posY);
+    }
+}
+
+int		Bomb::explose2(map::map &map, int posx, int posy)
+{
+  int res = 0;
+
+  if (map.getPos(posx, posy) == 2 || (map.getPos(posx, posy) >= 5 && map.getPos(posx, posy) <= 8))
+    {
+      res = rand() % 2;
+      if (res == 1 || (map.getPos(posx, posy) >= 5 && map.getPos(posx, posy) <= 8))
+	map.setPos(9, posx, posy);
+      else
+	{		
+	  res = rand() % 4;
+	  this->generateBonus(map, res, posx, posy);
+	}
+      return 0;
+    }
+  else if (map.getPos(posx, posy) == 1)
+    {
+      map.setPos(9, posx, posy); // NON TERMINE , CHARACTER A DELETE
+      return 1;
+    }
+  else if (map.getPos(posx, posy) == 3)
+    return 0;
+  else
+    return 1;
+}
+
+Bomb::~Bomb() {}
+
+Bomb::Bomb(const Bomb &other) : _posX(other._posX), _posY(other._posY), _power(other._power)
+{
+  
+}
+
+Bomb&		Bomb::operator=(const Bomb &other)
+{
+  if (&other != this)
+    {
+      this->_posX = other._posX;
+      this->_posY = other._posY;
+      this->_power = other._power;
+    }
+  return *this;
+}

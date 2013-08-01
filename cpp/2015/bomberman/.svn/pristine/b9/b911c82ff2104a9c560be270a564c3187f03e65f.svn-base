@@ -1,0 +1,49 @@
+##
+##  Makefile
+##  Bomberman
+##
+##  Created by Quentin PIDOUX on 30/04/12.
+##  Copyright (c) 2012 EPITECH. All rights reserved.
+##
+
+SDIR    =	./src
+
+IDIR    =	./include/
+
+NAME	=	bomberman
+
+SRCS	=	$(SDIR)/Graph.cpp		\
+		$(SDIR)/MenuCamera.cpp		\
+		$(SDIR)/main.cpp		\
+		$(SDIR)/Vector3f.cpp		\
+		$(SDIR)/Map.cpp			\
+		$(SDIR)/AObject.cpp		\
+		$(SDIR)/Mygame.cpp
+
+
+OBJS	=	$(SRCS:.cpp=.o)
+CXXFLAGS=	-W -Wall
+CXX	=	g++ -I ./inc/ -L./lib -Wl,-rpath=/usr/local/lib,-rpath=./libgdl/lib/,-rpath=./libsfml/ -lgdl_gl -lGL -lGLU -lsfml-graphics -lsfml-window -lsfml-system
+
+RM	=	rm -rfv
+
+$(NAME) :	$(OBJS)
+		$(CXX) -o $(NAME) $(OBJS)
+		@$(RM) $(OBJS)
+
+all	:	$(NAME)
+
+clean   :
+		@$(RM) ./*~
+		@$(RM) ./#*#
+		@$(RM) $(OBJS)
+
+fclean  :	clean
+		@$(RM) $(NAME)
+
+re	:	clean all
+
+.PHONY  :	all clean fclean re cclean
+
+.c.o   	:
+		$(CXX) $(CXXFLAGS) -c $< -o $(<:.c=.o)

@@ -1,0 +1,38 @@
+//
+// SFML_mod.hh for module SFML in /home/hubert_s//test/nibbler-2014-pidoux_q
+// 
+// Made by sevan hubert
+// Login   <hubert_s@epitech.net>
+// 
+// Started on  Thu Mar 17 15:50:19 2011 sevan hubert
+// Last update Sat Mar 19 17:08:11 2011 sevan hubert
+//
+
+#ifndef		__SFML_MOD__
+# define	__SFML_MOD__
+
+#include <cstdlib>
+#include <SFML/Graphics.hpp>
+
+#include "../IDisplay.hh"
+
+class	SFML_mod : public IDisplay
+{
+public :
+  SFML_mod(sf::RenderWindow *app);
+  ~SFML_mod();
+  
+  void	init(int x, int y);
+  void	print_map(int x, int y);
+  void	print_snake(int x, int y, bool isHead);
+  void	print_apple(int x, int y);
+  void	print_score(int highscore, int score, int apple_eat, int x);
+  int	get_key();
+  int	new_game();  
+  void	close();
+
+private :
+  sf::RenderWindow	*app;
+};
+
+#endif

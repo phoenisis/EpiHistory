@@ -1,0 +1,62 @@
+/*
+**  inc/Graph.hh
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#ifndef Graph_hh_
+# define Graph_hh_
+# include "Bomberlib.hh"
+# include "MenuCamera.hh"
+# include "Vector3f.hh"
+
+namespace Disp
+{
+  class Menu
+  {
+  public:
+    Menu(int, int, int, int);
+    ~Menu();
+    void initialize();
+    void update(gdl::GameClock const & gameClock, gdl::Input & input);
+    void Draw(int);
+    void intro();
+    bool MenuDecide;
+    int MenuCurr;
+
+  protected:
+    std::map<int, gdl::Model > menu_model;
+
+  private:
+    MenuCamera    camera_;
+    int	x;
+    int	y;
+    int	sizeX;
+    int	sizeY;
+    gdl::Window window_;
+  };
+
+  class Graph
+  {
+  public:
+    Graph();
+    ~Graph();
+    void draw_map();
+    void draw_player(const Vector3f);
+    void draw(int, int, int);
+
+  private:
+    gdl::Model bomb;
+    gdl::Model player;
+    gdl::Model fire;
+    gdl::Image block;
+    gdl::Image bonus_fire;
+    gdl::Image bonus_bomb;
+    std::vector<std::pair<Vector3f*, float> > positions;
+    std::map<int, gdl::Model > my_model;
+  };
+}
+
+#endif

@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1Game" kind="class" prot="public">
+    <compoundname>gdl::Game</compoundname>
+    <includes refid="Game_8hpp" local="no">Game.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgdl_1_1Game_1a0ff1750e43b4d276f64b25876b079bb4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgdl_1_1Window" kindref="compound">Window</ref></type>
+        <definition>Window gdl::Game::window_</definition>
+        <argsstring></argsstring>
+        <name>window_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1Game" kindref="compound">Game</ref> window. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="72" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgdl_1_1Game_1a1cc7814ce34e89d8c09e6648640c5da8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgdl_1_1GameClock" kindref="compound">GameClock</ref></type>
+        <definition>GameClock gdl::Game::gameClock_</definition>
+        <argsstring></argsstring>
+        <name>gameClock_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1Game" kindref="compound">Game</ref> clock. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="77" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgdl_1_1Game_1a43591b031a6f20da0cf41123efb8a26b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classgdl_1_1Input" kindref="compound">Input</ref></type>
+        <definition>Input gdl::Game::input_</definition>
+        <argsstring></argsstring>
+        <name>input_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1Input" kindref="compound">Input</ref> manager. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="82" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgdl_1_1Game_1af2e99c2dd49de1ca556c7ac5e0c9329f" prot="private" static="no" mutable="no">
+        <type>GameImpl &amp;</type>
+        <definition>GameImpl&amp; gdl::Game::gameInternal_</definition>
+        <argsstring></argsstring>
+        <name>gameInternal_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1Game" kindref="compound">Game</ref> Implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="88" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1Game_1a6e82a8942734638e0f78f7308c0950fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Game::Game</definition>
+        <argsstring>(void)</argsstring>
+        <name>Game</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="25" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Game_1a39acbe13be273b85570619bfff2f6135" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>gdl::Game::~Game</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Game</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="29" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.cpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Game_1aba4bb3b2f086d131a81ebe3de997938a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Game::run</definition>
+        <argsstring>(void)</argsstring>
+        <name>run</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call the initialize methode, create the window. While the window is open call update, draw and display the window. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="35" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.cpp" bodystart="14" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Game_1ad487d5d6e94f2e4d7bcfaf57626d93d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string const &amp;</type>
+        <definition>const std::string &amp; gdl::Game::getContentRoot</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getContentRoot</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the root for the Content.</para><para><simplesect kind="return"><para>Path to the Root. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="42" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Game_1a42bb8fd2de5376f6c864a998690da48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Game::setContentRoot</definition>
+        <argsstring>(std::string const &amp;)</argsstring>
+        <name>setContentRoot</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the root for the Content.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the Root. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="49" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.cpp" bodystart="50" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgdl_1_1Game_1a91948cfa194675d33b82c90eace878b2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::Game::initialize</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To override. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Game_1ad1a107e2c31850be6ee9df77e69d3714" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::Game::update</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>update</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To override. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Game_1af09f81ba22b7c297fa2da73cd3fce8c5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::Game::draw</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>draw</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To override. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Game_1a34061b97583826e39d08d7e1c85a3c4c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gdl::Game::unload</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>unload</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To override. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classgdl_1_1Window" kindref="compound">Window</ref> class offers you an easier way to develop a game. You just need to inherite from it and override three methods : initialize, update and draw. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>gdl::IClock</label>
+        <link refid="classgdl_1_1IClock"/>
+      </node>
+      <node id="7">
+        <label>gdl::Game</label>
+        <link refid="classgdl_1_1Game"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>gameClock_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>window_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>input_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gdl::Window</label>
+        <link refid="classgdl_1_1Window"/>
+      </node>
+      <node id="8">
+        <label>gdl::GameClock</label>
+        <link refid="classgdl_1_1GameClock"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gdl::Input</label>
+        <link refid="classgdl_1_1Input"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" line="20" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Game.hpp" bodystart="19" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1Game_1af09f81ba22b7c297fa2da73cd3fce8c5" prot="protected" virt="pure-virtual"><scope>gdl::Game</scope><name>draw</name></member>
+      <member refid="classgdl_1_1Game_1a6e82a8942734638e0f78f7308c0950fe" prot="public" virt="non-virtual"><scope>gdl::Game</scope><name>Game</name></member>
+      <member refid="classgdl_1_1Game_1a1cc7814ce34e89d8c09e6648640c5da8" prot="protected" virt="non-virtual"><scope>gdl::Game</scope><name>gameClock_</name></member>
+      <member refid="classgdl_1_1Game_1af2e99c2dd49de1ca556c7ac5e0c9329f" prot="private" virt="non-virtual"><scope>gdl::Game</scope><name>gameInternal_</name></member>
+      <member refid="classgdl_1_1Game_1ad487d5d6e94f2e4d7bcfaf57626d93d4" prot="public" virt="non-virtual"><scope>gdl::Game</scope><name>getContentRoot</name></member>
+      <member refid="classgdl_1_1Game_1a91948cfa194675d33b82c90eace878b2" prot="protected" virt="pure-virtual"><scope>gdl::Game</scope><name>initialize</name></member>
+      <member refid="classgdl_1_1Game_1a43591b031a6f20da0cf41123efb8a26b" prot="protected" virt="non-virtual"><scope>gdl::Game</scope><name>input_</name></member>
+      <member refid="classgdl_1_1Game_1aba4bb3b2f086d131a81ebe3de997938a" prot="public" virt="non-virtual"><scope>gdl::Game</scope><name>run</name></member>
+      <member refid="classgdl_1_1Game_1a42bb8fd2de5376f6c864a998690da48d" prot="public" virt="non-virtual"><scope>gdl::Game</scope><name>setContentRoot</name></member>
+      <member refid="classgdl_1_1Game_1a34061b97583826e39d08d7e1c85a3c4c" prot="protected" virt="pure-virtual"><scope>gdl::Game</scope><name>unload</name></member>
+      <member refid="classgdl_1_1Game_1ad1a107e2c31850be6ee9df77e69d3714" prot="protected" virt="pure-virtual"><scope>gdl::Game</scope><name>update</name></member>
+      <member refid="classgdl_1_1Game_1a0ff1750e43b4d276f64b25876b079bb4" prot="protected" virt="non-virtual"><scope>gdl::Game</scope><name>window_</name></member>
+      <member refid="classgdl_1_1Game_1a39acbe13be273b85570619bfff2f6135" prot="public" virt="virtual"><scope>gdl::Game</scope><name>~Game</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

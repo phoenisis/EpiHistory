@@ -1,0 +1,94 @@
+.TH "gdl::Input" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Input \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Input.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBInput\fP (\fBgdl::Window\fP &window)"
+.br
+.ti -1c
+.RI "\fB~Input\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisKeyDown\fP (gdl::Keys::Key key)"
+.br
+.ti -1c
+.RI "bool \fBisMouseButtonDown\fP (gdl::Mouse::Button button)"
+.br
+.ti -1c
+.RI "int \fBgetMousePositionX\fP (void) const "
+.br
+.ti -1c
+.RI "int \fBgetMousePositionY\fP (void) const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBInput\fP class catches each input event for a window. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::Input::Input (\fBgdl::Window\fP & window)"Constructor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP \fBWindow\fP to link with. 
+.RE
+.PP
+
+.SS "gdl::Input::~Input ()"Default destructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "int gdl::Input::getMousePositionX (void) const"Get the cursor position.
+.PP
+\fBReturns:\fP
+.RS 4
+The cursor position on x-axis. 
+.RE
+.PP
+
+.SS "int gdl::Input::getMousePositionY (void) const"Get the cursor position.
+.PP
+\fBReturns:\fP
+.RS 4
+The cursor position on y-axis. 
+.RE
+.PP
+
+.SS "bool gdl::Input::isKeyDown (gdl::Keys::Key key)"Check if a key is down.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIkey\fP Key to check. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If the key is down, true is returned. Otherwise, returned false. 
+.RE
+.PP
+
+.SS "bool gdl::Input::isMouseButtonDown (gdl::Mouse::Button button)"Check if a mouse button is down.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbutton\fP Button to check. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If the button is down, true is returned. Otherwise, returned false. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

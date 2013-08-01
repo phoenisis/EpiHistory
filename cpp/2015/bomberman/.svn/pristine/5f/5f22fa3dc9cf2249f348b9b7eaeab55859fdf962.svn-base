@@ -1,0 +1,53 @@
+#ifndef		__CHARACTER_HH__
+#define		__CHARACTER_HH__
+
+#include	<string>
+#include "Map.hh"
+
+//Player : 1
+//box : 2
+//wall : 3
+//bonus : 4
+//bomb : 5
+
+class		Character
+{
+private:
+  int		      _posX;
+  int		      _posY;
+  int		      _nbBombs;
+  int		      _power;
+  std::string	      _typebomb;
+  float		      _speed;
+  std::string	      _bonus;
+  std::string	      _name
+
+public:
+  //Constructeurs et Destructeur
+  Character(int, int, std::string);
+  ~Character();
+  //Coplien
+  Character(const & Character);
+  Character&    operator=(const &Character);
+  //Get & Set funcs
+  int        		    getPosX();
+  void       		    setPosX(int);
+  int        		    getPosY();
+  void       		    setPosY(int);
+  std::string	    getTypeBomb();
+  void       		    setTypeBomb(std::string);
+  int        		    getNbBombs();
+  void       		    setNbBombs(int);
+  int        		    getPower();
+  void       		    setPower(int);
+  float      		    getSpeed();
+  void       		    setSpeed(float);
+  void       		    checkBonus(map map);
+  void              doBonus(// class *
+);
+  void              doBomb();
+  //Mouvement func
+  void		    movePlayer(map);
+};
+
+#endif  //!__CHARACTER_HH__

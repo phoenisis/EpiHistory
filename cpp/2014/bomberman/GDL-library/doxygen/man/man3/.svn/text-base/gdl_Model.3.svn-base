@@ -1,0 +1,349 @@
+.TH "gdl::Model" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Model \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Model.hpp>\fP
+.PP
+Inherits \fBResource< ModelImpl >\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBModel\fP (void)"
+.br
+.ti -1c
+.RI "\fB~Model\fP (void)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBIClock\fP const &gameTime)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdraw_pose\fP (int pose_id)"
+.br
+.ti -1c
+.RI "void \fBinfos\fP (void)"
+.br
+.ti -1c
+.RI "bool \fBplay\fP (std::string const &_name, char state=Anim::RUN)"
+.br
+.ti -1c
+.RI "bool \fBanimation_hasStarted\fP (std::string const &name) const "
+.br
+.ti -1c
+.RI "bool \fBanim_is_ended\fP (std::string const &name) const "
+.br
+.ti -1c
+.RI "void \fBstop_animation\fP (std::string const &name)"
+.br
+.ti -1c
+.RI "double \fBget_anim_speed\fP (std::string const &name) const "
+.br
+.ti -1c
+.RI "double \fBget_anim_blendfactor\fP (std::string const &name) const "
+.br
+.ti -1c
+.RI "char \fBget_anim_state\fP (std::string const &name) const "
+.br
+.ti -1c
+.RI "void \fBset_anim_bendfactor\fP (std::string const &name, double blendFactor)"
+.br
+.ti -1c
+.RI "void \fBset_anim_speed\fP (std::string const &name, double speed)"
+.br
+.ti -1c
+.RI "\fBColor\fP const & \fBget_default_model_color\fP (void) const "
+.br
+.ti -1c
+.RI "void \fBset_default_model_color\fP (\fBColor\fP const &color)"
+.br
+.ti -1c
+.RI "void \fBset_anim_state\fP (std::string const &name, char state)"
+.br
+.ti -1c
+.RI "void \fBadd_anim_state\fP (std::string const &name, Anim::AnimStates state)"
+.br
+.ti -1c
+.RI "void \fBremove_anim_state\fP (std::string const &name, Anim::AnimStates state)"
+.br
+.ti -1c
+.RI "std::vector< std::string > const & \fBget_stackanimation_names\fP (void) const "
+.br
+.ti -1c
+.RI "std::vector< std::string > const & \fBget_animation_names\fP (void) const "
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBModel\fP \fBload\fP (std::string const &filename)"
+.br
+.ti -1c
+.RI "static bool \fBcut_animation\fP (\fBModel\fP &_model, std::string const &stackAnim, int id_start, int id_end, std::string const &_newName)"
+.br
+.ti -1c
+.RI "static void \fBBegin\fP (void)"
+.br
+.ti -1c
+.RI "static void \fBEnd\fP (void)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBModelImpl\fP"
+.br
+.ti -1c
+.RI "class \fBResourceManagerImpl\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The ModelImpl class provide the gestion of your model. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::Model::Model (void)"Default constructror. 
+.SS "gdl::Model::~Model (void)"Default destructror. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void gdl::Model::add_anim_state (std::string const & name, Anim::AnimStates state)"Add an animation state.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.br
+\fIstate\fP (in Anim namespace). 
+.RE
+.PP
+
+.SS "bool gdl::Model::anim_is_ended (std::string const & name) const"Check if the animation is ended.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If the animation has ended, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SS "bool gdl::Model::animation_hasStarted (std::string const & name) const"Check if the animation has started.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If successful, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SS "void gdl::Model::Begin (void)\fC [static]\fP"Open the scope to draw models. 
+.SS "bool gdl::Model::cut_animation (\fBModel\fP & _model, std::string const & stackAnim, int id_start, int id_end, std::string const & _newName)\fC [static]\fP"Cut the animation.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI_model\fP The model. 
+.br
+\fIstackAnim\fP The animations stack. 
+.br
+\fIid_start\fP First id. 
+.br
+\fIid_end\fP Last id. 
+.br
+\fI_newName\fP Name of the new animation. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If successfull, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SS "void gdl::Model::draw (void)"Draw the model in the \fBWindow\fP. 
+.SS "void gdl::Model::draw_pose (int pose_id)"Draw the model in a specific pose.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpose_id\fP ID of the specific pose. 
+.RE
+.PP
+
+.SS "void gdl::Model::End (void)\fC [static]\fP"Close the scope to draw models. 
+.SS "double gdl::Model::get_anim_blendfactor (std::string const & name) const"Get the blend factor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If the animation doesn't exist, -1 is returned. 
+.RE
+.PP
+
+.SS "double gdl::Model::get_anim_speed (std::string const & name) const"Get the animation speed.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If the animation doesn't exist, -1 is returned. 
+.RE
+.PP
+
+.SS "char gdl::Model::get_anim_state (std::string const & name) const"Get the anim state.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If the animation doesn't exist, -1 is returned. 
+.RE
+.PP
+
+.SS "std::vector< std::string > const & gdl::Model::get_animation_names (void) const"Get the animation's name.
+.PP
+\fBReturns:\fP
+.RS 4
+Vector of strings. 
+.RE
+.PP
+
+.SS "const \fBColor\fP & gdl::Model::get_default_model_color (void) const"Get the default model color.
+.PP
+\fBReturns:\fP
+.RS 4
+The default color. 
+.RE
+.PP
+
+.SS "std::vector< std::string > const & gdl::Model::get_stackanimation_names (void) const"Get the stack of the animation's name.
+.PP
+\fBReturns:\fP
+.RS 4
+Vector of strings. 
+.RE
+.PP
+
+.SS "void gdl::Model::infos (void)"Do nothing. Have to display informations about the \fBModel\fP like stack anime number, vertices number... 
+.SS "\fBModel\fP gdl::Model::load (std::string const & filename)\fC [static]\fP"Load the model.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilename\fP Filename with the extension. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the \fBModel\fP. 
+.RE
+.PP
+
+.SS "bool gdl::Model::play (std::string const & _name, char state = \fCAnim::RUN\fP)"Play the animation.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI_name\fP Animation name. 
+.br
+\fIstate\fP (AnimState enum). 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If successful, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SS "void gdl::Model::remove_anim_state (std::string const & name, Anim::AnimStates state)"Remove an animation state.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.br
+\fIstate\fP (in Anim namespace). 
+.RE
+.PP
+
+.SS "void gdl::Model::set_anim_bendfactor (std::string const & name, double blendFactor)"Set the blend factor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.br
+\fIblendFactor\fP Blend factor. 
+.RE
+.PP
+
+.SS "void gdl::Model::set_anim_speed (std::string const & name, double speed)"Set the animation speed.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.br
+\fIspeed\fP Speed of the animation. 
+.RE
+.PP
+
+.SS "void gdl::Model::set_anim_state (std::string const & name, char state)"Set the anim state.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.br
+\fIstate\fP (with AnimState enum). 
+.RE
+.PP
+
+.SS "void gdl::Model::set_default_model_color (\fBColor\fP const & color)"Set the default model color.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcolor\fP The default color. 
+.RE
+.PP
+
+.SS "void gdl::Model::stop_animation (std::string const & name)"Stop the animation.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP Animation name. 
+.RE
+.PP
+
+.SS "void gdl::Model::update (\fBIClock\fP const & gameTime)"Update the animation of the model.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgameTime\fP Game's clock. 
+.RE
+.PP
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class ModelImpl\fC [friend]\fP"To reach private members of ModelImpl. 
+.SS "friend class ResourceManagerImpl\fC [friend]\fP"To reach private members of ResourceManagerImpl. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="namespacegdl" kind="namespace">
+    <compoundname>gdl</compoundname>
+    <innerclass refid="classgdl_1_1Clock" prot="public">gdl::Clock</innerclass>
+    <innerclass refid="structgdl_1_1Color" prot="public">gdl::Color</innerclass>
+    <innerclass refid="classgdl_1_1Game" prot="public">gdl::Game</innerclass>
+    <innerclass refid="classgdl_1_1GameClock" prot="public">gdl::GameClock</innerclass>
+    <innerclass refid="classgdl_1_1IClock" prot="public">gdl::IClock</innerclass>
+    <innerclass refid="classgdl_1_1Image" prot="public">gdl::Image</innerclass>
+    <innerclass refid="classgdl_1_1Input" prot="public">gdl::Input</innerclass>
+    <innerclass refid="classgdl_1_1Model" prot="public">gdl::Model</innerclass>
+    <innerclass refid="classgdl_1_1ModelException" prot="public">gdl::ModelException</innerclass>
+    <innerclass refid="classgdl_1_1ResourceBase" prot="public">gdl::ResourceBase</innerclass>
+    <innerclass refid="classgdl_1_1Resource" prot="public">gdl::Resource</innerclass>
+    <innerclass refid="classgdl_1_1Window" prot="public">gdl::Window</innerclass>
+    <innernamespace refid="namespacegdl_1_1Keys">gdl::Keys</innernamespace>
+    <innernamespace refid="namespacegdl_1_1Mouse">gdl::Mouse</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegdl_1a9dd4eb77180c672eede46c4019e98745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Assert</definition>
+        <argsstring>(bool condition, const std::string &amp;msg)</argsstring>
+        <name>Assert</name>
+        <param>
+          <type>bool</type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an assert.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Condition to test </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message when the condition failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Assert.cpp" line="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Assert.cpp" line="7"/>
+  </compounddef>
+</doxygen>

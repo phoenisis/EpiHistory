@@ -1,0 +1,60 @@
+101 !process 0 0
+102 0xfffffa80024dc440
+103 0xfffffa86624dc440
+104 CreatorProcess
+105 kernel32!ExitProcess
+106 kernel32!TerminateProcess
+107 InheritedFromUniqueProcessId
+108 0
+109 NotMyfault.exe
+110 53
+111 wmpnetwk.exe
+112 b
+113 1
+114 6.2
+115 0xfffa8002c4f080
+119 u*
+120 7
+122 Non
+123 kernel32!SetThreadIdealProcessorEx
+124 kernel32!SetThreadPriority
+125 ntdll!_KPCR
+126 nt!_KPROCESS
+201 Access Token
+202 winlogon.exe
+205 kernel32!GetThreadId
+206 S-1-1-0
+208 b
+209 b
+301 CR8
+303 b
+304 setevent
+306 0
+310 ExInitializeResourceLite
+401 Interrupt Service Routine
+402 b
+403 PsCreateSystemThread
+404 a
+405 13
+406 1
+407 SEP
+408 SYSENTER
+411 PEB
+413 kernel32!KiCheckForApcDelivery
+414 SCM
+503 4
+506 1
+509 1745
+512 a
+517 a
+518 32
+519 b
+521 cr3
+522 0x00b00003 0x00000000 0x02c4f088 0xfffffa80
+523 a
+603 3
+604 3
+605 !drvobj
+606 ACPI G1/S4
+607 ScStartService
+608 a

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1Input" kind="class" prot="public">
+    <compoundname>gdl::Input</compoundname>
+    <includes refid="Input_8hpp" local="no">Input.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgdl_1_1Input_1ab700f6a73af763b8827138a318171f2f" prot="private" static="no" mutable="no">
+        <type>InputImpl &amp;</type>
+        <definition>InputImpl&amp; gdl::Input::input_</definition>
+        <argsstring></argsstring>
+        <name>input_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1Input" kindref="compound">Input</ref> implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="108" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1Input_1aaaec080ed208c7a0e93160e11710a6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Input::Input</definition>
+        <argsstring>(gdl::Window &amp;window)</argsstring>
+        <name>Input</name>
+        <param>
+          <type><ref refid="classgdl_1_1Window" kindref="compound">gdl::Window</ref> &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classgdl_1_1Window" kindref="compound">Window</ref> to link with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="62" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Input_1aa9c7fd004ef583434b65ddf7ebbad9bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Input::~Input</definition>
+        <argsstring>()</argsstring>
+        <name>~Input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="67" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Input_1ae0bfa17187848fd6a1576eb1e8204230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Input::isKeyDown</definition>
+        <argsstring>(gdl::Keys::Key key)</argsstring>
+        <name>isKeyDown</name>
+        <param>
+          <type>gdl::Keys::Key</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a key is down.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to check. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the key is down, true is returned. Otherwise, returned false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="76" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Input_1a893c44e94392d6d2d3c01f5ff4263f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Input::isMouseButtonDown</definition>
+        <argsstring>(gdl::Mouse::Button button)</argsstring>
+        <name>isMouseButtonDown</name>
+        <param>
+          <type>gdl::Mouse::Button</type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a mouse button is down.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Button to check. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the button is down, true is returned. Otherwise, returned false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="84" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Input_1a1a9f9de83134c8ea6e62ece2163868ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gdl::Input::getMousePositionX</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getMousePositionX</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the cursor position.</para><para><simplesect kind="return"><para>The cursor position on x-axis. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="90" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Input_1a8732662c038df92f1cb422973b675288" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gdl::Input::getMousePositionY</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getMousePositionY</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the cursor position.</para><para><simplesect kind="return"><para>The cursor position on y-axis. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="96" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgdl_1_1Input_1afbd8a611c72dda5a039347238a0964db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Input::getInput</definition>
+        <argsstring>(void)</argsstring>
+        <name>getInput</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link this class with the window&apos;s inputs. Is called in the constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="103" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classgdl_1_1Input" kindref="compound">Input</ref> class catches each input event for a window. </para>    </detaileddescription>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" line="55" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Input.hpp" bodystart="54" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1Input_1afbd8a611c72dda5a039347238a0964db" prot="private" virt="non-virtual"><scope>gdl::Input</scope><name>getInput</name></member>
+      <member refid="classgdl_1_1Input_1a1a9f9de83134c8ea6e62ece2163868ca" prot="public" virt="non-virtual"><scope>gdl::Input</scope><name>getMousePositionX</name></member>
+      <member refid="classgdl_1_1Input_1a8732662c038df92f1cb422973b675288" prot="public" virt="non-virtual"><scope>gdl::Input</scope><name>getMousePositionY</name></member>
+      <member refid="classgdl_1_1Input_1aaaec080ed208c7a0e93160e11710a6db" prot="public" virt="non-virtual"><scope>gdl::Input</scope><name>Input</name></member>
+      <member refid="classgdl_1_1Input_1ab700f6a73af763b8827138a318171f2f" prot="private" virt="non-virtual"><scope>gdl::Input</scope><name>input_</name></member>
+      <member refid="classgdl_1_1Input_1ae0bfa17187848fd6a1576eb1e8204230" prot="public" virt="non-virtual"><scope>gdl::Input</scope><name>isKeyDown</name></member>
+      <member refid="classgdl_1_1Input_1a893c44e94392d6d2d3c01f5ff4263f96" prot="public" virt="non-virtual"><scope>gdl::Input</scope><name>isMouseButtonDown</name></member>
+      <member refid="classgdl_1_1Input_1aa9c7fd004ef583434b65ddf7ebbad9bc" prot="public" virt="non-virtual"><scope>gdl::Input</scope><name>~Input</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

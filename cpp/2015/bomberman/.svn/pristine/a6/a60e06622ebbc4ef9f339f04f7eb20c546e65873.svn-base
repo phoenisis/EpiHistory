@@ -1,0 +1,44 @@
+/*
+**  inc/Bomb.hh
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#ifndef	bomb_hh_
+# define bomb_hh_
+
+# include "Map.hh"
+# include "AObjectr.hh"
+# include "Vector3f.hh"
+# include "Bomberlib.hh"
+# include "Map.hh"
+
+class Bomb : public AObject
+{
+public:
+  Bomb(int, int, int);
+  ~Bomb();
+
+  void initialize();
+  void update();
+  void draw();
+  void draw_object(Vector3f *);
+  void		doExplosion(map::map& );
+  void		explose(int, int, int, int, int);
+  int		explose2(int, int);
+  void		generateBonus(int, int, int);
+
+  std::vector<std::pair<Vector3f*, float> > getposition_b() const;
+
+private:
+  gdl::Model _model;
+  map::map &map;
+  int		_posX;
+  int		_posY;
+  int		_power;
+
+};
+
+#endif

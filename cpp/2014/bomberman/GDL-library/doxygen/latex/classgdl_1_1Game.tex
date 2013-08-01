@@ -1,0 +1,127 @@
+\hypertarget{classgdl_1_1Game}{
+\section{gdl::Game Class Reference}
+\label{classgdl_1_1Game}\index{gdl::Game@{gdl::Game}}
+}
+
+
+{\ttfamily \#include $<$Game.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgdl_1_1Game_a6e82a8942734638e0f78f7308c0950fe}{Game} (void)
+\item 
+virtual \hyperlink{classgdl_1_1Game_a39acbe13be273b85570619bfff2f6135}{$\sim$Game} (void)
+\item 
+void \hyperlink{classgdl_1_1Game_aba4bb3b2f086d131a81ebe3de997938a}{run} (void)
+\item 
+std::string const \& \hyperlink{classgdl_1_1Game_ad487d5d6e94f2e4d7bcfaf57626d93d4}{getContentRoot} (void) const 
+\item 
+void \hyperlink{classgdl_1_1Game_a42bb8fd2de5376f6c864a998690da48d}{setContentRoot} (std::string const \&)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classgdl_1_1Game_a91948cfa194675d33b82c90eace878b2}{initialize} (void)=0
+\item 
+virtual void \hyperlink{classgdl_1_1Game_ad1a107e2c31850be6ee9df77e69d3714}{update} (void)=0
+\item 
+virtual void \hyperlink{classgdl_1_1Game_af09f81ba22b7c297fa2da73cd3fce8c5}{draw} (void)=0
+\item 
+virtual void \hyperlink{classgdl_1_1Game_a34061b97583826e39d08d7e1c85a3c4c}{unload} (void)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgdl_1_1Window}{Window} \hyperlink{classgdl_1_1Game_a0ff1750e43b4d276f64b25876b079bb4}{window\_\-}
+\item 
+\hyperlink{classgdl_1_1GameClock}{GameClock} \hyperlink{classgdl_1_1Game_a1cc7814ce34e89d8c09e6648640c5da8}{gameClock\_\-}
+\item 
+\hyperlink{classgdl_1_1Input}{Input} \hyperlink{classgdl_1_1Game_a43591b031a6f20da0cf41123efb8a26b}{input\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classgdl_1_1Window}{Window} class offers you an easier way to develop a game. You just need to inherite from it and override three methods : initialize, update and draw. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgdl_1_1Game_a6e82a8942734638e0f78f7308c0950fe}{
+\index{gdl::Game@{gdl::Game}!Game@{Game}}
+\index{Game@{Game}!gdl::Game@{gdl::Game}}
+\subsubsection[{Game}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Game::Game (void)}}
+\label{classgdl_1_1Game_a6e82a8942734638e0f78f7308c0950fe}
+Default constructor. \hypertarget{classgdl_1_1Game_a39acbe13be273b85570619bfff2f6135}{
+\index{gdl::Game@{gdl::Game}!$\sim$Game@{$\sim$Game}}
+\index{$\sim$Game@{$\sim$Game}!gdl::Game@{gdl::Game}}
+\subsubsection[{$\sim$Game}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Game::$\sim$Game (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classgdl_1_1Game_a39acbe13be273b85570619bfff2f6135}
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1Game_af09f81ba22b7c297fa2da73cd3fce8c5}{
+\index{gdl::Game@{gdl::Game}!draw@{draw}}
+\index{draw@{draw}!gdl::Game@{gdl::Game}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::Game::draw (void)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classgdl_1_1Game_af09f81ba22b7c297fa2da73cd3fce8c5}
+To override. \hypertarget{classgdl_1_1Game_ad487d5d6e94f2e4d7bcfaf57626d93d4}{
+\index{gdl::Game@{gdl::Game}!getContentRoot@{getContentRoot}}
+\index{getContentRoot@{getContentRoot}!gdl::Game@{gdl::Game}}
+\subsubsection[{getContentRoot}]{\setlength{\rightskip}{0pt plus 5cm}const std::string \& gdl::Game::getContentRoot (void) const}}
+\label{classgdl_1_1Game_ad487d5d6e94f2e4d7bcfaf57626d93d4}
+Get the root for the Content.
+
+\begin{DoxyReturn}{Returns}
+Path to the Root. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Game_a91948cfa194675d33b82c90eace878b2}{
+\index{gdl::Game@{gdl::Game}!initialize@{initialize}}
+\index{initialize@{initialize}!gdl::Game@{gdl::Game}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::Game::initialize (void)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classgdl_1_1Game_a91948cfa194675d33b82c90eace878b2}
+To override. \hypertarget{classgdl_1_1Game_aba4bb3b2f086d131a81ebe3de997938a}{
+\index{gdl::Game@{gdl::Game}!run@{run}}
+\index{run@{run}!gdl::Game@{gdl::Game}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Game::run (void)}}
+\label{classgdl_1_1Game_aba4bb3b2f086d131a81ebe3de997938a}
+Call the initialize methode, create the window. While the window is open call update, draw and display the window. \hypertarget{classgdl_1_1Game_a42bb8fd2de5376f6c864a998690da48d}{
+\index{gdl::Game@{gdl::Game}!setContentRoot@{setContentRoot}}
+\index{setContentRoot@{setContentRoot}!gdl::Game@{gdl::Game}}
+\subsubsection[{setContentRoot}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Game::setContentRoot (std::string const \& {\em name})}}
+\label{classgdl_1_1Game_a42bb8fd2de5376f6c864a998690da48d}
+Set the root for the Content.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Path to the Root. \end{DoxyParams}
+\hypertarget{classgdl_1_1Game_a34061b97583826e39d08d7e1c85a3c4c}{
+\index{gdl::Game@{gdl::Game}!unload@{unload}}
+\index{unload@{unload}!gdl::Game@{gdl::Game}}
+\subsubsection[{unload}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::Game::unload (void)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classgdl_1_1Game_a34061b97583826e39d08d7e1c85a3c4c}
+To override. \hypertarget{classgdl_1_1Game_ad1a107e2c31850be6ee9df77e69d3714}{
+\index{gdl::Game@{gdl::Game}!update@{update}}
+\index{update@{update}!gdl::Game@{gdl::Game}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::Game::update (void)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classgdl_1_1Game_ad1a107e2c31850be6ee9df77e69d3714}
+To override. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classgdl_1_1Game_a1cc7814ce34e89d8c09e6648640c5da8}{
+\index{gdl::Game@{gdl::Game}!gameClock\_\-@{gameClock\_\-}}
+\index{gameClock\_\-@{gameClock\_\-}!gdl::Game@{gdl::Game}}
+\subsubsection[{gameClock\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf GameClock} {\bf gdl::Game::gameClock\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgdl_1_1Game_a1cc7814ce34e89d8c09e6648640c5da8}
+\hyperlink{classgdl_1_1Game}{Game} clock. \hypertarget{classgdl_1_1Game_a43591b031a6f20da0cf41123efb8a26b}{
+\index{gdl::Game@{gdl::Game}!input\_\-@{input\_\-}}
+\index{input\_\-@{input\_\-}!gdl::Game@{gdl::Game}}
+\subsubsection[{input\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input} {\bf gdl::Game::input\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgdl_1_1Game_a43591b031a6f20da0cf41123efb8a26b}
+\hyperlink{classgdl_1_1Input}{Input} manager. \hypertarget{classgdl_1_1Game_a0ff1750e43b4d276f64b25876b079bb4}{
+\index{gdl::Game@{gdl::Game}!window\_\-@{window\_\-}}
+\index{window\_\-@{window\_\-}!gdl::Game@{gdl::Game}}
+\subsubsection[{window\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window} {\bf gdl::Game::window\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgdl_1_1Game_a0ff1750e43b4d276f64b25876b079bb4}
+\hyperlink{classgdl_1_1Game}{Game} window. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Game.hpp\item 
+Game.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+/*
+**  src/Graph.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Graph.hh"
+#include "../inc/Bomberlib.hh"
+#include "../inc/Mygame.hh"
+#include <string>
+#include <iostream>
+
+namespace Disp
+{
+  Menu::Menu(int x, int y, int sizeX, int sizeY)
+  {
+    this->window_.create();
+    this->camera_.initialize();
+    this->x = x;
+    this->y = y;
+    this->sizeX = sizeX;
+    this->sizeY = sizeY;
+    this->MenuCurr = 1;
+    this->MenuDecide = false;
+  }
+
+  void Menu::initialize()
+  {
+    gdl::Model New_game = gdl::Model::load("./asserts/marvin.fbx");
+    gdl::Model Load = gdl::Model::load("./asserts/marvin.fbx");
+    gdl::Model Save = gdl::Model::load("./asserts/marvin.fbx");
+    gdl::Model Exit = gdl::Model::load("./asserts/marvin.fbx");
+
+    this->menu_model[1]=New_game;
+    this->menu_model[2]=Load;
+    this->menu_model[3]=Save;
+    this->menu_model[4]=Exit;
+    std::cout << "initialise" << std::endl;
+    Draw(this->MenuCurr);
+  }
+
+  Menu::~Menu()
+  {}
+
+  void Menu::update()
+  {
+    gdl::Input input(this->window_);
+
+    std::cout << "update" << std::endl;
+
+    gdl::Model::Begin();
+    glPushMatrix();
+
+    if (this->MenuDecide == false) {
+      if (input.isKeyDown(gdl::Keys::Up) == true){
+    	if (this->MenuCurr < 2){
+    	  this->MenuCurr--;
+    	  std::cout << "touche UP" << std::endl;
+    	  Draw(this->MenuCurr);
+    	}
+      }
+
+      else if (input.isKeyDown(gdl::Keys::Down) == true){
+    	if (this->MenuCurr < 3){
+    	  this->MenuCurr++;
+    	  std::cout << "Touche DOWN" << std::endl;
+    	  Draw(this->MenuCurr);
+    	}
+      }
+
+      if (input.isKeyDown(gdl::Keys::Space) == true)
+    	this->MenuDecide = true;
+      if (input.isKeyDown(gdl::Keys::Escape) == true)
+    	return;
+      std::cout << this->MenuDecide << std::endl;
+      glPopMatrix();
+    }
+    gdl::Model::End();
+  }
+
+  void Menu::Draw(int nb)
+  {
+    std::cout << "Draw" << std::endl;
+    gdl::Model::Begin();
+    gdl::Model _model = this->menu_model.find(nb)->second;
+
+    _model.play("Take 001");
+    glPushMatrix();
+    glTranslatef(0 + 0.50, 0.0f, 0 - 0.50);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    _model.draw();
+    glPopMatrix();
+
+    gdl::Model::End();
+  }
+
+  Graph::Graph()
+  {
+    gdl::Model Bombe = gdl::Model::load("../asserts/bomb.fbx");
+    gdl::Model Marvin = gdl::Model::load("../asserts/marvin.fbx");
+    gdl::Model Fire = gdl::Model::load("../asserts/fire.FBX");
+    gdl::Model Dalle = gdl::Model::load("../asserts/ground.FBX");
+    gdl::Model Breakable = gdl::Model::load("../asserts/box.FBX");
+    gdl::Model Unbreakable = gdl::Model::load("../asserts/stone.FBX");
+    gdl::Model Bonus_Fire = gdl::Model::load("../asserts/bonus_fire_up.FBX");
+    gdl::Model Bonus_Bombe = gdl::Model::load("../asserts/bonus_bomb_up.FBX");
+    gdl::Model Malus_Fire = gdl::Model::load("../asserts/bonus_fire_down.FBX");
+    gdl::Model Malus_Bombe = gdl::Model::load("../asserts/bonus_bomb_down.FBX");
+
+    this->my_model[1]=Bombe;
+    this->my_model[2]=Marvin;
+    this->my_model[3]=Fire;
+    this->my_model[4]=Dalle;
+    this->my_model[5]=Breakable;
+    this->my_model[6]=Unbreakable;
+    this->my_model[7]=Bonus_Fire;
+    this->my_model[8]=Bonus_Bombe;
+    this->my_model[9]=Malus_Fire;
+    this->my_model[10]=Malus_Bombe;
+  }
+
+  void Menu::intro()
+  {}
+
+  Graph::~Graph()
+  {}
+
+  void	Graph::draw(int z, int x, int nb)
+  {
+    gdl::Model::Begin();
+    gdl::Model _model = this->my_model.find(nb)->second;
+
+    _model.play("Take 001");
+    glPushMatrix();
+    glTranslatef(z + 0.50, 0.0f, x - 0.50);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    _model.draw();
+    glPopMatrix();
+
+    gdl::Model::End();
+  }
+}

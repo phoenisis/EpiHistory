@@ -1,0 +1,126 @@
+.TH "gdl::Color" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Color \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Color.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef unsigned char \fBuchar\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBColor\fP ()"
+.br
+.ti -1c
+.RI "\fBColor\fP (\fBuchar\fP \fBr\fP, \fBuchar\fP \fBg\fP, \fBuchar\fP \fBb\fP, \fBuchar\fP \fBa\fP=255)"
+.br
+.ti -1c
+.RI "\fBColor\fP (const \fBColor\fP &)"
+.br
+.ti -1c
+.RI "\fB~Color\fP (void)"
+.br
+.ti -1c
+.RI "\fBColor\fP & \fBoperator=\fP (\fBColor\fP const &)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (\fBColor\fP const &) const "
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (\fBColor\fP const &) const "
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBuchar\fP \fBr\fP"
+.br
+.ti -1c
+.RI "\fBuchar\fP \fBg\fP"
+.br
+.ti -1c
+.RI "\fBuchar\fP \fBb\fP"
+.br
+.ti -1c
+.RI "\fBuchar\fP \fBa\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The color class provides an simple container to manage colors. 
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef unsigned char \fBgdl::Color::uchar\fP"Type redefinition. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::Color::Color ()"Default constructor. 
+.SS "gdl::Color::Color (\fBuchar\fP r, \fBuchar\fP g, \fBuchar\fP b, \fBuchar\fP a = \fC255\fP)"Constructor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIr\fP Byte for red component. 
+.br
+\fIg\fP Byte for green component. 
+.br
+\fIb\fP Byte for blue component. 
+.br
+\fIa\fP Byte for alpha component. 
+.RE
+.PP
+
+.SS "gdl::Color::Color (const \fBColor\fP & color)"Copy constructor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcolor\fP Instance to copy. 
+.RE
+.PP
+
+.SS "gdl::Color::~Color (void)\fC [inline]\fP"Default destructor. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool gdl::Color::operator!= (\fBColor\fP const & c) const"Overloading of the comparison operator.
+.PP
+\fBReturns:\fP
+.RS 4
+If the test succeed, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SS "\fBColor\fP & gdl::Color::operator= (\fBColor\fP const & color)"Overloading of the assignment operator.
+.PP
+\fBReturns:\fP
+.RS 4
+An reference on the \fBColor\fP instance. 
+.RE
+.PP
+
+.SS "bool gdl::Color::operator== (\fBColor\fP const & c) const"Overloading of the comparison operator.
+.PP
+\fBReturns:\fP
+.RS 4
+If the test succeed, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBuchar\fP \fBgdl::Color::a\fP"Alpha component. 
+.SS "\fBuchar\fP \fBgdl::Color::b\fP"Blue component. 
+.SS "\fBuchar\fP \fBgdl::Color::g\fP"Green component. 
+.SS "\fBuchar\fP \fBgdl::Color::r\fP"Red component. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

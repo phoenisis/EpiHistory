@@ -1,0 +1,18 @@
+#ifndef __BOMBERLIB_H__
+#define __BOMBERLIB_H__
+
+#include <Clock.hpp>
+#include <Color.hpp>
+#include <Game.hpp>
+#include <GameClock.hpp>
+#include <Image.hpp>
+#include <Input.hpp>
+#include <Model.hpp>
+#include <Window.hpp>
+#include <GL/gl.h>
+#include <GL/glu.h>
+
+int     my_strmem(char const c, char const *str);
+
+#endif
+

@@ -1,0 +1,69 @@
+
+NAME	= nibbler
+
+SRCS	= ./Apple.cpp	\
+	  ./Head.cpp	\
+	  ./Map.cpp	\
+	  ./Snake.cpp	\
+	  ./main.cpp
+
+OBJS	= $(SRCS:.cpp=.o)
+
+FLAGS	= -lcurses -ltermcap -W -Wall -Werror -ldl -lsfml-graphics -lsfml-window -lsfml-system
+
+
+
+NNCURSE = libNcurse.so
+
+SNCURSE = ./Ncurse/libNcurse.cpp
+
+ONCURSE = $(SNCURSE:.cpp=.o)
+
+
+
+NSFML	= libSFML.so
+
+SSFML	= ./SFML/SFML.cpp
+
+OSFML = $(SSFML:.cpp=.o)
+
+
+
+
+CC	= g++
+
+RM	= rm -rf
+
+
+$(NAME) : $(OBJS)
+	  $(CC) $(FLAGS) -o $(NAME) $(OBJS)
+
+
+all	: $(NAME) $(NNCURSE) $(NSFML)
+
+
+$(NNCURSE)	: 
+		  $(CC) -c -fPIC $(FLAGS) $(SNCURSE)
+		   mv libNcurse.o ./Ncurse/ 
+	  	  $(CC) -shared $(FLAGS) $(ONCURSE) -o $(NNCURSE) 
+	  	  mv $(NNCURSE) ./Ncurse/.
+
+$(NSFML)	: 
+	          $(CC) -c -fPIC $(FLAGS) $(SSFML)
+		  mv SFML.o ./SFML/
+	  	  $(CC) -shared $(FLAGS) $(OSFML) -o $(NSFML) 
+	  	  mv $(NSFML) ./SFML/.
+
+
+clean   :
+	 @$(RM) ./*~
+	 @$(RM) ./#*#
+	 @$(RM) $(OBJS) $(ONCURSE) $(OSFML)
+
+fclean  : clean
+	  @$(RM) $(NAME) $(NNCURSE) $(NSFML)
+
+re	: all
+
+
+.PHONY  : all clean fclean re cclean

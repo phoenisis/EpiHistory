@@ -1,0 +1,88 @@
+/*
+**  src/Bomb.cpp
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include "../inc/Bomb.hh"
+
+Bomb::Bomb(int posX, int posY, int power) : _posX(posX), _posY(posY), _power(power)
+{
+  srand(time(NULL));
+}
+
+void		Bomb::generateBonus(map::map &map, int res, int x, int y)
+{
+  if (res == 0)
+    map::map.setPos(5, x, y);
+  if (res == 1)
+    map::map.setPos(6, x, y);
+  if (res == 2)
+    map::map.setPos(7, x, y);
+  if (res == 3)
+    map::map.setPos(8, x, y);
+
+}
+
+void	Bomb::explose(map::map &map, int i, int y, int posx, int posy, int power)
+{
+  int res = 0;
+
+  if (power >= 0 && posx > 0 && posx < 20 && posy > 0 && posy < 20)
+    {
+      if (y == 1)
+	{
+	  if (map::getMyMap(posx, posy) == BOX)
+	    {
+	      res = rand() % 2;
+	      if (res == 1)
+		setPos(9, posx, posy);
+	      else
+		{
+		  res = rand % 4;
+		  this->generateBonus(res, posx, posy);
+		}
+	      return;
+	    }
+	  else if (map::getMyMap(posx, posy) == PLAYER)
+	    setPos(9, posx, posy); // NON TERMINE , CHARACTER A DELETE
+	  explose(map::map, i, y, posx + i, posy, power -1);
+	}
+      if (y == 2)
+	{
+	  if (map::getMyMap(posx, posy) == BOX)
+	    {
+	      res = rand() % 2;
+	      if (res == 1)
+		setPos(9, posx, posy);
+	      else
+		{
+		  res = rand % 4;
+		  this->generateBonus(res);
+		  return;
+		}
+	      else if (map::getMyMap(posx, posy) == PLAYER)
+		setPos(9, posx, posy); // NON TERMINE , CHARACTER A DELETE
+
+	      explose(map::map, i, y, posx, posy + i, power -1);
+	    }
+	}
+    }
+}
+
+Bomb::~Bomb() {}
+
+Bomb::Bomb(const Bomb &other)
+{
+
+}
+
+Bomb&		operator=(const Bonb &other)
+{
+
+}

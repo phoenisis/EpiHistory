@@ -1,0 +1,885 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1Model" kind="class" prot="public">
+    <compoundname>gdl::Model</compoundname>
+    <basecompoundref refid="classgdl_1_1Resource" prot="private" virt="non-virtual">gdl::Resource&lt; ModelImpl &gt;</basecompoundref>
+    <includes refid="Model_8hpp" local="no">Model.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classgdl_1_1Model_1a2480dbae41214c8a84fe8cee712837c3" prot="private" static="no">
+        <type>std::map&lt; std::string, AnimConfigImpl * &gt;</type>
+        <definition>typedef std::map&lt;std::string, AnimConfigImpl*&gt; gdl::Model::AnimationsType</definition>
+        <argsstring></argsstring>
+        <name>AnimationsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="237" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgdl_1_1Model_1ac142a878bd34fc2032627f30bee18446" prot="private" static="no" mutable="no">
+        <type>AnimationsType</type>
+        <definition>AnimationsType gdl::Model::m_animations</definition>
+        <argsstring></argsstring>
+        <name>m_animations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="238" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgdl_1_1Model_1afb81d2077780e342b8fd3654cabc4c19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ModelImpl</definition>
+        <argsstring></argsstring>
+        <name>ModelImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To reach private members of ModelImpl. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="252" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classgdl_1_1Model_1a7afc1a807b9064f725fdcdce33639acb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ResourceManagerImpl</definition>
+        <argsstring></argsstring>
+        <name>ResourceManagerImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To reach private members of ResourceManagerImpl. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="257" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgdl_1_1Model_1a6b21fac6f31b4d9bf330a0fb00d2f8ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Model::CheckUniqueAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>CheckUniqueAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1ae89920968936a09f125bf1f9f2344402" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Model::Model</definition>
+        <argsstring>(ModelImpl *impl)</argsstring>
+        <name>Model</name>
+        <param>
+          <type>ModelImpl *</type>
+          <declname>impl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Explicit constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>impl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer on ModelImpl. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="245" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1Model_1a48d0cb59ef4926b95b1a4504d6b6fbe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Model::Model</definition>
+        <argsstring>(void)</argsstring>
+        <name>Model</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructror. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="40" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a76ba0ddf7db67016d0a72f0c22febca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Model::~Model</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Model</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructror. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="44" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a9e5a520c27759a0913010e88262f87d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::update</definition>
+        <argsstring>(IClock const &amp;gameTime)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="classgdl_1_1IClock" kindref="compound">IClock</ref> const &amp;</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the animation of the model.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Game&apos;s clock. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="59" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1af8cbb946c57ab177273521bb3c127fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::draw</definition>
+        <argsstring>(void)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the model in the <ref refid="classgdl_1_1Window" kindref="compound">Window</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="64" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a4835d0ce38b458dc0b378f4a025c5a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::draw_pose</definition>
+        <argsstring>(int pose_id)</argsstring>
+        <name>draw_pose</name>
+        <param>
+          <type>int</type>
+          <declname>pose_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the model in a specific pose.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pose_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the specific pose. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="71" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1ae767b95441e66f3c5e8f06efd6f785fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::infos</definition>
+        <argsstring>(void)</argsstring>
+        <name>infos</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Do nothing. Have to display informations about the <ref refid="classgdl_1_1Model" kindref="compound">Model</ref> like stack anime number, vertices number... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="78" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1abd7249531d6433c6a8c0970f931b16e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Model::play</definition>
+        <argsstring>(std::string const &amp;_name, char state=Anim::RUN)</argsstring>
+        <name>play</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>state</declname>
+          <defval>Anim::RUN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Play the animation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(AnimState enum). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If successful, true is returned. Otherwise, false is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="88" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a5046ca0821ca4c5a6a6ec33c51b41903" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Model::animation_hasStarted</definition>
+        <argsstring>(std::string const &amp;name) const </argsstring>
+        <name>animation_hasStarted</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the animation has started.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If successful, true is returned. Otherwise, false is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="97" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a3fcf22fc2e37057fe047c3841d30c88b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Model::anim_is_ended</definition>
+        <argsstring>(std::string const &amp;name) const </argsstring>
+        <name>anim_is_ended</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the animation is ended.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the animation has ended, true is returned. Otherwise, false is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="105" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a565112440d65142e71911e60cdb223bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::stop_animation</definition>
+        <argsstring>(std::string const &amp;name)</argsstring>
+        <name>stop_animation</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the animation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="112" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a5ccf274812bacb19062d4051fbe44b57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gdl::Model::get_anim_speed</definition>
+        <argsstring>(std::string const &amp;name) const </argsstring>
+        <name>get_anim_speed</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the animation speed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the animation doesn&apos;t exist, -1 is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="120" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a97d6d0d3f9e6df95e20caf26e769bea4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gdl::Model::get_anim_blendfactor</definition>
+        <argsstring>(std::string const &amp;name) const </argsstring>
+        <name>get_anim_blendfactor</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the blend factor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the animation doesn&apos;t exist, -1 is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="128" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a5cb4cfea0c7f0819d0749baddd682f98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char gdl::Model::get_anim_state</definition>
+        <argsstring>(std::string const &amp;name) const </argsstring>
+        <name>get_anim_state</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the anim state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the animation doesn&apos;t exist, -1 is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="136" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a0cbcdc21c1962e7230fcba6b063b119a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::set_anim_bendfactor</definition>
+        <argsstring>(std::string const &amp;name, double blendFactor)</argsstring>
+        <name>set_anim_bendfactor</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>blendFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the blend factor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">blendFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Blend factor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="144" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1abebb3405288cef12250671957cda4925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::set_anim_speed</definition>
+        <argsstring>(std::string const &amp;name, double speed)</argsstring>
+        <name>set_anim_speed</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the animation speed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Speed of the animation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="152" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a8bbdffaebc6ef023b84d609d9f00a43e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgdl_1_1Color" kindref="compound">Color</ref> const &amp;</type>
+        <definition>const Color &amp; gdl::Model::get_default_model_color</definition>
+        <argsstring>(void) const </argsstring>
+        <name>get_default_model_color</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default model color.</para><para><simplesect kind="return"><para>The default color. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="159" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a5fe9cd2cbfe7a993505528832cdc0604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::set_default_model_color</definition>
+        <argsstring>(Color const &amp;color)</argsstring>
+        <name>set_default_model_color</name>
+        <param>
+          <type><ref refid="structgdl_1_1Color" kindref="compound">Color</ref> const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default model color.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The default color. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="166" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a7239d032a682d61fcf69194e34461102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::set_anim_state</definition>
+        <argsstring>(std::string const &amp;name, char state)</argsstring>
+        <name>set_anim_state</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the anim state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(with AnimState enum). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="174" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a2bf37d490e0dd0906d4ee7d74aca5df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::add_anim_state</definition>
+        <argsstring>(std::string const &amp;name, Anim::AnimStates state)</argsstring>
+        <name>add_anim_state</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Anim::AnimStates</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an animation state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(in Anim namespace). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="182" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1af32a30b8fc163e1dc9d1a78eff49f2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::remove_anim_state</definition>
+        <argsstring>(std::string const &amp;name, Anim::AnimStates state)</argsstring>
+        <name>remove_anim_state</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Anim::AnimStates</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove an animation state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(in Anim namespace). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="190" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1accd5847c295adfc7cebcd2283ee2bfdf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt; const &amp;</type>
+        <definition>std::vector&lt; std::string &gt; const &amp; gdl::Model::get_stackanimation_names</definition>
+        <argsstring>(void) const </argsstring>
+        <name>get_stackanimation_names</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the stack of the animation&apos;s name.</para><para><simplesect kind="return"><para>Vector of strings. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="197" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a7f09fd45a42fd3314e320c0b969ab2bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt; const &amp;</type>
+        <definition>std::vector&lt; std::string &gt; const &amp; gdl::Model::get_animation_names</definition>
+        <argsstring>(void) const </argsstring>
+        <name>get_animation_names</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the animation&apos;s name.</para><para><simplesect kind="return"><para>Vector of strings. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="204" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgdl_1_1Model_1a6f9c70f0e5b0b0c640d739a4fd1249cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgdl_1_1Model" kindref="compound">Model</ref></type>
+        <definition>Model gdl::Model::load</definition>
+        <argsstring>(std::string const &amp;filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load the model.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filename with the extension. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the <ref refid="classgdl_1_1Model" kindref="compound">Model</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="52" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1ad477ab8d1ffe487499886170a1b0d949" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Model::cut_animation</definition>
+        <argsstring>(Model &amp;_model, std::string const &amp;stackAnim, int id_start, int id_end, std::string const &amp;_newName)</argsstring>
+        <name>cut_animation</name>
+        <param>
+          <type><ref refid="classgdl_1_1Model" kindref="compound">Model</ref> &amp;</type>
+          <declname>_model</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>stackAnim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id_start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id_end</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>_newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cut the animation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The model. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stackAnim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The animations stack. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First id. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">id_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Last id. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_newName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the new animation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If successfull, true is returned. Otherwise, false is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="221" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="74" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1ae1ede142757404fb1869c62c682bc48b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::Begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>Begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open the scope to draw models. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="227" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Model_1a65b3733d5447e12316befa7a28eeadd7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Model::End</definition>
+        <argsstring>(void)</argsstring>
+        <name>End</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the scope to draw models. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="231" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.cpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The ModelImpl class provide the gestion of your model. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>gdl::ResourceBase</label>
+        <link refid="classgdl_1_1ResourceBase"/>
+      </node>
+      <node id="29">
+        <label>gdl::Resource&lt; ModelImpl &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="30" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>gdl::Model</label>
+        <link refid="classgdl_1_1Model"/>
+        <childnode refid="29" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>gdl::ResourceBase</label>
+        <link refid="classgdl_1_1ResourceBase"/>
+      </node>
+      <node id="32">
+        <label>gdl::Resource&lt; ModelImpl &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="33" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>gdl::Model</label>
+        <link refid="classgdl_1_1Model"/>
+        <childnode refid="32" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" line="32" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Model.hpp" bodystart="31" bodyend="258"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1Model_1a2bf37d490e0dd0906d4ee7d74aca5df3" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>add_anim_state</name></member>
+      <member refid="classgdl_1_1Model_1a3fcf22fc2e37057fe047c3841d30c88b" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>anim_is_ended</name></member>
+      <member refid="classgdl_1_1Model_1a5046ca0821ca4c5a6a6ec33c51b41903" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>animation_hasStarted</name></member>
+      <member refid="classgdl_1_1Model_1a2480dbae41214c8a84fe8cee712837c3" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>AnimationsType</name></member>
+      <member refid="classgdl_1_1Model_1ae1ede142757404fb1869c62c682bc48b" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>Begin</name></member>
+      <member refid="classgdl_1_1Model_1a6b21fac6f31b4d9bf330a0fb00d2f8ec" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>CheckUniqueAnimation</name></member>
+      <member refid="classgdl_1_1Model_1ad477ab8d1ffe487499886170a1b0d949" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>cut_animation</name></member>
+      <member refid="classgdl_1_1Resource_1acfc41dc044277eff21791ff867078989" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>data_</name></member>
+      <member refid="classgdl_1_1Model_1af8cbb946c57ab177273521bb3c127fb4" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>draw</name></member>
+      <member refid="classgdl_1_1Model_1a4835d0ce38b458dc0b378f4a025c5a09" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>draw_pose</name></member>
+      <member refid="classgdl_1_1Model_1a65b3733d5447e12316befa7a28eeadd7" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>End</name></member>
+      <member refid="classgdl_1_1Model_1a97d6d0d3f9e6df95e20caf26e769bea4" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>get_anim_blendfactor</name></member>
+      <member refid="classgdl_1_1Model_1a5ccf274812bacb19062d4051fbe44b57" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>get_anim_speed</name></member>
+      <member refid="classgdl_1_1Model_1a5cb4cfea0c7f0819d0749baddd682f98" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>get_anim_state</name></member>
+      <member refid="classgdl_1_1Model_1a7f09fd45a42fd3314e320c0b969ab2bc" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>get_animation_names</name></member>
+      <member refid="classgdl_1_1Model_1a8bbdffaebc6ef023b84d609d9f00a43e" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>get_default_model_color</name></member>
+      <member refid="classgdl_1_1Model_1accd5847c295adfc7cebcd2283ee2bfdf" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>get_stackanimation_names</name></member>
+      <member refid="classgdl_1_1Resource_1a62cfa0d7b8f63c2d6be09a644e49028c" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>HardReset</name></member>
+      <member refid="classgdl_1_1Model_1ae767b95441e66f3c5e8f06efd6f785fe" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>infos</name></member>
+      <member refid="classgdl_1_1Resource_1a3d8b62b778b5c598ee51a5edcdae05ef" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>isValid</name></member>
+      <member refid="classgdl_1_1Model_1a6f9c70f0e5b0b0c640d739a4fd1249cd" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>load</name></member>
+      <member refid="classgdl_1_1Model_1ac142a878bd34fc2032627f30bee18446" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>m_animations</name></member>
+      <member refid="classgdl_1_1Model_1a48d0cb59ef4926b95b1a4504d6b6fbe0" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>Model</name></member>
+      <member refid="classgdl_1_1Model_1ae89920968936a09f125bf1f9f2344402" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>Model</name></member>
+      <member refid="classgdl_1_1Model_1afb81d2077780e342b8fd3654cabc4c19" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>ModelImpl</name></member>
+      <member refid="classgdl_1_1Resource_1a750113d7aafe245fecb39089d15ebbe3" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>operator*</name></member>
+      <member refid="classgdl_1_1Resource_1a0b869a1e27677c66bb78dec379e73658" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>operator-&gt;</name></member>
+      <member refid="classgdl_1_1Resource_1a8d4f9966f9a8047d0830fc0ce4c15d37" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>operator=</name></member>
+      <member refid="classgdl_1_1Model_1abd7249531d6433c6a8c0970f931b16e6" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>play</name></member>
+      <member refid="classgdl_1_1Model_1af32a30b8fc163e1dc9d1a78eff49f2ea" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>remove_anim_state</name></member>
+      <member refid="classgdl_1_1Resource_1a149a477edeec7571d7664ac6be21f3ce" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>Resource</name></member>
+      <member refid="classgdl_1_1Resource_1a2110d7edf4e2864a70688a4279480e43" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>Resource</name></member>
+      <member refid="classgdl_1_1Model_1a7afc1a807b9064f725fdcdce33639acb" prot="private" virt="non-virtual"><scope>gdl::Model</scope><name>ResourceManagerImpl</name></member>
+      <member refid="classgdl_1_1Model_1a0cbcdc21c1962e7230fcba6b063b119a" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>set_anim_bendfactor</name></member>
+      <member refid="classgdl_1_1Model_1abebb3405288cef12250671957cda4925" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>set_anim_speed</name></member>
+      <member refid="classgdl_1_1Model_1a7239d032a682d61fcf69194e34461102" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>set_anim_state</name></member>
+      <member refid="classgdl_1_1Model_1a5fe9cd2cbfe7a993505528832cdc0604" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>set_default_model_color</name></member>
+      <member refid="classgdl_1_1Model_1a565112440d65142e71911e60cdb223bb" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>stop_animation</name></member>
+      <member refid="classgdl_1_1Model_1a9e5a520c27759a0913010e88262f87d0" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>update</name></member>
+      <member refid="classgdl_1_1Model_1a76ba0ddf7db67016d0a72f0c22febca4" prot="public" virt="non-virtual"><scope>gdl::Model</scope><name>~Model</name></member>
+      <member refid="classgdl_1_1Resource_1a52f5853b3028356acb3cfe8673fa4bd3" prot="private" virt="virtual"><scope>gdl::Model</scope><name>~Resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+.TH "gdl::Window" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::Window \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Window.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWindow\fP (void)"
+.br
+.ti -1c
+.RI "\fB~Window\fP (void)"
+.br
+.ti -1c
+.RI "void \fBcreate\fP (void)"
+.br
+.ti -1c
+.RI "void \fBcatchEvent\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdisplay\fP (void)"
+.br
+.ti -1c
+.RI "void \fBclose\fP (void)"
+.br
+.ti -1c
+.RI "bool \fBisOpened\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsetTitle\fP (std::string const &title)"
+.br
+.ti -1c
+.RI "void \fBsetWidth\fP (size_t const width)"
+.br
+.ti -1c
+.RI "void \fBsetHeight\fP (size_t const height)"
+.br
+.ti -1c
+.RI "size_t \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "size_t \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetFullscreen\fP (bool const state)"
+.br
+.ti -1c
+.RI "void \fBsetCursorAt\fP (unsigned int const x, unsigned int const y)"
+.br
+.ti -1c
+.RI "void \fBshowCursor\fP (bool const status)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBInputImpl\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBWindow\fP class offert you an OpenGL context. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gdl::Window::Window (void)"Construct \fBWindow\fP object with default values.
+.br
+ Title : 'Game'
+.br
+ Width : 800
+.br
+ Height : 600
+.br
+ Fullscreen mode : false
+.br
+ 
+.SS "gdl::Window::~Window (void)"Destroy \fBWindow\fP object. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void gdl::Window::catchEvent (void)"Catch the event when the user closes the window. 
+.SS "void gdl::Window::close (void)"Close the window 
+.SS "void gdl::Window::create (void)"Create (or recreate) the \fBWindow\fP. 
+.SS "void gdl::Window::display (void)"Display the window on screen. 
+.SS "size_t gdl::Window::getHeight (void) const"Get the Windows's Height 
+.SS "size_t gdl::Window::getWidth (void) const"Get the Windows's Width 
+.SS "bool gdl::Window::isOpened (void)"Tell if the window is open.
+.PP
+\fBReturns:\fP
+.RS 4
+If the window is open, true is returned. Otherwise, false is returned. 
+.RE
+.PP
+
+.SS "void gdl::Window::setCursorAt (unsigned int const  x, unsigned int const  y)"Set the cursor at a specified position.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP Position on x-axis (from left) 
+.br
+\fIy\fP Position on y-axis (from top) 
+.RE
+.PP
+
+.SS "void gdl::Window::setFullscreen (bool const  state)"Set the fullscreen mode to the window.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstate\fP True to set the fullscreen mode. False to set windowed mode. 
+.RE
+.PP
+
+.SS "void gdl::Window::setHeight (size_t const  height)"Set the height to the window. Must be called before create method.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIheight\fP New height. 
+.RE
+.PP
+
+.SS "void gdl::Window::setTitle (std::string const & title)"Set the title to the window. Must be called before create method.
+.PP
+\fBParameters:\fP
+.RS 4
+\fItitle\fP New title. 
+.RE
+.PP
+
+.SS "void gdl::Window::setWidth (size_t const  width)"Set the width to the window. Must be called before create method.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidth\fP New width. 
+.RE
+.PP
+
+.SS "void gdl::Window::showCursor (bool const  status)"Show or hide the mouse cursor.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstatus\fP True to show the cursor. False to hide it. 
+.RE
+.PP
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class InputImpl\fC [friend]\fP"To reach private members of InputImpl. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

@@ -1,0 +1,28 @@
+/*
+**  src/Mygame.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Mygame.hh"
+
+Mygame::Mygame()
+{}
+
+Mygame::~Mygame()
+{}
+
+void Mygame::initialize()
+{
+  window_.create();
+}
+
+void Mygame::update()
+{}
+
+void Mygame::draw()
+{
+  this->window_.display();
+}

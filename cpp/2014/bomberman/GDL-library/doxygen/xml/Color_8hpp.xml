@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="Color_8hpp" kind="file">
+    <compoundname>Color.hpp</compoundname>
+    <includedby refid="Color_8cpp" local="yes">Color.cpp</includedby>
+    <includedby refid="Model_8hpp" local="yes">Model.hpp</includedby>
+    <invincdepgraph>
+      <node id="24">
+        <label>Model.hpp</label>
+        <link refid="Model_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>Color.hpp</label>
+        <link refid="Color.hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgdl_1_1Color" prot="public">gdl::Color</innerclass>
+    <innernamespace refid="namespacegdl">gdl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__GDL__COLOR__HPP__</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__GDL__COLOR__HPP__</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gdl</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="structgdl_1_1Color" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgdl_1_1Color" kindref="compound">Color</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1aa898b04614ee1e721a5413cb9b6cae16" kindref="member">Color</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1aa898b04614ee1e721a5413cb9b6cae16" kindref="member">Color</ref>(<ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1aacd5f4d3c04fd4f47986f400a70c9143" kindref="member">r</ref>,<sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1a47b05c3bbf1ece915e3cd7e260b5bfa4" kindref="member">g</ref>,<sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1aa0b3ca9d0a465b76b4bc955ba2c38352" kindref="member">b</ref>,<sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1af3fd2777ff073f3020d5d1fa1d25e38b" kindref="member">a</ref><sp/>=<sp/>255);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1aa898b04614ee1e721a5413cb9b6cae16" kindref="member">Color</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structgdl_1_1Color" kindref="compound">Color</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structgdl_1_1Color_1afb38b5f4475e657c82c6e0c4e835d1ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1afb38b5f4475e657c82c6e0c4e835d1ea" kindref="member">~Color</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color" kindref="compound">Color</ref>&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1a3ef6a664a4ae454eb846ea381c679dba" kindref="member">operator=</ref>(<ref refid="structgdl_1_1Color" kindref="compound">Color</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgdl_1_1Color_1a90c8f9a5fe3bca45d2760619097f3be2" kindref="member">operator==</ref>(<ref refid="structgdl_1_1Color" kindref="compound">Color</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structgdl_1_1Color_1af2fbc33fd8ab45ab40fd61bc1acf67ad" kindref="member">operator!=</ref>(<ref refid="structgdl_1_1Color" kindref="compound">Color</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structgdl_1_1Color_1aacd5f4d3c04fd4f47986f400a70c9143" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1aacd5f4d3c04fd4f47986f400a70c9143" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="76" refid="structgdl_1_1Color_1a47b05c3bbf1ece915e3cd7e260b5bfa4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1a47b05c3bbf1ece915e3cd7e260b5bfa4" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="80" refid="structgdl_1_1Color_1aa0b3ca9d0a465b76b4bc955ba2c38352" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1aa0b3ca9d0a465b76b4bc955ba2c38352" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="84" refid="structgdl_1_1Color_1af3fd2777ff073f3020d5d1fa1d25e38b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgdl_1_1Color_1a5f5cae76580de8bc9abf0ca1ab33e126" kindref="member">uchar</ref><sp/><ref refid="structgdl_1_1Color_1af3fd2777ff073f3020d5d1fa1d25e38b" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__GDL__COLOR__HPP__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Color.hpp"/>
+  </compounddef>
+</doxygen>

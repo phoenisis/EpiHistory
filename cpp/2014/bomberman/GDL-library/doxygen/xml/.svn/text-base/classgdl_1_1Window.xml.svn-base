@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1Window" kind="class" prot="public">
+    <compoundname>gdl::Window</compoundname>
+    <includes refid="Window_8hpp" local="no">Window.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgdl_1_1Window_1a4f546444e7f94a497ab5e72b5354f3af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class InputImpl</definition>
+        <argsstring></argsstring>
+        <name>InputImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To reach private members of InputImpl. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="131" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgdl_1_1Window_1abf913f35db6721c814d1ab563c446863" prot="private" static="no" mutable="no">
+        <type>WindowImpl &amp;</type>
+        <definition>WindowImpl&amp; gdl::Window::window_</definition>
+        <argsstring></argsstring>
+        <name>window_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1Window" kindref="compound">Window</ref> implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="137" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1Window_1af775c74ba07b8ec16ed378b970406635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Window::Window</definition>
+        <argsstring>(void)</argsstring>
+        <name>Window</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct <ref refid="classgdl_1_1Window" kindref="compound">Window</ref> object with default values.<linebreak/>
+ Title : &quot;Game&quot;<linebreak/>
+ Width : 800<linebreak/>
+ Height : 600<linebreak/>
+ Fullscreen mode : false<linebreak/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="31" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="8" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1adf0d05debac3ac1bc05a75b171746c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Window::~Window</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Window</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy <ref refid="classgdl_1_1Window" kindref="compound">Window</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="36" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a616a4e27c611911476e5bfa3e85e915d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::create</definition>
+        <argsstring>(void)</argsstring>
+        <name>create</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create (or recreate) the <ref refid="classgdl_1_1Window" kindref="compound">Window</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="41" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="21" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a9c9db9cf7e7a9d5b8b3ab98f24057582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::catchEvent</definition>
+        <argsstring>(void)</argsstring>
+        <name>catchEvent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Catch the event when the user closes the window. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="46" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1ab58fa5ccc3a51ae3393465fcb04f5157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::display</definition>
+        <argsstring>(void)</argsstring>
+        <name>display</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Display the window on screen. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="51" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a72e440ef14e7e19754d4d7a548fd2f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::close</definition>
+        <argsstring>(void)</argsstring>
+        <name>close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the window </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="56" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a1d6572c0dde559d4f36608ddcc519e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdl::Window::isOpened</definition>
+        <argsstring>(void)</argsstring>
+        <name>isOpened</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell if the window is open.</para><para><simplesect kind="return"><para>If the window is open, true is returned. Otherwise, false is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="64" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a53e25fd5c288569ae28a01c56767a9c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::setTitle</definition>
+        <argsstring>(std::string const &amp;title)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the title to the window. Must be called before create method.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New title. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="72" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a96e78a7ef90ba4f1166a282940f3990a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::setWidth</definition>
+        <argsstring>(size_t const width)</argsstring>
+        <name>setWidth</name>
+        <param>
+          <type>size_t const </type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the width to the window. Must be called before create method.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New width. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a1be26b215f0ac9b3f075616d53927646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::setHeight</definition>
+        <argsstring>(size_t const height)</argsstring>
+        <name>setHeight</name>
+        <param>
+          <type>size_t const </type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the height to the window. Must be called before create method.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New height. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1abe7946e48e470c1e4ef6ae56a83ae620" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t gdl::Window::getWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Windows&apos;s Width </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="94" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a9cb9feedb7ccdc129f9212448b4221b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t gdl::Window::getHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Windows&apos;s Height </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="100" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a5834fddbeb60f10da3a7042f202e439c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::setFullscreen</definition>
+        <argsstring>(bool const state)</argsstring>
+        <name>setFullscreen</name>
+        <param>
+          <type>bool const </type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the fullscreen mode to the window.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to set the fullscreen mode. False to set windowed mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="110" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1a75799cef28dc31c7333f73409a1d712a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::setCursorAt</definition>
+        <argsstring>(unsigned int const x, unsigned int const y)</argsstring>
+        <name>setCursorAt</name>
+        <param>
+          <type>unsigned int const </type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned int const </type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the cursor at a specified position.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position on x-axis (from left) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position on y-axis (from top) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="118" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Window_1afea7afeccaf67cc6f93a4690cebfe529" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Window::showCursor</definition>
+        <argsstring>(bool const status)</argsstring>
+        <name>showCursor</name>
+        <param>
+          <type>bool const </type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show or hide the mouse cursor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to show the cursor. False to hide it. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="126" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classgdl_1_1Window" kindref="compound">Window</ref> class offert you an OpenGL context. </para>    </detaileddescription>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" line="22" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Window.hpp" bodystart="21" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1Window_1a9c9db9cf7e7a9d5b8b3ab98f24057582" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>catchEvent</name></member>
+      <member refid="classgdl_1_1Window_1a72e440ef14e7e19754d4d7a548fd2f63" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>close</name></member>
+      <member refid="classgdl_1_1Window_1a616a4e27c611911476e5bfa3e85e915d" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>create</name></member>
+      <member refid="classgdl_1_1Window_1ab58fa5ccc3a51ae3393465fcb04f5157" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>display</name></member>
+      <member refid="classgdl_1_1Window_1a9cb9feedb7ccdc129f9212448b4221b9" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>getHeight</name></member>
+      <member refid="classgdl_1_1Window_1abe7946e48e470c1e4ef6ae56a83ae620" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>getWidth</name></member>
+      <member refid="classgdl_1_1Window_1a4f546444e7f94a497ab5e72b5354f3af" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>InputImpl</name></member>
+      <member refid="classgdl_1_1Window_1a1d6572c0dde559d4f36608ddcc519e82" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>isOpened</name></member>
+      <member refid="classgdl_1_1Window_1a75799cef28dc31c7333f73409a1d712a" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>setCursorAt</name></member>
+      <member refid="classgdl_1_1Window_1a5834fddbeb60f10da3a7042f202e439c" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>setFullscreen</name></member>
+      <member refid="classgdl_1_1Window_1a1be26b215f0ac9b3f075616d53927646" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>setHeight</name></member>
+      <member refid="classgdl_1_1Window_1a53e25fd5c288569ae28a01c56767a9c6" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>setTitle</name></member>
+      <member refid="classgdl_1_1Window_1a96e78a7ef90ba4f1166a282940f3990a" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>setWidth</name></member>
+      <member refid="classgdl_1_1Window_1afea7afeccaf67cc6f93a4690cebfe529" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>showCursor</name></member>
+      <member refid="classgdl_1_1Window_1af775c74ba07b8ec16ed378b970406635" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>Window</name></member>
+      <member refid="classgdl_1_1Window_1abf913f35db6721c814d1ab563c446863" prot="private" virt="non-virtual"><scope>gdl::Window</scope><name>window_</name></member>
+      <member refid="classgdl_1_1Window_1adf0d05debac3ac1bc05a75b171746c27" prot="public" virt="non-virtual"><scope>gdl::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

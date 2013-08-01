@@ -1,0 +1,15 @@
+#ifndef Mygame_hh_
+# define Mygame_hh_
+# include "Bomberlib.hh"
+
+class Mygame : public gdl::Game
+{
+  Mygame();
+  ~Mygame();
+  void initialize();
+  void update();
+  void draw();
+
+};
+
+#endif

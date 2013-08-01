@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1GameClock" kind="class" prot="public">
+    <compoundname>gdl::GameClock</compoundname>
+    <basecompoundref refid="classgdl_1_1IClock" prot="public" virt="non-virtual">gdl::IClock</basecompoundref>
+    <includes refid="GameClock_8hpp" local="no">GameClock.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgdl_1_1GameClock_1a079cb7ba9f4dbfcd182ae68b7ce48c10" prot="private" static="no" mutable="no">
+        <type>GameClockImpl &amp;</type>
+        <definition>GameClockImpl&amp; gdl::GameClock::clock_</definition>
+        <argsstring></argsstring>
+        <name>clock_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1GameClock" kindref="compound">GameClock</ref> implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="71" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgdl_1_1GameClock_1a9e69aa47099c106608cbeb0720d5e8d1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gdl::GameClock::isActiv_</definition>
+        <argsstring></argsstring>
+        <name>isActiv_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate if this clock is active. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="75" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgdl_1_1GameClock_1a1e1d4dbba0469f7e367840efe9f99cb9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gdl::GameClock::elapsedTime_</definition>
+        <argsstring></argsstring>
+        <name>elapsedTime_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Elapsed time since the last update. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="79" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgdl_1_1GameClock_1a634e59317ff5a1f842a3de4cb78ac66d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gdl::GameClock::totalGameTime_</definition>
+        <argsstring></argsstring>
+        <name>totalGameTime_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Elapsed time since the game is launched. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="83" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgdl_1_1GameClock_1aa2fab026580d6f14280c2ffb8063a314" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Game</definition>
+        <argsstring></argsstring>
+        <name>Game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="85" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgdl_1_1GameClock_1acad69430d62f1434cdcbef92ad2004ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::GameClock::GameClock</definition>
+        <argsstring>()</argsstring>
+        <name>GameClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructror. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="24" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1GameClock_1ad48fd1a4a8e2fdf876ace25c26c59172" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::GameClock::~GameClock</definition>
+        <argsstring>()</argsstring>
+        <name>~GameClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructror. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="29" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1GameClock_1aa7ad30c03dec94bc5b21a4fcad290644" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gdl::GameClock::play</definition>
+        <argsstring>(void)</argsstring>
+        <name>play</name>
+        <reimplements refid="classgdl_1_1IClock_1af9f70e18cd6b9b39aca1a359412adf4d">play</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the clock. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="36" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1GameClock_1aab85df27e686f8dbc0bcdb009a6e9158" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gdl::GameClock::pause</definition>
+        <argsstring>(void)</argsstring>
+        <name>pause</name>
+        <reimplements refid="classgdl_1_1IClock_1a7274430efa1f0e621bcce5d99d6abca7">pause</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the clock until you play it again. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="41" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1GameClock_1adb1151b518f6ee38a169b25b75542311" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gdl::GameClock::update</definition>
+        <argsstring>(void)</argsstring>
+        <name>update</name>
+        <reimplements refid="classgdl_1_1IClock_1a0489f6f9055df40116e98e7ed6ad4146">update</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Up the time of the clock. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="46" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="24" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1GameClock_1af568839e075e6e3c2b7aad91450d16d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gdl::GameClock::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <reimplements refid="classgdl_1_1IClock_1a63cd29fcd9830e719d4cb82d5e993ec6">reset</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the clock to 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="51" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1GameClock_1a4c089f024d7b1448bc0d24f6a2785281" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float gdl::GameClock::getElapsedTime</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getElapsedTime</name>
+        <reimplements refid="classgdl_1_1IClock_1ad5c3e51562a10e319a3494785d077d1b">getElapsedTime</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the time since the last Update call.</para><para><simplesect kind="return"><para>The time in float. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="58" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1GameClock_1a8769e925304d57d6c6949c8bedec7956" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gdl::GameClock::getTotalGameTime</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getTotalGameTime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the time between now and the start of the <ref refid="classgdl_1_1Game" kindref="compound">Game</ref>.</para><para><simplesect kind="return"><para>The time in float. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="65" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classgdl_1_1GameClock" kindref="compound">GameClock</ref> provides a main clock for the entire game. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>gdl::IClock</label>
+        <link refid="classgdl_1_1IClock"/>
+      </node>
+      <node id="12">
+        <label>gdl::GameClock</label>
+        <link refid="classgdl_1_1GameClock"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>gdl::IClock</label>
+        <link refid="classgdl_1_1IClock"/>
+      </node>
+      <node id="14">
+        <label>gdl::GameClock</label>
+        <link refid="classgdl_1_1GameClock"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" line="19" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/GameClock.hpp" bodystart="18" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1GameClock_1a079cb7ba9f4dbfcd182ae68b7ce48c10" prot="private" virt="non-virtual"><scope>gdl::GameClock</scope><name>clock_</name></member>
+      <member refid="classgdl_1_1GameClock_1a1e1d4dbba0469f7e367840efe9f99cb9" prot="private" virt="non-virtual"><scope>gdl::GameClock</scope><name>elapsedTime_</name></member>
+      <member refid="classgdl_1_1GameClock_1aa2fab026580d6f14280c2ffb8063a314" prot="private" virt="non-virtual"><scope>gdl::GameClock</scope><name>Game</name></member>
+      <member refid="classgdl_1_1GameClock_1acad69430d62f1434cdcbef92ad2004ca" prot="private" virt="non-virtual"><scope>gdl::GameClock</scope><name>GameClock</name></member>
+      <member refid="classgdl_1_1GameClock_1a4c089f024d7b1448bc0d24f6a2785281" prot="public" virt="virtual"><scope>gdl::GameClock</scope><name>getElapsedTime</name></member>
+      <member refid="classgdl_1_1GameClock_1a8769e925304d57d6c6949c8bedec7956" prot="public" virt="non-virtual"><scope>gdl::GameClock</scope><name>getTotalGameTime</name></member>
+      <member refid="classgdl_1_1GameClock_1a9e69aa47099c106608cbeb0720d5e8d1" prot="private" virt="non-virtual"><scope>gdl::GameClock</scope><name>isActiv_</name></member>
+      <member refid="classgdl_1_1GameClock_1aab85df27e686f8dbc0bcdb009a6e9158" prot="public" virt="virtual"><scope>gdl::GameClock</scope><name>pause</name></member>
+      <member refid="classgdl_1_1GameClock_1aa7ad30c03dec94bc5b21a4fcad290644" prot="public" virt="virtual"><scope>gdl::GameClock</scope><name>play</name></member>
+      <member refid="classgdl_1_1GameClock_1af568839e075e6e3c2b7aad91450d16d2" prot="public" virt="virtual"><scope>gdl::GameClock</scope><name>reset</name></member>
+      <member refid="classgdl_1_1GameClock_1a634e59317ff5a1f842a3de4cb78ac66d" prot="private" virt="non-virtual"><scope>gdl::GameClock</scope><name>totalGameTime_</name></member>
+      <member refid="classgdl_1_1GameClock_1adb1151b518f6ee38a169b25b75542311" prot="public" virt="virtual"><scope>gdl::GameClock</scope><name>update</name></member>
+      <member refid="classgdl_1_1GameClock_1ad48fd1a4a8e2fdf876ace25c26c59172" prot="private" virt="non-virtual"><scope>gdl::GameClock</scope><name>~GameClock</name></member>
+      <member refid="classgdl_1_1IClock_1a99fa0615ad15521b475cd35cbf7dcf8a" prot="public" virt="virtual"><scope>gdl::GameClock</scope><name>~IClock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

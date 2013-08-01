@@ -1,0 +1,4 @@
+monitoring reseau : /proc/net/dev <= attention, l'utilisation reseau s'incremente dans le fichier.
+stocker valeures dans une stack d'int (push)
+adresses ip : /etc/netowrks
+

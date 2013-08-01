@@ -1,0 +1,173 @@
+/*
+**  src/Character.cpp
+**  Bomberman
+**
+**  Created by Evan HERVE on 03/05/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Character.hh"
+
+Character::Character(map::map &map, Setting *setting, int nb)
+{
+  int		i = 0;
+  int		j = 0;
+  bool		end = false;
+
+  this->choice = nb;
+  this->Up = setting->Up;
+  this->Down = setting->Down;
+  this->Right = setting->Right;
+  this->Left = setting->Left;
+  this->Space = setting->Space;
+  this->camera_ = new MenuCamera();
+  this->map = map;
+  this->position_ = new Vector3f(0.00f, 0.0f, 0.00f);
+  this->rotation_ = new Vector3f(0.00f, 0.0f, 0.00f);
+
+  for (i = 0; i < map.getWidth() && end == false; i++)
+    {
+      for(j = 0; j < map.getLength() && end == false; j++)
+	{
+	  if (map.getPos(i, j) == 1)
+	    {
+	      this->setPosY(i);
+	      this->setPosX(j);
+	      map.setPos(9,j, i);
+	      end = true;
+	    }
+	}
+    }
+}
+
+Character::~Character()
+{}
+
+void Character::initialize()
+{
+  switch (this->choice){
+  case 1:
+    this->model_ = gdl::Model::load( "./asserts/anims/bomberman_white_run.FBX");
+    break;
+  case 2:
+    this->model_ = gdl::Model::load( "./asserts/anims/bomberman_black_run.FBX");
+    break;
+  case 3:
+    this->model_ = gdl::Model::load( "./asserts/anims/bomberman_blue_run.FBX");
+    break;
+  case 4:
+    this->model_ = gdl::Model::load( "./asserts/anims/bomberman_red_run.FBX");
+    break;
+  case 5:
+    this->model_ = gdl::Model::load( "./asserts/anims/bomberman_pink_run.FBX");
+    break;
+  case 6:
+    this->model_ = gdl::Model::load( "./asserts/anims/bomberman_gold_run.FBX");
+    break;
+  }
+}
+
+void Character::update(gdl::GameClock const &gameClock, gdl::Input &input)
+{
+  this->model_.update(gameClock);
+  this->Action(input);
+  draw();
+  std::cout << "assssssssssssssssssssssssssss" << std::endl;
+}
+
+void Character::draw()
+{
+  if (this->alive == false)
+    return ;
+  gdl::Model::Begin();
+
+  glPushMatrix();
+
+  this->model_.play("Take 001");
+  glTranslatef(this->position_->x, 0.0f, this->position_->y);
+  glRotatef(this->rotation_->x, 0.0f, 1.0f, 0.0f);
+  this->model_.draw();
+
+  glPopMatrix();
+
+  gdl::Model::End();
+}
+
+void    Character::Action(gdl::Input &input)
+{
+  if ((this->alive && input.isKeyDown(this->Down) == true) &&
+      ((this->map.getPos(this->getPosX(), this->getPosY() + 1) == map::PLAYER) ||
+       ((this->map.getPos(this->getPosX(), this->getPosY() + 1) >= 5) && ((this->map.getPos(this->getPosX(), this->getPosY() + 1) <= 9)))))
+    {
+      std::cout << "bas" << std::endl;
+      this->rotation_->y = 0;
+      this->map.setPos(9, this->getPosX(), this->getPosY());
+      this->setPosY(this->getPosY() + 1);
+      checkBonus(this->map.getPos(this->getPosX(), this->getPosY()));
+      this->map.setPos(1, this->getPosX(), this->getPosY());
+      this->position_->x += 0.18;
+    }
+
+  if ((this->alive && input.isKeyDown(this->Up) == true) &&
+      ((this->map.getPos(this->getPosX(), this->getPosY() - 1) == map::PLAYER) ||
+       ((this->map.getPos(this->getPosX(), this->getPosY() - 1) >= 5) && ((this->map.getPos(this->getPosX(), this->getPosY() - 1) <= 9)))))
+    {
+      std::cout << "haut" << std::endl;
+      this->rotation_->y = 180;
+      this->map.setPos(9, this->getPosX(), this->getPosY());
+      this->setPosY(this->getPosY() - 1);
+      checkBonus(this->map.getPos(this->getPosX(), this->getPosY()));
+      this->map.setPos(1, this->getPosX(), this->getPosY());
+      this->position_->x -= 0.18;
+    }
+  if ((this->alive && input.isKeyDown(this->Right) == true) &&
+      ((this->map.getPos(this->getPosX() + 1, this->getPosY()) == map::PLAYER) ||
+       ((this->map.getPos(this->getPosX() + 1, this->getPosY()) >= 5) && ((this->map.getPos(this->getPosX() + 1, this->getPosY()) <= 9)))))
+    {
+      std::cout << "droite" << std::endl;
+      this->rotation_->y = 90;
+      this->map.setPos(9, this->getPosX(), this->getPosY());
+      this->setPosX(this->getPosX() + 1);
+      checkBonus(this->map.getPos(this->getPosX(), this->getPosY()));
+      this->map.setPos(1, this->getPosX(), this->getPosY());
+      this->position_->z += 0.18;
+    }
+  if ((this->alive && input.isKeyDown(this->Left) == true) &&
+      ((this->map.getPos(this->getPosX() - 1, this->getPosY()) == map::PLAYER) ||
+       ((this->map.getPos(this->getPosX() - 1, this->getPosY()) >= 5) && ((this->map.getPos(this->getPosX() - 1, this->getPosY()) <= 9)))))
+    {
+      std::cout << "gauche" << std::endl;
+      this->rotation_->y = 270;
+      this->map.setPos(9, this->getPosX(), this->getPosY());
+      this->setPosX(this->getPosX() - 1);
+      checkBonus(this->map.getPos(this->getPosX(), this->getPosY()));
+      this->map.setPos(1, this->getPosX(), this->getPosY());
+      this->position_->z -= 0.18;
+    }
+  if (this->alive && input.isKeyDown(this->Space) == true)
+    {
+      this->map.setPos(4, this->getPosX(), this->getPosY());
+      this->bomb = new Bombe(this->getPosX(), this->getPosY(), this->_power);
+
+    }
+}
+
+void    Character::checkBonus(int bloctype)
+{
+  if (bloctype == 5 || bloctype == 6)
+    {
+      if (bloctype == 5)
+	this->_nbBombs = this->_nbBombs + 1;
+      else if (bloctype == 6 && this->_nbBombs > 1)
+	this->_nbBombs = this->_nbBombs - 1;
+      this->map.setPos(9, this->getPosX(), this->getPosY());
+    }
+  else if (bloctype == 7 || bloctype == 8)
+    {
+      if (bloctype == 7)
+	this->_power = this->_power + 1;
+      else if (bloctype == 8 && this->_power > 2)
+	this->_power = this->_power - 1;
+      this->map.setPos(9, this->getPosX(), this->getPosY());
+    }
+}

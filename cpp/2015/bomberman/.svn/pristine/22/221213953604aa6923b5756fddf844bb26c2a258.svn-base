@@ -1,0 +1,28 @@
+/*
+**  inc/Mygame.hh
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#ifndef Mygame_hh_
+# define Mygame_hh_
+# include "Bomberlib.hh"
+
+class Mygame : public gdl::Game
+{
+public:
+  MyGame();
+  ~MyGame();
+  void initialize(void);
+  void update(void);
+  void draw(void);
+  void setMap(Map *M);
+
+private:
+  Map::Map *map;
+  std::list<AObject*>   objects_;
+};
+
+#endif

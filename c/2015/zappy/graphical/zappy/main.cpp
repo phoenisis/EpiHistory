@@ -1,0 +1,255 @@
+//
+//  main.cpp
+//  zappy
+//
+//  Created by Quentin PIDOUX on 14/06/12.
+//  Copyright (c) 2012 Epitech. All rights reserved.
+//
+
+#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
+#include <SFML/Network.hpp>
+#include <iostream>
+#include <utility>
+
+#include "ResourcePath.hpp"
+#include "Graph.h"
+#include "Client.h"
+
+int main (int argc, const char * argv[])
+{
+    Graph disp = *new Graph();
+    
+    int v_x = 400;
+    int v_y = 300;
+    int i_x = 0;
+    int i_y = 0;
+    const int limit = 20;
+    
+    int count = 10;
+    sf::String str;
+    std::string ip;
+    std::string port;
+    std::string msg;
+    sf::Text Text(str, disp.getFont(), 50);
+    
+    disp.window.setView(disp.view);
+    disp.getMusic().play();
+    Text.setColor(sf::Color::Black);
+    Text.setPosition(95, 360); 
+    
+    for (int i = 0; i <= 7; i++) {
+        disp.setTrantorianInfo(i, 0);
+    }
+    
+    while (disp.window.isOpen())
+    {
+        sf::Event event;
+        
+        while (disp.window.pollEvent(event))
+        {
+            if ((event.type == sf::Event::Closed) ||
+                (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape))
+                disp.window.close();
+            if (disp.getMenuBool() == true){
+                if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num1 && str.getSize()-1 != limit)
+                    str += "1";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num2 && str.getSize()-1 != limit)
+                    str += "2";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num3 && str.getSize()-1 != limit)
+                    str += "3";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num4 && str.getSize()-1 != limit)
+                    str += "4";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num5 && str.getSize()-1 != limit)
+                    str += "5";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num6 && str.getSize()-1 != limit)
+                    str += "6";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num7 && str.getSize()-1 != limit)
+                    str += "7";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num8 && str.getSize()-1 != limit)
+                    str += "8";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num9 && str.getSize()-1 != limit)
+                    str += "9";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Num0 && str.getSize()-1 != limit)
+                    str += "0";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Period && str.getSize()-1 != limit)
+                    str += ".";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::SemiColon && str.getSize()-1 != limit)
+                    str += ":";
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Back){
+                    if (str.getSize() > 0)
+                        str.erase(str.getSize()-1);
+                }
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Return){
+                    for (int i = 0; str[i] != ':' && str[i] != 0 ;){
+                        ip += str[i++];
+                        if (str[i] == ':')
+                            for (i += 1; str[i] != 0; i++)
+                                port += str[i];
+                    }
+                    disp.initClient(ip, port);
+                    if (disp.client->tryConnect() == true){
+                        disp.doAction(disp.client->recieveMessage());                   
+                        disp.setMenuBool(false);
+                    }
+                    else{
+                        disp.deleteClient();
+                        disp.setMenuBool(false);
+                        disp.setNothingFoundBool(true);
+                    }
+                }
+            }
+            
+            else {
+                // Mouse
+                if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+                    if (sf::Mouse::getPosition(disp.window).x/30 == 23 && sf::Mouse::getPosition(disp.window).y/30 == 1){
+                        disp.setSgt();
+                        disp.doAction(disp.client->recieveMessage());
+                        disp.setSst(disp.getTime()-15);
+                    }
+                    else if (sf::Mouse::getPosition(disp.window).x/30 == 25 && sf::Mouse::getPosition(disp.window).y/30 == 1){
+                        disp.setSgt();
+                        disp.doAction(disp.client->recieveMessage());
+                        disp.setSst(disp.getTime()+15);
+                    }
+                    
+                    else
+                        disp.setBtc(sf::Mouse::getPosition(disp.window).x/30 ,sf::Mouse::getPosition(disp.window).y/30);
+                     
+                }
+                // Keyboard in game
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Right){
+                    if (v_x < (disp.getMapSizeX()-400)){
+                        disp.view.setCenter(v_x+=10, v_y);
+                        disp.window.setView(disp.view);
+                    }
+                }
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Left){
+                    if (v_x > 400){
+                        disp.view.setCenter(v_x-=10, v_y);
+                        disp.window.setView(disp.view);
+                    }
+                }
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Up){
+                    if (v_y > 300){
+                        disp.view.setCenter(v_x, v_y-=10);
+                        disp.window.setView(disp.view);
+                    }
+                }
+                
+                else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Down){
+                    if (v_y < (disp.getMapSizeY() - 300)){
+                        disp.view.setCenter(v_x, v_y+=10);
+                        disp.window.setView(disp.view);
+                    }
+                }
+            }
+        }
+        
+        //Affichage
+                
+        disp.window.clear();
+        disp.setPosCommunicationBox(v_x-400, v_y+200);
+        disp.setPosItemBox(v_x+275, v_y-30);
+        disp.setPosTimeControl(v_x+275, v_y-305);
+        disp.setPosTextConsol(v_x-375, v_y+240);
+        i_x = v_x+340;
+        i_y = v_y+30;
+                
+        if (disp.getMenuBool() == true){
+            disp.view.setCenter(400, 300);
+            disp.window.setView(disp.view);
+            Text.setString(str);
+            disp.window.draw(disp.getMenu());
+            disp.window.draw(Text);
+        }
+        
+        else if (disp.getConnectionLostBool() == true){
+            disp.view.setCenter(400, 300);
+            disp.window.setView(disp.view);
+            disp.window.draw(disp.getConnectionLost());
+            disp.window.display();
+            sleep(3);
+            disp.window.close();
+        }
+        
+        else if (disp.getNothingfoundBool() == true){
+            disp.view.setCenter(400, 300);
+            disp.window.setView(disp.view);
+            disp.window.draw(disp.getNothingFound());
+            disp.window.display();
+            sleep(3);
+            disp.setMenuBool(true);
+            disp.setNothingFoundBool(false);
+            str = "";
+            ip = "";
+            port = "";
+        }
+        
+        else if (disp.getWinBool() == true){
+            disp.view.setCenter(400, 300);
+            disp.window.setView(disp.view);
+            disp.window.draw(disp.getWin());
+            disp.setPosTextWinner(150, 360);
+            disp.window.draw(disp.getTextWinner());
+            disp.window.display();
+            sleep(4);
+            disp.window.close();
+        }
+        
+        else {
+
+            disp.doAction(disp.client->recieveMessage());
+            
+            
+            //Pose du sol
+            for (int x = 0;x < disp.getMapSizeX(); x += 30) {
+                disp.setPosGrass(x, 0);
+                if (x > v_x - 430 && x < v_x + 430)
+                    disp.window.draw(disp.getGrass());
+                
+                for (int y = 0;y < disp.getMapSizeY(); y += 30){
+                    disp.setPosGrass(x, y);
+                    if (y > v_y - 330 && y < v_y + 330)
+                        disp.window.draw(disp.getGrass());
+                }
+            }
+            
+            for (int x = 0;x < disp.getMapSizeX(); x += 30) {
+                if (x > v_x - 430 && x < v_x + 430){
+                    disp.setBtc(x/30, (v_y + 330)/30);
+                    disp.doAction(disp.client->recieveMessage());
+                }
+                for (int y = 0;y < disp.getMapSizeY(); y += 30){
+                    if (y > v_y - 330 && y < v_y + 330){
+                        disp.setBtc(x/30, y/30);
+                        disp.doAction(disp.client->recieveMessage());
+                    }
+                }
+            }
+
+            disp.window.draw(disp.getItemBox());
+            for (int i=0; i <= 7; i++) {
+                if (i > 0){
+                    disp.setTextTrantorianInfo(disp.getTrantorianInfo(i));
+                    disp.setPosTextTrantorianInfo(i_x, i_y);
+                    disp.window.draw(disp.getTextTrantorianInfo());
+                    i_y += 28;
+                }
+                else {
+                    disp.setTextTrantorianInfo(disp.getTrantorianInfo(i));
+                    disp.setPosTextTrantorianInfo(i_x, i_y);
+                    disp.window.draw(disp.getTextTrantorianInfo());
+                    i_y += 45;
+                }
+            }
+            disp.window.draw(disp.getCommunicationBox());
+            disp.window.draw(disp.getTimeControl());
+            disp.window.draw(disp.getTextConsol());
+            count++;
+        }
+        disp.window.display();
+    }
+	return EXIT_SUCCESS;
+}

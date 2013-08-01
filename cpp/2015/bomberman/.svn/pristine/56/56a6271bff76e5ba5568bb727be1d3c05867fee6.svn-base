@@ -1,0 +1,67 @@
+/*
+**  src/main.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Graph.hh"
+#include "../inc/Bomberlib.hh"
+#include "../inc/Mygame.hh"
+#include "../inc/Vector3f.hh"
+#include "../inc/Bloc.hh"
+#include "../inc/Map.hh"
+
+#include <iostream>
+#include <unistd.h>
+
+int main()
+{
+  Disp::Menu		*main_menu   = new Disp::Menu;
+  Disp::MenuLabel	*menu_label  = new Disp::MenuLabel(-25, -15, 50, 20);
+  MyGame		*game        = new MyGame;
+  map::map		*map	     = new map::map(200, 200, 1);
+  Bloc::Wall		*wall	     = new Bloc::Wall(*map);
+  Bloc::Box		*box	     = new Bloc::Box(*map);
+  Bloc::Blank		*blank	     = new Bloc::Blank(*map);
+
+  while(2)
+    {
+      game->setMap(map);
+      game->add_object(wall);
+      game->add_object(box);
+      game->add_object(blank);
+
+      main_menu->add_object(menu_label);
+      main_menu->lbl_ = menu_label;
+      main_menu->run();
+
+      if (menu_label->MenuDecide == true)
+	{
+	  switch (menu_label->MenuCurr) {
+	  case 1:
+	    std::cout << "menulabel Start" << std::endl;
+	    menu_label->MenuDecide = false;
+	    game->run();
+	    break;
+	  case 2:
+	    //load
+	    std::cout << "menulabel load" << std::endl;
+	    main_menu->close();
+	    break;
+	  case 3:
+	    //save
+	    std::cout << "menulabel save" << std::endl;
+	    main_menu->close();
+	    break;
+	  case 4:
+	    //Quit
+	    std::cout << "menulabel quit" << std::endl;
+	    main_menu->close();
+	    return 0;
+	    break;
+	  }
+	}
+    }
+}

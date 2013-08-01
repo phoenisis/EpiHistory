@@ -1,0 +1,70 @@
+#ZAPPY
+#Makefile
+
+NAMESERVER	= server
+
+SRCSSERVER	=	  server/main.c				\
+	               	  server/handle_clients.c		\
+	               	  server/handle_clients_welcome.c	\
+	               	  server/main_server.c			\
+	               	  server/communication.c		\
+			  server/list_clients.c			\
+	               	  server/player.c			\
+	               	  server/str_to_wordtab.c		\
+	               	  server/parse.c			\
+	               	  server/error.c			\
+			  server/mapp.c				\
+			  server/broadcast.c			\
+			  server/display_funcs.c		\
+			  server/display_info_player.c		\
+			  server/team_name.c			\
+
+OBJSSERVER 	= $(SRCSSERVER:.c=.o)
+
+NAMECLIENT	= client
+
+SRCSCLIENT	=	clientc++/Client.cpp			\
+			clientc++/IA.cpp        		\
+			clientc++/init.cpp			\
+			clientc++/main.cpp			\
+			clientc++/parse.cpp			\
+			clientc++/player.cpp			\
+
+OBJSCLIENT	= $(SRCSCLIENT:.cpp=.o)
+
+CC	= clang
+
+CXX	= g++ -I ./SFML-2.0-rc/include/ -L ./SFML-2.0-rc/lib/ -Wl,--rpath=./SFML-2.0-rc/lib/ -lsfml-network -lsfml-system
+
+CFLAGS	+= -g3 -W -Wextra -Wall
+
+RM	= rm -rf
+
+.PHONY		:	all clean fatclean re
+
+$(NAME)	:	$(OBJSSERVER) Makefile
+		$(OBJSCLIENT) Makefile
+		$(CC) -o $(NAMESERVER) $(OBJSSERVER) $(CFLAGS)
+		$(CPP) -o $(NAMECLIENT) $(OBJSCLIENT) $(CFLAGS)
+#		@find . \( -name "*.o" -o -name "*~" -o -name "#*#" \) -exec rm {} \;
+
+
+all	:	$(NAME) server client
+
+
+server	:	$(OBJSSERVER) Makefile
+	 	$(CC) -o $(NAMESERVER) $(OBJSSERVER) $(CFLAGS)
+#		@find . \( -name "*.o" -o -name "*~" -o -name "#*#" \) -exec rm {} \;
+
+
+client	:	$(OBJSCLIENT) Makefile
+	 	$(CXX) -o $(NAMECLIENT) $(OBJSCLIENT) $(CFLAGS)
+#		@find . \( -name "*.o" -o -name "*~" -o -name "#*#" \) -exec rm {} \;
+
+clean	:
+		@find . \( -name "*.o" -o -name "*~" -o -name "#*#" \) -exec rm {} \;
+
+re	:	fclean all
+
+fclean:		clean
+		@$(RM) $(NAMESERVER) $(NAMECLIENT)

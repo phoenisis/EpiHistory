@@ -1,0 +1,76 @@
+\hypertarget{classgdl_1_1IClock}{
+\section{gdl::IClock Class Reference}
+\label{classgdl_1_1IClock}\index{gdl::IClock@{gdl::IClock}}
+}
+
+
+{\ttfamily \#include $<$IClock.hpp$>$}Inheritance diagram for gdl::IClock::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classgdl_1_1IClock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classgdl_1_1IClock_af9f70e18cd6b9b39aca1a359412adf4d}{play} (void)=0
+\item 
+virtual void \hyperlink{classgdl_1_1IClock_a7274430efa1f0e621bcce5d99d6abca7}{pause} (void)=0
+\item 
+virtual void \hyperlink{classgdl_1_1IClock_a0489f6f9055df40116e98e7ed6ad4146}{update} (void)=0
+\item 
+virtual void \hyperlink{classgdl_1_1IClock_a63cd29fcd9830e719d4cb82d5e993ec6}{reset} (void)=0
+\item 
+virtual float \hyperlink{classgdl_1_1IClock_ad5c3e51562a10e319a3494785d077d1b}{getElapsedTime} (void) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface \hyperlink{classgdl_1_1IClock}{IClock} is used to force a specific time implementation. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1IClock_ad5c3e51562a10e319a3494785d077d1b}{
+\index{gdl::IClock@{gdl::IClock}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!gdl::IClock@{gdl::IClock}}
+\subsubsection[{getElapsedTime}]{\setlength{\rightskip}{0pt plus 5cm}virtual float gdl::IClock::getElapsedTime (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classgdl_1_1IClock_ad5c3e51562a10e319a3494785d077d1b}
+Return the time between now and the last call of the update method.
+
+\begin{DoxyReturn}{Returns}
+The time in float. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classgdl_1_1Clock_a3b81a05f6b9d4af46b6c955017c8ddfd}{gdl::Clock}, and \hyperlink{classgdl_1_1GameClock_a4c089f024d7b1448bc0d24f6a2785281}{gdl::GameClock}.\hypertarget{classgdl_1_1IClock_a7274430efa1f0e621bcce5d99d6abca7}{
+\index{gdl::IClock@{gdl::IClock}!pause@{pause}}
+\index{pause@{pause}!gdl::IClock@{gdl::IClock}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::IClock::pause (void)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classgdl_1_1IClock_a7274430efa1f0e621bcce5d99d6abca7}
+Stop the clock until you play it again. 
+
+Implemented in \hyperlink{classgdl_1_1Clock_afcd4590e0217065f7f2c9bd13cb6c3ad}{gdl::Clock}, and \hyperlink{classgdl_1_1GameClock_aab85df27e686f8dbc0bcdb009a6e9158}{gdl::GameClock}.\hypertarget{classgdl_1_1IClock_af9f70e18cd6b9b39aca1a359412adf4d}{
+\index{gdl::IClock@{gdl::IClock}!play@{play}}
+\index{play@{play}!gdl::IClock@{gdl::IClock}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::IClock::play (void)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classgdl_1_1IClock_af9f70e18cd6b9b39aca1a359412adf4d}
+Start the clock. 
+
+Implemented in \hyperlink{classgdl_1_1Clock_af1054a354823d2556a780ddec710e368}{gdl::Clock}, and \hyperlink{classgdl_1_1GameClock_aa7ad30c03dec94bc5b21a4fcad290644}{gdl::GameClock}.\hypertarget{classgdl_1_1IClock_a63cd29fcd9830e719d4cb82d5e993ec6}{
+\index{gdl::IClock@{gdl::IClock}!reset@{reset}}
+\index{reset@{reset}!gdl::IClock@{gdl::IClock}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::IClock::reset (void)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classgdl_1_1IClock_a63cd29fcd9830e719d4cb82d5e993ec6}
+Reset the clock to 0. 
+
+Implemented in \hyperlink{classgdl_1_1Clock_a9a44b0217d50c216d2e94d0f174e3a67}{gdl::Clock}, and \hyperlink{classgdl_1_1GameClock_af568839e075e6e3c2b7aad91450d16d2}{gdl::GameClock}.\hypertarget{classgdl_1_1IClock_a0489f6f9055df40116e98e7ed6ad4146}{
+\index{gdl::IClock@{gdl::IClock}!update@{update}}
+\index{update@{update}!gdl::IClock@{gdl::IClock}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void gdl::IClock::update (void)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classgdl_1_1IClock_a0489f6f9055df40116e98e7ed6ad4146}
+Up the time of the clock. 
+
+Implemented in \hyperlink{classgdl_1_1Clock_acc748cbe2dc79ab94c7843e2f010d049}{gdl::Clock}, and \hyperlink{classgdl_1_1GameClock_adb1151b518f6ee38a169b25b75542311}{gdl::GameClock}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+IClock.hpp\end{DoxyCompactItemize}

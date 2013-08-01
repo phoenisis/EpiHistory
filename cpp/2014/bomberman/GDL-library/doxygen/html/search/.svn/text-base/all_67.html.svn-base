@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_g">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../structgdl_1_1Color.html#a47b05c3bbf1ece915e3cd7e260b5bfa4" target="basefrm">g</a>
+  <span class="SRScope">gdl::Color</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_game">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="../classgdl_1_1Game.html#a6e82a8942734638e0f78f7308c0950fe" target="basefrm">Game</a>
+  <span class="SRScope">gdl::Game</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_game">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../classgdl_1_1Game.html" target="basefrm">Game</a>
+  <span class="SRScope">gdl</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_gameclock">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../classgdl_1_1GameClock.html" target="basefrm">GameClock</a>
+  <span class="SRScope">gdl</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_gameclock_5f">
+ <div class="SREntry">
+  <a id="Item4" onkeydown="return searchResults.Nav(event,4)" onkeypress="return searchResults.Nav(event,4)" onkeyup="return searchResults.Nav(event,4)" class="SRSymbol" href="../classgdl_1_1Game.html#a1cc7814ce34e89d8c09e6648640c5da8" target="basefrm">gameClock_</a>
+  <span class="SRScope">gdl::Game</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_get_5fanim_5fblendfactor">
+ <div class="SREntry">
+  <a id="Item5" onkeydown="return searchResults.Nav(event,5)" onkeypress="return searchResults.Nav(event,5)" onkeyup="return searchResults.Nav(event,5)" class="SRSymbol" href="../classgdl_1_1Model.html#a97d6d0d3f9e6df95e20caf26e769bea4" target="basefrm">get_anim_blendfactor</a>
+  <span class="SRScope">gdl::Model</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_get_5fanim_5fspeed">
+ <div class="SREntry">
+  <a id="Item6" onkeydown="return searchResults.Nav(event,6)" onkeypress="return searchResults.Nav(event,6)" onkeyup="return searchResults.Nav(event,6)" class="SRSymbol" href="../classgdl_1_1Model.html#a5ccf274812bacb19062d4051fbe44b57" target="basefrm">get_anim_speed</a>
+  <span class="SRScope">gdl::Model</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_get_5fanim_5fstate">
+ <div class="SREntry">
+  <a id="Item7" onkeydown="return searchResults.Nav(event,7)" onkeypress="return searchResults.Nav(event,7)" onkeyup="return searchResults.Nav(event,7)" class="SRSymbol" href="../classgdl_1_1Model.html#a5cb4cfea0c7f0819d0749baddd682f98" target="basefrm">get_anim_state</a>
+  <span class="SRScope">gdl::Model</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_get_5fanimation_5fnames">
+ <div class="SREntry">
+  <a id="Item8" onkeydown="return searchResults.Nav(event,8)" onkeypress="return searchResults.Nav(event,8)" onkeyup="return searchResults.Nav(event,8)" class="SRSymbol" href="../classgdl_1_1Model.html#a7f09fd45a42fd3314e320c0b969ab2bc" target="basefrm">get_animation_names</a>
+  <span class="SRScope">gdl::Model</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_get_5fdefault_5fmodel_5fcolor">
+ <div class="SREntry">
+  <a id="Item9" onkeydown="return searchResults.Nav(event,9)" onkeypress="return searchResults.Nav(event,9)" onkeyup="return searchResults.Nav(event,9)" class="SRSymbol" href="../classgdl_1_1Model.html#a8bbdffaebc6ef023b84d609d9f00a43e" target="basefrm">get_default_model_color</a>
+  <span class="SRScope">gdl::Model</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_get_5fstackanimation_5fnames">
+ <div class="SREntry">
+  <a id="Item10" onkeydown="return searchResults.Nav(event,10)" onkeypress="return searchResults.Nav(event,10)" onkeyup="return searchResults.Nav(event,10)" class="SRSymbol" href="../classgdl_1_1Model.html#accd5847c295adfc7cebcd2283ee2bfdf" target="basefrm">get_stackanimation_names</a>
+  <span class="SRScope">gdl::Model</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_getcontentroot">
+ <div class="SREntry">
+  <a id="Item11" onkeydown="return searchResults.Nav(event,11)" onkeypress="return searchResults.Nav(event,11)" onkeyup="return searchResults.Nav(event,11)" class="SRSymbol" href="../classgdl_1_1Game.html#ad487d5d6e94f2e4d7bcfaf57626d93d4" target="basefrm">getContentRoot</a>
+  <span class="SRScope">gdl::Game</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_getelapsedtime">
+ <div class="SREntry">
+  <a id="Item12" onkeydown="return searchResults.Nav(event,12)" onkeypress="return searchResults.Nav(event,12)" onkeyup="return searchResults.Nav(event,12)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_getelapsedtime')">getElapsedTime</a>
+  <div class="SRChildren">
+    <a id="Item12_c0" onkeydown="return searchResults.NavChild(event,12,0)" onkeypress="return searchResults.NavChild(event,12,0)" onkeyup="return searchResults.NavChild(event,12,0)" class="SRScope" href="../classgdl_1_1Clock.html#a3b81a05f6b9d4af46b6c955017c8ddfd" target="basefrm">gdl::Clock::getElapsedTime()</a>
+    <a id="Item12_c1" onkeydown="return searchResults.NavChild(event,12,1)" onkeypress="return searchResults.NavChild(event,12,1)" onkeyup="return searchResults.NavChild(event,12,1)" class="SRScope" href="../classgdl_1_1GameClock.html#a4c089f024d7b1448bc0d24f6a2785281" target="basefrm">gdl::GameClock::getElapsedTime()</a>
+    <a id="Item12_c2" onkeydown="return searchResults.NavChild(event,12,2)" onkeypress="return searchResults.NavChild(event,12,2)" onkeyup="return searchResults.NavChild(event,12,2)" class="SRScope" href="../classgdl_1_1IClock.html#ad5c3e51562a10e319a3494785d077d1b" target="basefrm">gdl::IClock::getElapsedTime()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_getheight">
+ <div class="SREntry">
+  <a id="Item13" onkeydown="return searchResults.Nav(event,13)" onkeypress="return searchResults.Nav(event,13)" onkeyup="return searchResults.Nav(event,13)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_getheight')">getHeight</a>
+  <div class="SRChildren">
+    <a id="Item13_c0" onkeydown="return searchResults.NavChild(event,13,0)" onkeypress="return searchResults.NavChild(event,13,0)" onkeyup="return searchResults.NavChild(event,13,0)" class="SRScope" href="../classgdl_1_1Image.html#a92a2838f614afac73777e54e4a37eb4c" target="basefrm">gdl::Image::getHeight()</a>
+    <a id="Item13_c1" onkeydown="return searchResults.NavChild(event,13,1)" onkeypress="return searchResults.NavChild(event,13,1)" onkeyup="return searchResults.NavChild(event,13,1)" class="SRScope" href="../classgdl_1_1Window.html#a9cb9feedb7ccdc129f9212448b4221b9" target="basefrm">gdl::Window::getHeight()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_getmousepositionx">
+ <div class="SREntry">
+  <a id="Item14" onkeydown="return searchResults.Nav(event,14)" onkeypress="return searchResults.Nav(event,14)" onkeyup="return searchResults.Nav(event,14)" class="SRSymbol" href="../classgdl_1_1Input.html#a1a9f9de83134c8ea6e62ece2163868ca" target="basefrm">getMousePositionX</a>
+  <span class="SRScope">gdl::Input</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_getmousepositiony">
+ <div class="SREntry">
+  <a id="Item15" onkeydown="return searchResults.Nav(event,15)" onkeypress="return searchResults.Nav(event,15)" onkeyup="return searchResults.Nav(event,15)" class="SRSymbol" href="../classgdl_1_1Input.html#a8732662c038df92f1cb422973b675288" target="basefrm">getMousePositionY</a>
+  <span class="SRScope">gdl::Input</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_getpixelptr">
+ <div class="SREntry">
+  <a id="Item16" onkeydown="return searchResults.Nav(event,16)" onkeypress="return searchResults.Nav(event,16)" onkeyup="return searchResults.Nav(event,16)" class="SRSymbol" href="../classgdl_1_1Image.html#af98213f37f91724b3c5b6999864239d1" target="basefrm">getPixelPtr</a>
+  <span class="SRScope">gdl::Image</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_gettotalelapsedtime">
+ <div class="SREntry">
+  <a id="Item17" onkeydown="return searchResults.Nav(event,17)" onkeypress="return searchResults.Nav(event,17)" onkeyup="return searchResults.Nav(event,17)" class="SRSymbol" href="../classgdl_1_1Clock.html#a1c7cb8d2c1c742db97cb667c2cfe5552" target="basefrm">getTotalElapsedTime</a>
+  <span class="SRScope">gdl::Clock</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_gettotalgametime">
+ <div class="SREntry">
+  <a id="Item18" onkeydown="return searchResults.Nav(event,18)" onkeypress="return searchResults.Nav(event,18)" onkeyup="return searchResults.Nav(event,18)" class="SRSymbol" href="../classgdl_1_1GameClock.html#a8769e925304d57d6c6949c8bedec7956" target="basefrm">getTotalGameTime</a>
+  <span class="SRScope">gdl::GameClock</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_getwidth">
+ <div class="SREntry">
+  <a id="Item19" onkeydown="return searchResults.Nav(event,19)" onkeypress="return searchResults.Nav(event,19)" onkeyup="return searchResults.Nav(event,19)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_getwidth')">getWidth</a>
+  <div class="SRChildren">
+    <a id="Item19_c0" onkeydown="return searchResults.NavChild(event,19,0)" onkeypress="return searchResults.NavChild(event,19,0)" onkeyup="return searchResults.NavChild(event,19,0)" class="SRScope" href="../classgdl_1_1Image.html#afbfdaf5f3b8744d9903face66b730d93" target="basefrm">gdl::Image::getWidth()</a>
+    <a id="Item19_c1" onkeydown="return searchResults.NavChild(event,19,1)" onkeypress="return searchResults.NavChild(event,19,1)" onkeyup="return searchResults.NavChild(event,19,1)" class="SRScope" href="../classgdl_1_1Window.html#abe7946e48e470c1e4ef6ae56a83ae620" target="basefrm">gdl::Window::getWidth()</a>
+  </div>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

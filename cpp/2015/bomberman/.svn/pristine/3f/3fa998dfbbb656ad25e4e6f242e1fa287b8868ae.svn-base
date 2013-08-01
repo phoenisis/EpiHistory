@@ -1,0 +1,124 @@
+#include "../inc/Character.hh"
+
+Character::Character(int posX, int posY, std::string name) : _posX(posX) , _posY(posY), _name(name), _nbBombs(1), _power(1), _speed(1), _bonus(NULL)
+{}
+
+Character::~Character()
+{}
+
+int		Character::getPosX()
+{
+  return this->_posX;
+}
+
+int		Character::getPosY()
+{
+  return this->_posY;
+}
+
+std::string   Character::getTypeBomb()
+{
+  return this->_typeBomb;
+}
+
+void        setTypeBomb(std::string bombe)
+{
+  this->_typeBomb = bombe;
+}
+
+int		Character::getNbBombs()
+{
+  return this->_nbBombs;
+}
+
+int		Character::getPower()
+{
+  return this->_power;
+}
+
+float		Character::Speed()
+{
+  return this->_speed;
+}
+
+void		Character::setPosX(int x)
+{
+  this->_posX = x;
+}
+
+void		Character::setPosY(int y)
+{
+  this->_posY = y;
+}
+
+void		Character::setNbBombs(int nb)
+{
+  this->_nbBombs = nb;
+}
+
+void		Character::setPower(int pow)
+{
+  this->_power = pow;
+}
+
+void		Character::setSpeed(float s)
+{
+  this->_speed = s;
+}
+
+void    Character::checkBonus()
+{
+  //ex de l'enum : enum bonus dans une classe avec un pointeur "point" dessus :
+  //{
+  //  SPEED,
+  //  NBBOMB,
+  //  TYPEBOMB,
+  //  POWER,
+  //}
+
+  if (map[getPosX()][getPosY()] == 3)
+    doBonus(point);
+  if (map[getPosX()][getPosY()] == 4)
+    doBonus(point);
+  if (map[getPosX()][getPosY()] == 5)
+    doBonus(point);
+  if (map[getPosX()][getPosY()] == 6)
+    doBonus(point);
+
+}
+
+void    Character::doBonus(class *point)
+{
+  if (point->bonus == SPEED)
+    setSpeed(this->_speed + 1);
+  else if (point->bonus == NBBOMB)
+    setNbBombs(this->_nbBombs + 1);
+  else if (point->bonus == TYPEBOMB)
+    setTypeBomb(_typeBomb);
+  else if (point->bonus == POWER)
+    setPower(this->_power + 1);
+}
+
+void    Character::movePlayer(map map, action act)
+{
+ // ex de l'enum : enum action
+ //{
+ //   RIGHT,
+ //   LEFT,
+ //   UP,
+ //   DOWN,
+ //   BOMB,
+ //}
+
+  if ((act == RIGHT) && map.getMyMap(getPosX() + 1, getPosY()) == PLAYER || map.getMyMap(getPosX() + 1, getPosY()) == BONUS)
+    setPosX(_posX + 1);
+  else if ((act == LEFT) && map.getMyMap(getPosX() - 1, getPosY()) == PLAYER || map.getMyMap(getPosX() - 1, getPosY()) == BONUS)
+    setPosX(_posX - 1);
+  else if ((act == UP) && map.getMyMap(getPosX(), getPosY()) + 1 == PLAYER || map.getMyMap(getPosX(), getPosY() + 1) == BONUS)
+    setPosY(_posY + 1);
+  else if ((act == DOWN) && map.getMyMap(getPosX(), getPosY() -1) == PLAYER || map.getMyMap(getPosX(), getPosY() - 1) == BONUS)
+    setPosY(_posY - 1);
+  else if (act == BOMB)
+    doBomb( );
+  checkBonus();
+}

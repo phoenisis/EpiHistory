@@ -1,0 +1,8 @@
+#include "map.hh"
+
+int	main()
+{
+  map::map	m1(20, 20, 6);
+
+  m1.affMap();
+}

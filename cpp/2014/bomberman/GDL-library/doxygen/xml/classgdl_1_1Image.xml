@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.2-20100208">
+  <compounddef id="classgdl_1_1Image" kind="class" prot="public">
+    <compoundname>gdl::Image</compoundname>
+    <basecompoundref refid="classgdl_1_1Resource" prot="private" virt="non-virtual">gdl::Resource&lt; ImageImpl &gt;</basecompoundref>
+    <includes refid="Image_8hpp" local="no">Image.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgdl_1_1Image_1ad30335dc3a64ec73d35a335c53178345" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ImageImpl</definition>
+        <argsstring></argsstring>
+        <name>ImageImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classgdl_1_1Image" kindref="compound">Image</ref> implementation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="75" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgdl_1_1Image_1a1ccd90e38aeef3b04ee4e62ad6928b06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Image::Image</definition>
+        <argsstring>(void)</argsstring>
+        <name>Image</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="21" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Image_1a2106e265d93d44829fe181009af0782f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Image::~Image</definition>
+        <argsstring>(void)</argsstring>
+        <name>~Image</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="26" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Image_1a38b36eb4c9bb1ff523d56c8548e250ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdl::Image::bind</definition>
+        <argsstring>(void)</argsstring>
+        <name>bind</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bind the texture on the GPU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="39" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Image_1afbfdaf5f3b8744d9903face66b730d93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gdl::Image::getWidth</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getWidth</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width of the image.</para><para><simplesect kind="return"><para>Width of the image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="46" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Image_1a92a2838f614afac73777e54e4a37eb4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gdl::Image::getHeight</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getHeight</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the height of the image.</para><para><simplesect kind="return"><para>Height of the image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="53" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classgdl_1_1Image_1af98213f37f91724b3c5b6999864239d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char const *</type>
+        <definition>unsigned char const * gdl::Image::getPixelPtr</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getPixelPtr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a pointer to the pixel array of the image.</para><para><simplesect kind="return"><para>Pointer to the pixel array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="60" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgdl_1_1Image_1a5fbf636e446bfa53e54f6664bbe49fb7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgdl_1_1Image" kindref="compound">Image</ref></type>
+        <definition>Image gdl::Image::load</definition>
+        <argsstring>(std::string const &amp;filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load an image from a file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filename of the image with extension. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An instance of the resource. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="34" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgdl_1_1Image_1a738f9a5873aec7dba28cfd26a7dcf176" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gdl::Image::Image</definition>
+        <argsstring>(ImageImpl *impl)</argsstring>
+        <name>Image</name>
+        <param>
+          <type>ImageImpl *</type>
+          <declname>impl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Explicit constructor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>impl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer on ImageImpl. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="70" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classgdl_1_1Image" kindref="compound">Image</ref> class provides image loading and image binding. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>gdl::Image</label>
+        <link refid="classgdl_1_1Image"/>
+        <childnode refid="21" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gdl::ResourceBase</label>
+        <link refid="classgdl_1_1ResourceBase"/>
+      </node>
+      <node id="21">
+        <label>gdl::Resource&lt; ImageImpl &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="22" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>gdl::Image</label>
+        <link refid="classgdl_1_1Image"/>
+        <childnode refid="24" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>gdl::ResourceBase</label>
+        <link refid="classgdl_1_1ResourceBase"/>
+      </node>
+      <node id="24">
+        <label>gdl::Resource&lt; ImageImpl &gt;</label>
+        <link refid="classgdl_1_1Resource"/>
+        <childnode refid="25" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" line="16" bodyfile="/home/thumer_m/gdl/internals/bomberman/doxygen/Image.hpp" bodystart="15" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classgdl_1_1Image_1a38b36eb4c9bb1ff523d56c8548e250ab" prot="public" virt="non-virtual"><scope>gdl::Image</scope><name>bind</name></member>
+      <member refid="classgdl_1_1Resource_1acfc41dc044277eff21791ff867078989" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>data_</name></member>
+      <member refid="classgdl_1_1Image_1a92a2838f614afac73777e54e4a37eb4c" prot="public" virt="non-virtual"><scope>gdl::Image</scope><name>getHeight</name></member>
+      <member refid="classgdl_1_1Image_1af98213f37f91724b3c5b6999864239d1" prot="public" virt="non-virtual"><scope>gdl::Image</scope><name>getPixelPtr</name></member>
+      <member refid="classgdl_1_1Image_1afbfdaf5f3b8744d9903face66b730d93" prot="public" virt="non-virtual"><scope>gdl::Image</scope><name>getWidth</name></member>
+      <member refid="classgdl_1_1Resource_1a62cfa0d7b8f63c2d6be09a644e49028c" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>HardReset</name></member>
+      <member refid="classgdl_1_1Image_1a1ccd90e38aeef3b04ee4e62ad6928b06" prot="public" virt="non-virtual"><scope>gdl::Image</scope><name>Image</name></member>
+      <member refid="classgdl_1_1Image_1a738f9a5873aec7dba28cfd26a7dcf176" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>Image</name></member>
+      <member refid="classgdl_1_1Image_1ad30335dc3a64ec73d35a335c53178345" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>ImageImpl</name></member>
+      <member refid="classgdl_1_1Resource_1a3d8b62b778b5c598ee51a5edcdae05ef" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>isValid</name></member>
+      <member refid="classgdl_1_1Image_1a5fbf636e446bfa53e54f6664bbe49fb7" prot="public" virt="non-virtual"><scope>gdl::Image</scope><name>load</name></member>
+      <member refid="classgdl_1_1Resource_1a750113d7aafe245fecb39089d15ebbe3" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>operator*</name></member>
+      <member refid="classgdl_1_1Resource_1a0b869a1e27677c66bb78dec379e73658" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>operator-&gt;</name></member>
+      <member refid="classgdl_1_1Resource_1a8d4f9966f9a8047d0830fc0ce4c15d37" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>operator=</name></member>
+      <member refid="classgdl_1_1Resource_1a149a477edeec7571d7664ac6be21f3ce" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>Resource</name></member>
+      <member refid="classgdl_1_1Resource_1a2110d7edf4e2864a70688a4279480e43" prot="private" virt="non-virtual"><scope>gdl::Image</scope><name>Resource</name></member>
+      <member refid="classgdl_1_1Image_1a2106e265d93d44829fe181009af0782f" prot="public" virt="non-virtual"><scope>gdl::Image</scope><name>~Image</name></member>
+      <member refid="classgdl_1_1Resource_1a52f5853b3028356acb3cfe8673fa4bd3" prot="private" virt="virtual"><scope>gdl::Image</scope><name>~Resource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

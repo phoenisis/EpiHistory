@@ -1,0 +1,16 @@
+#ifndef pipe_hh_
+# define pipe_hh_
+# include <string.h>
+
+class pipe
+{
+public:
+    pipe(const std::string);
+    ~pipe();
+    const std::string reader();
+    bool writter(const std::string);
+private:
+    std::string name;
+};
+
+#endif

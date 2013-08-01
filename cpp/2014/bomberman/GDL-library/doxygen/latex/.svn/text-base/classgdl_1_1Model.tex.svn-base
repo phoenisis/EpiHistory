@@ -1,0 +1,359 @@
+\hypertarget{classgdl_1_1Model}{
+\section{gdl::Model Class Reference}
+\label{classgdl_1_1Model}\index{gdl::Model@{gdl::Model}}
+}
+
+
+{\ttfamily \#include $<$Model.hpp$>$}Inheritance diagram for gdl::Model::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classgdl_1_1Model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgdl_1_1Model_a48d0cb59ef4926b95b1a4504d6b6fbe0}{Model} (void)
+\item 
+\hyperlink{classgdl_1_1Model_a76ba0ddf7db67016d0a72f0c22febca4}{$\sim$Model} (void)
+\item 
+void \hyperlink{classgdl_1_1Model_a9e5a520c27759a0913010e88262f87d0}{update} (\hyperlink{classgdl_1_1IClock}{IClock} const \&gameTime)
+\item 
+void \hyperlink{classgdl_1_1Model_af8cbb946c57ab177273521bb3c127fb4}{draw} (void)
+\item 
+void \hyperlink{classgdl_1_1Model_a4835d0ce38b458dc0b378f4a025c5a09}{draw\_\-pose} (int pose\_\-id)
+\item 
+void \hyperlink{classgdl_1_1Model_ae767b95441e66f3c5e8f06efd6f785fe}{infos} (void)
+\item 
+bool \hyperlink{classgdl_1_1Model_abd7249531d6433c6a8c0970f931b16e6}{play} (std::string const \&\_\-name, char state=Anim::RUN)
+\item 
+bool \hyperlink{classgdl_1_1Model_a5046ca0821ca4c5a6a6ec33c51b41903}{animation\_\-hasStarted} (std::string const \&name) const 
+\item 
+bool \hyperlink{classgdl_1_1Model_a3fcf22fc2e37057fe047c3841d30c88b}{anim\_\-is\_\-ended} (std::string const \&name) const 
+\item 
+void \hyperlink{classgdl_1_1Model_a565112440d65142e71911e60cdb223bb}{stop\_\-animation} (std::string const \&name)
+\item 
+double \hyperlink{classgdl_1_1Model_a5ccf274812bacb19062d4051fbe44b57}{get\_\-anim\_\-speed} (std::string const \&name) const 
+\item 
+double \hyperlink{classgdl_1_1Model_a97d6d0d3f9e6df95e20caf26e769bea4}{get\_\-anim\_\-blendfactor} (std::string const \&name) const 
+\item 
+char \hyperlink{classgdl_1_1Model_a5cb4cfea0c7f0819d0749baddd682f98}{get\_\-anim\_\-state} (std::string const \&name) const 
+\item 
+void \hyperlink{classgdl_1_1Model_a0cbcdc21c1962e7230fcba6b063b119a}{set\_\-anim\_\-bendfactor} (std::string const \&name, double blendFactor)
+\item 
+void \hyperlink{classgdl_1_1Model_abebb3405288cef12250671957cda4925}{set\_\-anim\_\-speed} (std::string const \&name, double speed)
+\item 
+\hyperlink{structgdl_1_1Color}{Color} const \& \hyperlink{classgdl_1_1Model_a8bbdffaebc6ef023b84d609d9f00a43e}{get\_\-default\_\-model\_\-color} (void) const 
+\item 
+void \hyperlink{classgdl_1_1Model_a5fe9cd2cbfe7a993505528832cdc0604}{set\_\-default\_\-model\_\-color} (\hyperlink{structgdl_1_1Color}{Color} const \&color)
+\item 
+void \hyperlink{classgdl_1_1Model_a7239d032a682d61fcf69194e34461102}{set\_\-anim\_\-state} (std::string const \&name, char state)
+\item 
+void \hyperlink{classgdl_1_1Model_a2bf37d490e0dd0906d4ee7d74aca5df3}{add\_\-anim\_\-state} (std::string const \&name, Anim::AnimStates state)
+\item 
+void \hyperlink{classgdl_1_1Model_af32a30b8fc163e1dc9d1a78eff49f2ea}{remove\_\-anim\_\-state} (std::string const \&name, Anim::AnimStates state)
+\item 
+std::vector$<$ std::string $>$ const \& \hyperlink{classgdl_1_1Model_accd5847c295adfc7cebcd2283ee2bfdf}{get\_\-stackanimation\_\-names} (void) const 
+\item 
+std::vector$<$ std::string $>$ const \& \hyperlink{classgdl_1_1Model_a7f09fd45a42fd3314e320c0b969ab2bc}{get\_\-animation\_\-names} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classgdl_1_1Model}{Model} \hyperlink{classgdl_1_1Model_a6f9c70f0e5b0b0c640d739a4fd1249cd}{load} (std::string const \&filename)
+\item 
+static bool \hyperlink{classgdl_1_1Model_ad477ab8d1ffe487499886170a1b0d949}{cut\_\-animation} (\hyperlink{classgdl_1_1Model}{Model} \&\_\-model, std::string const \&stackAnim, int id\_\-start, int id\_\-end, std::string const \&\_\-newName)
+\item 
+static void \hyperlink{classgdl_1_1Model_ae1ede142757404fb1869c62c682bc48b}{Begin} (void)
+\item 
+static void \hyperlink{classgdl_1_1Model_a65b3733d5447e12316befa7a28eeadd7}{End} (void)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgdl_1_1Model_afb81d2077780e342b8fd3654cabc4c19}{ModelImpl}
+\item 
+class \hyperlink{classgdl_1_1Model_a7afc1a807b9064f725fdcdce33639acb}{ResourceManagerImpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The ModelImpl class provide the gestion of your model. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgdl_1_1Model_a48d0cb59ef4926b95b1a4504d6b6fbe0}{
+\index{gdl::Model@{gdl::Model}!Model@{Model}}
+\index{Model@{Model}!gdl::Model@{gdl::Model}}
+\subsubsection[{Model}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Model::Model (void)}}
+\label{classgdl_1_1Model_a48d0cb59ef4926b95b1a4504d6b6fbe0}
+Default constructror. \hypertarget{classgdl_1_1Model_a76ba0ddf7db67016d0a72f0c22febca4}{
+\index{gdl::Model@{gdl::Model}!$\sim$Model@{$\sim$Model}}
+\index{$\sim$Model@{$\sim$Model}!gdl::Model@{gdl::Model}}
+\subsubsection[{$\sim$Model}]{\setlength{\rightskip}{0pt plus 5cm}gdl::Model::$\sim$Model (void)}}
+\label{classgdl_1_1Model_a76ba0ddf7db67016d0a72f0c22febca4}
+Default destructror. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1Model_a2bf37d490e0dd0906d4ee7d74aca5df3}{
+\index{gdl::Model@{gdl::Model}!add\_\-anim\_\-state@{add\_\-anim\_\-state}}
+\index{add\_\-anim\_\-state@{add\_\-anim\_\-state}!gdl::Model@{gdl::Model}}
+\subsubsection[{add\_\-anim\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::add\_\-anim\_\-state (std::string const \& {\em name}, \/  Anim::AnimStates {\em state})}}
+\label{classgdl_1_1Model_a2bf37d490e0dd0906d4ee7d74aca5df3}
+Add an animation state.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \item[\mbox{$\leftarrow$} {\em state}](in Anim namespace). \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_a3fcf22fc2e37057fe047c3841d30c88b}{
+\index{gdl::Model@{gdl::Model}!anim\_\-is\_\-ended@{anim\_\-is\_\-ended}}
+\index{anim\_\-is\_\-ended@{anim\_\-is\_\-ended}!gdl::Model@{gdl::Model}}
+\subsubsection[{anim\_\-is\_\-ended}]{\setlength{\rightskip}{0pt plus 5cm}bool gdl::Model::anim\_\-is\_\-ended (std::string const \& {\em name}) const}}
+\label{classgdl_1_1Model_a3fcf22fc2e37057fe047c3841d30c88b}
+Check if the animation is ended.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the animation has ended, true is returned. Otherwise, false is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_a5046ca0821ca4c5a6a6ec33c51b41903}{
+\index{gdl::Model@{gdl::Model}!animation\_\-hasStarted@{animation\_\-hasStarted}}
+\index{animation\_\-hasStarted@{animation\_\-hasStarted}!gdl::Model@{gdl::Model}}
+\subsubsection[{animation\_\-hasStarted}]{\setlength{\rightskip}{0pt plus 5cm}bool gdl::Model::animation\_\-hasStarted (std::string const \& {\em name}) const}}
+\label{classgdl_1_1Model_a5046ca0821ca4c5a6a6ec33c51b41903}
+Check if the animation has started.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Animation name. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If successful, true is returned. Otherwise, false is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_ae1ede142757404fb1869c62c682bc48b}{
+\index{gdl::Model@{gdl::Model}!Begin@{Begin}}
+\index{Begin@{Begin}!gdl::Model@{gdl::Model}}
+\subsubsection[{Begin}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::Begin (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classgdl_1_1Model_ae1ede142757404fb1869c62c682bc48b}
+Open the scope to draw models. \hypertarget{classgdl_1_1Model_ad477ab8d1ffe487499886170a1b0d949}{
+\index{gdl::Model@{gdl::Model}!cut\_\-animation@{cut\_\-animation}}
+\index{cut\_\-animation@{cut\_\-animation}!gdl::Model@{gdl::Model}}
+\subsubsection[{cut\_\-animation}]{\setlength{\rightskip}{0pt plus 5cm}bool gdl::Model::cut\_\-animation ({\bf Model} \& {\em \_\-model}, \/  std::string const \& {\em stackAnim}, \/  int {\em id\_\-start}, \/  int {\em id\_\-end}, \/  std::string const \& {\em \_\-newName})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classgdl_1_1Model_ad477ab8d1ffe487499886170a1b0d949}
+Cut the animation.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-model}]The model. \item[\mbox{$\leftarrow$} {\em stackAnim}]The animations stack. \item[\mbox{$\leftarrow$} {\em id\_\-start}]First id. \item[\mbox{$\leftarrow$} {\em id\_\-end}]Last id. \item[\mbox{$\leftarrow$} {\em \_\-newName}]Name of the new animation. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If successfull, true is returned. Otherwise, false is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_af8cbb946c57ab177273521bb3c127fb4}{
+\index{gdl::Model@{gdl::Model}!draw@{draw}}
+\index{draw@{draw}!gdl::Model@{gdl::Model}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::draw (void)}}
+\label{classgdl_1_1Model_af8cbb946c57ab177273521bb3c127fb4}
+Draw the model in the \hyperlink{classgdl_1_1Window}{Window}. \hypertarget{classgdl_1_1Model_a4835d0ce38b458dc0b378f4a025c5a09}{
+\index{gdl::Model@{gdl::Model}!draw\_\-pose@{draw\_\-pose}}
+\index{draw\_\-pose@{draw\_\-pose}!gdl::Model@{gdl::Model}}
+\subsubsection[{draw\_\-pose}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::draw\_\-pose (int {\em pose\_\-id})}}
+\label{classgdl_1_1Model_a4835d0ce38b458dc0b378f4a025c5a09}
+Draw the model in a specific pose.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em pose\_\-id}]ID of the specific pose. \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_a65b3733d5447e12316befa7a28eeadd7}{
+\index{gdl::Model@{gdl::Model}!End@{End}}
+\index{End@{End}!gdl::Model@{gdl::Model}}
+\subsubsection[{End}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::End (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classgdl_1_1Model_a65b3733d5447e12316befa7a28eeadd7}
+Close the scope to draw models. \hypertarget{classgdl_1_1Model_a97d6d0d3f9e6df95e20caf26e769bea4}{
+\index{gdl::Model@{gdl::Model}!get\_\-anim\_\-blendfactor@{get\_\-anim\_\-blendfactor}}
+\index{get\_\-anim\_\-blendfactor@{get\_\-anim\_\-blendfactor}!gdl::Model@{gdl::Model}}
+\subsubsection[{get\_\-anim\_\-blendfactor}]{\setlength{\rightskip}{0pt plus 5cm}double gdl::Model::get\_\-anim\_\-blendfactor (std::string const \& {\em name}) const}}
+\label{classgdl_1_1Model_a97d6d0d3f9e6df95e20caf26e769bea4}
+Get the blend factor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the animation doesn't exist, -\/1 is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_a5ccf274812bacb19062d4051fbe44b57}{
+\index{gdl::Model@{gdl::Model}!get\_\-anim\_\-speed@{get\_\-anim\_\-speed}}
+\index{get\_\-anim\_\-speed@{get\_\-anim\_\-speed}!gdl::Model@{gdl::Model}}
+\subsubsection[{get\_\-anim\_\-speed}]{\setlength{\rightskip}{0pt plus 5cm}double gdl::Model::get\_\-anim\_\-speed (std::string const \& {\em name}) const}}
+\label{classgdl_1_1Model_a5ccf274812bacb19062d4051fbe44b57}
+Get the animation speed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the animation doesn't exist, -\/1 is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_a5cb4cfea0c7f0819d0749baddd682f98}{
+\index{gdl::Model@{gdl::Model}!get\_\-anim\_\-state@{get\_\-anim\_\-state}}
+\index{get\_\-anim\_\-state@{get\_\-anim\_\-state}!gdl::Model@{gdl::Model}}
+\subsubsection[{get\_\-anim\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}char gdl::Model::get\_\-anim\_\-state (std::string const \& {\em name}) const}}
+\label{classgdl_1_1Model_a5cb4cfea0c7f0819d0749baddd682f98}
+Get the anim state.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the animation doesn't exist, -\/1 is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_a7f09fd45a42fd3314e320c0b969ab2bc}{
+\index{gdl::Model@{gdl::Model}!get\_\-animation\_\-names@{get\_\-animation\_\-names}}
+\index{get\_\-animation\_\-names@{get\_\-animation\_\-names}!gdl::Model@{gdl::Model}}
+\subsubsection[{get\_\-animation\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ std::string $>$ const \& gdl::Model::get\_\-animation\_\-names (void) const}}
+\label{classgdl_1_1Model_a7f09fd45a42fd3314e320c0b969ab2bc}
+Get the animation's name.
+
+\begin{DoxyReturn}{Returns}
+Vector of strings. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_a8bbdffaebc6ef023b84d609d9f00a43e}{
+\index{gdl::Model@{gdl::Model}!get\_\-default\_\-model\_\-color@{get\_\-default\_\-model\_\-color}}
+\index{get\_\-default\_\-model\_\-color@{get\_\-default\_\-model\_\-color}!gdl::Model@{gdl::Model}}
+\subsubsection[{get\_\-default\_\-model\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Color} \& gdl::Model::get\_\-default\_\-model\_\-color (void) const}}
+\label{classgdl_1_1Model_a8bbdffaebc6ef023b84d609d9f00a43e}
+Get the default model color.
+
+\begin{DoxyReturn}{Returns}
+The default color. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_accd5847c295adfc7cebcd2283ee2bfdf}{
+\index{gdl::Model@{gdl::Model}!get\_\-stackanimation\_\-names@{get\_\-stackanimation\_\-names}}
+\index{get\_\-stackanimation\_\-names@{get\_\-stackanimation\_\-names}!gdl::Model@{gdl::Model}}
+\subsubsection[{get\_\-stackanimation\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ std::string $>$ const \& gdl::Model::get\_\-stackanimation\_\-names (void) const}}
+\label{classgdl_1_1Model_accd5847c295adfc7cebcd2283ee2bfdf}
+Get the stack of the animation's name.
+
+\begin{DoxyReturn}{Returns}
+Vector of strings. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_ae767b95441e66f3c5e8f06efd6f785fe}{
+\index{gdl::Model@{gdl::Model}!infos@{infos}}
+\index{infos@{infos}!gdl::Model@{gdl::Model}}
+\subsubsection[{infos}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::infos (void)}}
+\label{classgdl_1_1Model_ae767b95441e66f3c5e8f06efd6f785fe}
+Do nothing. Have to display informations about the \hyperlink{classgdl_1_1Model}{Model} like stack anime number, vertices number... \hypertarget{classgdl_1_1Model_a6f9c70f0e5b0b0c640d739a4fd1249cd}{
+\index{gdl::Model@{gdl::Model}!load@{load}}
+\index{load@{load}!gdl::Model@{gdl::Model}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model} gdl::Model::load (std::string const \& {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classgdl_1_1Model_a6f9c70f0e5b0b0c640d739a4fd1249cd}
+Load the model.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em filename}]Filename with the extension. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classgdl_1_1Model}{Model}. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_abd7249531d6433c6a8c0970f931b16e6}{
+\index{gdl::Model@{gdl::Model}!play@{play}}
+\index{play@{play}!gdl::Model@{gdl::Model}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}bool gdl::Model::play (std::string const \& {\em \_\-name}, \/  char {\em state} = {\ttfamily Anim::RUN})}}
+\label{classgdl_1_1Model_abd7249531d6433c6a8c0970f931b16e6}
+Play the animation.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-name}]Animation name. \item[\mbox{$\leftarrow$} {\em state}](AnimState enum). \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If successful, true is returned. Otherwise, false is returned. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1Model_af32a30b8fc163e1dc9d1a78eff49f2ea}{
+\index{gdl::Model@{gdl::Model}!remove\_\-anim\_\-state@{remove\_\-anim\_\-state}}
+\index{remove\_\-anim\_\-state@{remove\_\-anim\_\-state}!gdl::Model@{gdl::Model}}
+\subsubsection[{remove\_\-anim\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::remove\_\-anim\_\-state (std::string const \& {\em name}, \/  Anim::AnimStates {\em state})}}
+\label{classgdl_1_1Model_af32a30b8fc163e1dc9d1a78eff49f2ea}
+Remove an animation state.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \item[\mbox{$\leftarrow$} {\em state}](in Anim namespace). \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_a0cbcdc21c1962e7230fcba6b063b119a}{
+\index{gdl::Model@{gdl::Model}!set\_\-anim\_\-bendfactor@{set\_\-anim\_\-bendfactor}}
+\index{set\_\-anim\_\-bendfactor@{set\_\-anim\_\-bendfactor}!gdl::Model@{gdl::Model}}
+\subsubsection[{set\_\-anim\_\-bendfactor}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::set\_\-anim\_\-bendfactor (std::string const \& {\em name}, \/  double {\em blendFactor})}}
+\label{classgdl_1_1Model_a0cbcdc21c1962e7230fcba6b063b119a}
+Set the blend factor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \item[\mbox{$\leftarrow$} {\em blendFactor}]Blend factor. \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_abebb3405288cef12250671957cda4925}{
+\index{gdl::Model@{gdl::Model}!set\_\-anim\_\-speed@{set\_\-anim\_\-speed}}
+\index{set\_\-anim\_\-speed@{set\_\-anim\_\-speed}!gdl::Model@{gdl::Model}}
+\subsubsection[{set\_\-anim\_\-speed}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::set\_\-anim\_\-speed (std::string const \& {\em name}, \/  double {\em speed})}}
+\label{classgdl_1_1Model_abebb3405288cef12250671957cda4925}
+Set the animation speed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \item[\mbox{$\leftarrow$} {\em speed}]Speed of the animation. \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_a7239d032a682d61fcf69194e34461102}{
+\index{gdl::Model@{gdl::Model}!set\_\-anim\_\-state@{set\_\-anim\_\-state}}
+\index{set\_\-anim\_\-state@{set\_\-anim\_\-state}!gdl::Model@{gdl::Model}}
+\subsubsection[{set\_\-anim\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::set\_\-anim\_\-state (std::string const \& {\em name}, \/  char {\em state})}}
+\label{classgdl_1_1Model_a7239d032a682d61fcf69194e34461102}
+Set the anim state.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \item[\mbox{$\leftarrow$} {\em state}](with AnimState enum). \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_a5fe9cd2cbfe7a993505528832cdc0604}{
+\index{gdl::Model@{gdl::Model}!set\_\-default\_\-model\_\-color@{set\_\-default\_\-model\_\-color}}
+\index{set\_\-default\_\-model\_\-color@{set\_\-default\_\-model\_\-color}!gdl::Model@{gdl::Model}}
+\subsubsection[{set\_\-default\_\-model\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::set\_\-default\_\-model\_\-color ({\bf Color} const \& {\em color})}}
+\label{classgdl_1_1Model_a5fe9cd2cbfe7a993505528832cdc0604}
+Set the default model color.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em color}]The default color. \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_a565112440d65142e71911e60cdb223bb}{
+\index{gdl::Model@{gdl::Model}!stop\_\-animation@{stop\_\-animation}}
+\index{stop\_\-animation@{stop\_\-animation}!gdl::Model@{gdl::Model}}
+\subsubsection[{stop\_\-animation}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::stop\_\-animation (std::string const \& {\em name})}}
+\label{classgdl_1_1Model_a565112440d65142e71911e60cdb223bb}
+Stop the animation.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em name}]Animation name. \end{DoxyParams}
+\hypertarget{classgdl_1_1Model_a9e5a520c27759a0913010e88262f87d0}{
+\index{gdl::Model@{gdl::Model}!update@{update}}
+\index{update@{update}!gdl::Model@{gdl::Model}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::Model::update ({\bf IClock} const \& {\em gameTime})}}
+\label{classgdl_1_1Model_a9e5a520c27759a0913010e88262f87d0}
+Update the animation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em gameTime}]Game's clock. \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgdl_1_1Model_afb81d2077780e342b8fd3654cabc4c19}{
+\index{gdl::Model@{gdl::Model}!ModelImpl@{ModelImpl}}
+\index{ModelImpl@{ModelImpl}!gdl::Model@{gdl::Model}}
+\subsubsection[{ModelImpl}]{\setlength{\rightskip}{0pt plus 5cm}friend class ModelImpl\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classgdl_1_1Model_afb81d2077780e342b8fd3654cabc4c19}
+To reach private members of ModelImpl. \hypertarget{classgdl_1_1Model_a7afc1a807b9064f725fdcdce33639acb}{
+\index{gdl::Model@{gdl::Model}!ResourceManagerImpl@{ResourceManagerImpl}}
+\index{ResourceManagerImpl@{ResourceManagerImpl}!gdl::Model@{gdl::Model}}
+\subsubsection[{ResourceManagerImpl}]{\setlength{\rightskip}{0pt plus 5cm}friend class ResourceManagerImpl\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classgdl_1_1Model_a7afc1a807b9064f725fdcdce33639acb}
+To reach private members of ResourceManagerImpl. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Model.hpp\item 
+Model.cpp\end{DoxyCompactItemize}

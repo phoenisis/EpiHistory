@@ -1,0 +1,97 @@
+\hypertarget{classgdl_1_1GameClock}{
+\section{gdl::GameClock Class Reference}
+\label{classgdl_1_1GameClock}\index{gdl::GameClock@{gdl::GameClock}}
+}
+
+
+{\ttfamily \#include $<$GameClock.hpp$>$}Inheritance diagram for gdl::GameClock::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classgdl_1_1GameClock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgdl_1_1GameClock_aa7ad30c03dec94bc5b21a4fcad290644}{play} (void)
+\item 
+void \hyperlink{classgdl_1_1GameClock_aab85df27e686f8dbc0bcdb009a6e9158}{pause} (void)
+\item 
+void \hyperlink{classgdl_1_1GameClock_adb1151b518f6ee38a169b25b75542311}{update} (void)
+\item 
+void \hyperlink{classgdl_1_1GameClock_af568839e075e6e3c2b7aad91450d16d2}{reset} (void)
+\item 
+float \hyperlink{classgdl_1_1GameClock_a4c089f024d7b1448bc0d24f6a2785281}{getElapsedTime} (void) const 
+\item 
+float \hyperlink{classgdl_1_1GameClock_a8769e925304d57d6c6949c8bedec7956}{getTotalGameTime} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgdl_1_1GameClock_aa2fab026580d6f14280c2ffb8063a314}{
+class {\bfseries Game}}
+\label{classgdl_1_1GameClock_aa2fab026580d6f14280c2ffb8063a314}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgdl_1_1GameClock}{GameClock} provides a main clock for the entire game. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgdl_1_1GameClock_a4c089f024d7b1448bc0d24f6a2785281}{
+\index{gdl::GameClock@{gdl::GameClock}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!gdl::GameClock@{gdl::GameClock}}
+\subsubsection[{getElapsedTime}]{\setlength{\rightskip}{0pt plus 5cm}float gdl::GameClock::getElapsedTime (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classgdl_1_1GameClock_a4c089f024d7b1448bc0d24f6a2785281}
+Return the time since the last Update call.
+
+\begin{DoxyReturn}{Returns}
+The time in float. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classgdl_1_1IClock_ad5c3e51562a10e319a3494785d077d1b}{gdl::IClock}.\hypertarget{classgdl_1_1GameClock_a8769e925304d57d6c6949c8bedec7956}{
+\index{gdl::GameClock@{gdl::GameClock}!getTotalGameTime@{getTotalGameTime}}
+\index{getTotalGameTime@{getTotalGameTime}!gdl::GameClock@{gdl::GameClock}}
+\subsubsection[{getTotalGameTime}]{\setlength{\rightskip}{0pt plus 5cm}float gdl::GameClock::getTotalGameTime (void) const}}
+\label{classgdl_1_1GameClock_a8769e925304d57d6c6949c8bedec7956}
+Return the time between now and the start of the \hyperlink{classgdl_1_1Game}{Game}.
+
+\begin{DoxyReturn}{Returns}
+The time in float. 
+\end{DoxyReturn}
+\hypertarget{classgdl_1_1GameClock_aab85df27e686f8dbc0bcdb009a6e9158}{
+\index{gdl::GameClock@{gdl::GameClock}!pause@{pause}}
+\index{pause@{pause}!gdl::GameClock@{gdl::GameClock}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::GameClock::pause (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classgdl_1_1GameClock_aab85df27e686f8dbc0bcdb009a6e9158}
+Stop the clock until you play it again. 
+
+Implements \hyperlink{classgdl_1_1IClock_a7274430efa1f0e621bcce5d99d6abca7}{gdl::IClock}.\hypertarget{classgdl_1_1GameClock_aa7ad30c03dec94bc5b21a4fcad290644}{
+\index{gdl::GameClock@{gdl::GameClock}!play@{play}}
+\index{play@{play}!gdl::GameClock@{gdl::GameClock}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::GameClock::play (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classgdl_1_1GameClock_aa7ad30c03dec94bc5b21a4fcad290644}
+Start the clock. 
+
+Implements \hyperlink{classgdl_1_1IClock_af9f70e18cd6b9b39aca1a359412adf4d}{gdl::IClock}.\hypertarget{classgdl_1_1GameClock_af568839e075e6e3c2b7aad91450d16d2}{
+\index{gdl::GameClock@{gdl::GameClock}!reset@{reset}}
+\index{reset@{reset}!gdl::GameClock@{gdl::GameClock}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::GameClock::reset (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classgdl_1_1GameClock_af568839e075e6e3c2b7aad91450d16d2}
+Reset the clock to 0. 
+
+Implements \hyperlink{classgdl_1_1IClock_a63cd29fcd9830e719d4cb82d5e993ec6}{gdl::IClock}.\hypertarget{classgdl_1_1GameClock_adb1151b518f6ee38a169b25b75542311}{
+\index{gdl::GameClock@{gdl::GameClock}!update@{update}}
+\index{update@{update}!gdl::GameClock@{gdl::GameClock}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void gdl::GameClock::update (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classgdl_1_1GameClock_adb1151b518f6ee38a169b25b75542311}
+Up the time of the clock. 
+
+Implements \hyperlink{classgdl_1_1IClock_a0489f6f9055df40116e98e7ed6ad4146}{gdl::IClock}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+GameClock.hpp\item 
+GameClock.cpp\end{DoxyCompactItemize}

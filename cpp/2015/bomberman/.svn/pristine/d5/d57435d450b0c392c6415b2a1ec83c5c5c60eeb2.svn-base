@@ -1,0 +1,116 @@
+/*
+**  src/Graph.cpp
+**  Bomberman
+**
+**  Created by Quentin PIDOUX on 30/04/12.
+**  Copyright (c) 2012 EPITECH. All rights reserved.
+*/
+
+#include "../inc/Graph.hh"
+#include <string>
+#include <iostream>
+
+namespace Display
+{
+  Menu::Menu(int x, int y, int sizeX, int sizeY)
+  {
+    gdl::Model New_game = gdl::Model::load("../asserts/New_Game.FBX");
+    gdl::Model Load = gdl::Model::load("../Load.fbx");
+    gdl::Model Save = gdl::Model::load("../Save.FBX");
+    gdl::Model Exit = gdl::Model::load("../Exit.FBX");
+
+    window_.create();
+    this->camera_.initialize();
+    this->x = x;
+    this->y = y;
+    this->sizeX = sizeX;
+    this->sizeY = sizeY;
+    this->MenuCurr = 1;
+    this->MenuDecide = false;
+
+    this->menu_model[1]=New_Game;
+    this->menu_model[2]=Load;
+    this->menu_model[3]=Save;
+    this->menu_model[4]=Exit;
+  }
+
+  Menu::~Menu()
+  {}
+
+  void Menu::update(gdl::GameClock const & gameClock, gdl::Input & input)
+  {
+    gdl::Model _model;
+    gdl::Model::Begin();
+
+    glPushMatrix();
+    _model.draw();
+    glPopMatrix();
+
+    if (this->MenuDecide == false) {
+      if (input.isKeyDown(gdl::Keys::Up) == true){
+	if (this->MenuCurr < 2){
+	  this->MenuCurr--;
+	  _model = this->menu_model.find(this->MenuCurr)->second;
+	  _model.draw();
+	}
+      }
+
+      else if (input.isKeyDown(gdl::Keys::Down) == true){
+	if (this->MenuCurr < 3){
+	  this->MenuCurr++;
+	  _model = this->menu_model.find(this->MenuCurr)->second;
+	  _model.draw();
+	}
+      }
+
+      if (input.isKeyDown(gdl::Keys::Space) == true)
+	this->MenuDecide = true;
+    }
+    gdl::Model::End();
+  }
+
+  Graph::Graph()
+  {
+    gdl::Model Bombe = gdl::Model::load("../asserts/bombe.FBX");
+    gdl::Model Marvin = gdl::Model::load("../marvin.fbx");
+    gdl::Model Fire = gdl::Model::load("../fire.FBX");
+    gdl::Model Dalle = gdl::Model::load("../asserts/dalle.FBX");
+    gdl::Model Bonus_Fire = gdl::Model::load("../asserts/bonus_flamme.FBX");
+    gdl::Model Bonus_Bombe = gdl::Model::load("../asserts/bonus_bombe.FBX");
+
+    this->my_model[1]=Bombe;
+    this->my_model[2]=Marvin;
+    this->my_model[3]=Fire;
+    this->my_model[4]=Dalle;
+    this->my_model[5]=Bonus_Fire;
+    this->my_model[6]=Bonus_Bombe;
+  }
+
+  Graph::~Graph()
+  {}
+
+    void	Graph::draw(const Vector3f *position, int nb)
+  {
+    gdl::Model::Begin();
+
+    gdl::Model _model = mymap.find(nb)->second;
+
+    _model.play("Take 001");
+    glPushMatrix();
+    glTranslatef(position->z + 0.50, 0.0f, position->x - 0.50);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    _model.draw();
+    glPopMatrix();
+
+    gdl::Model::End();
+  }
+}
+
+
+
+int main()
+{
+  Display::Menu  *menu  = new Display::MenuLabel(-25, -10, 50, 20);
+
+  return 0;
+}

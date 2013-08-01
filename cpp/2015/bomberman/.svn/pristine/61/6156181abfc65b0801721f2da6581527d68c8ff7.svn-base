@@ -1,0 +1,110 @@
+#include "../inc/Character.hh"
+
+Character::Character(int posX, int posY, std::string name) : _posX(posX) , _posY(posY), _name(name), _nbBombs(1), _power(1), _speed(1), _bonus(NULL)
+{}
+
+Character::~Character()
+{}
+
+int		Character::getPosX()
+{
+  return this->_posX;
+}
+
+int		Character::getPosY()
+{
+  return this->_posY;
+}
+
+std::string   Character::getTypeBomb()
+{
+  return this->_typeBomb;
+}
+
+void        setTypeBomb(std::string bombe)
+{
+  this->_typeBomb = bombe;
+}
+
+int		Character::getNbBombs()
+{
+  return this->_nbBombs;
+}
+
+int		Character::getPower()
+{
+  return this->_power;
+}
+
+float		Character::Speed()
+{
+  return this->_speed;
+}
+
+void		Character::setPosX(int x)
+{
+  this->_posX = x;
+}
+
+void		Character::setPosY(int y)
+{
+  this->_posY = y;
+}
+
+void		Character::setNbBombs(int nb)
+{
+  this->_nbBombs = nb;
+}
+
+void		Character::setPower(int pow)
+{
+  this->_power = pow;
+}
+
+void		Character::setSpeed(float s)
+{
+  this->_speed = s;
+}
+
+void    Character::checkBonus(map map)
+{
+  //ex de l'enum : enum bonus :
+  //{
+  //  NBBOMB,
+  //  POWER,
+  //}
+  if (bonus == NBBOMB && map::map.getMyMap(this->_posX(), this->_posY()) == BONUS)
+    {
+      this->_nbBombs = this->_nbBombs + 1;
+      map::map.setMyMap(this->_posX(), this->_posY() == 8);
+    }
+  else if (bonus == POWER && map::map.getMyMap(this->_posX(), this->_posY()) == BONUS)
+    {
+      this->_power = this->_power + 1;
+      map::map.setMyMap(this->_posX(), this->_posY() == 8);
+    }
+}
+
+void    Character::movePlayer(map map, action act)
+{
+ // ex de l'enum : enum action
+ //{
+ //   RIGHT,
+ //   LEFT,
+ //   UP,
+ //   DOWN,
+ //   BOMB,
+ //}
+
+  if ((act == RIGHT) && map::map.getMyMap(this->_posX() + 1, this->_posY()) == PLAYER || map::map.getMyMap(this->_posX() + 1, this->_posY()) == BONUS)
+    this->_posX = this->_posX + 1;
+  else if ((act == LEFT) && map::map.getMyMap(this->_posX() - 1, this->_posY()) == PLAYER || map::map.getMyMap(this->_posX() - 1, this->_posY()) == BONUS)
+    this->_posX = this->_posX - 1;
+  else if ((act == UP) && map::map.getMyMap(this->_posX(), this->_posY()) + 1 == PLAYER || map::map.getMyMap(this->_posX(), this->_posY() + 1) == BONUS)
+    this->_posY = this->_posY + 1;
+  else if ((act == DOWN) && map::map.getMyMap(this->_posX(), this->_posY() -1) == PLAYER || map::map.getMyMap(this->_posX(), this->_posY() - 1) == BONUS)
+    this->_posY = this->_posY - 1;
+  else if (act == BOMB)
+    doBomb( );
+  checkBonus(map map);
+}

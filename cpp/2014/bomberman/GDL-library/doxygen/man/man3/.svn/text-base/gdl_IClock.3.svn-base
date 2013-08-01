@@ -1,0 +1,62 @@
+.TH "gdl::IClock" 3 "16 May 2011" "Version 1.1" "GDL-GL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gdl::IClock \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IClock.hpp>\fP
+.PP
+Inherited by \fBgdl::Clock\fP, and \fBgdl::GameClock\fP.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBplay\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual void \fBpause\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreset\fP (void)=0"
+.br
+.ti -1c
+.RI "virtual float \fBgetElapsedTime\fP (void) const =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface \fBIClock\fP is used to force a specific time implementation. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual float gdl::IClock::getElapsedTime (void) const\fC [pure virtual]\fP"Return the time between now and the last call of the update method.
+.PP
+\fBReturns:\fP
+.RS 4
+The time in float. 
+.RE
+.PP
+
+.PP
+Implemented in \fBgdl::Clock\fP, and \fBgdl::GameClock\fP.
+.SS "virtual void gdl::IClock::pause (void)\fC [pure virtual]\fP"Stop the clock until you play it again. 
+.PP
+Implemented in \fBgdl::Clock\fP, and \fBgdl::GameClock\fP.
+.SS "virtual void gdl::IClock::play (void)\fC [pure virtual]\fP"Start the clock. 
+.PP
+Implemented in \fBgdl::Clock\fP, and \fBgdl::GameClock\fP.
+.SS "virtual void gdl::IClock::reset (void)\fC [pure virtual]\fP"Reset the clock to 0. 
+.PP
+Implemented in \fBgdl::Clock\fP, and \fBgdl::GameClock\fP.
+.SS "virtual void gdl::IClock::update (void)\fC [pure virtual]\fP"Up the time of the clock. 
+.PP
+Implemented in \fBgdl::Clock\fP, and \fBgdl::GameClock\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for GDL-GL from the source code.

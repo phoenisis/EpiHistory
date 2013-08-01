@@ -1,0 +1,46 @@
+Formules pour le 104Systeme :
+
+
+---------------------------Option 1-----------------------------------------
+
+Passer des coordonees cartesiennes aux coordonnes polaires:
+
+r = OM = racine de [(x au carree ) + (y au carree )]
+
+               \
+cos(alpha) = x  |
+             -  |
+             r  |
+                 \      deduire alpha
+sin(alpha) = y   /
+             -  |
+             r  |
+                |
+               /
+
+---------------------------Option 2-----------------------------------------
+
+Passer des coordonnees polaires aux coordonnees cartesiennes:
+
+y = r cos(alpha)
+x = r sin(alpha)
+
+---------------------------Option 3-----------------------------------------
+
+Passer des coordonnees cartesiennes aux coordonees spheriques:
+
+rho = racine carre [(x au carre) + (y au carre) + ( z au carre)]
+theta (positif) = arccos [x/racine carre(x au carre) + (y au carre)]
+      (negatif) = 2PI - arccos [x/racine carre(x au carre) + (y au carre)]
+phi = arccos (z/rho)
+
+---------------------------Option 4-----------------------------------------
+
+Passer des coordonnees spherique aux coordonnees cartesiennes:
+
+x = rho * cos(phi) * cos(theta)
+y = rho * sin(phi) * sin(theta)
+z = rho * sin(phi)
+
+----------------------------------------------------------------------------
+

@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <list>
+
+namespace	map
+{
+
+ typedef enum
+    {
+      PLAYER = 1,
+      BOX,
+      WALL,
+      BONUS,
+      BOMB
+    }bloc_type;
+
+  class		map
+  {
+  public:
+    map(int length = 20, int width = 20, int nbPlayeur = 2);
+    ~map();
+    void	generateMap(int length, int width, int nbPlayeur);
+    void	affMap() const;
+
+  private:
+    int **_mymap;
+  };
+};
